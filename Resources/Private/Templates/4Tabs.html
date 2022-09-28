@@ -1,0 +1,109 @@
+ <html xmlns="http://www.w3.org/1999/xhtml" lang="en"
+     xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+     
+     
+    <f:layout name="Default"/>
+    
+    <f:section name="Main">
+          <f:if condition="{data.container}">
+              <f:then>
+                  <div class="container">
+                      <f:render section="Tabulator" arguments="{_all}"/>  
+                  </div> 
+              </f:then>
+              <f:else>
+                  <f:render section="Tabulator" arguments="{_all}"/>  
+               </f:else>
+          </f:if> 
+    </f:section> 
+     
+    <f:section name="Tabulator">
+       <div class="t3up_tabulator tabssstyle-{bootstraptabs}">
+			<ul class="nav nav-tabs p-0" role="tablist" id="tabs-{f:if(condition:data._LOCALIZED_UID, then:data._LOCALIZED_UID, else:data.uid)}">
+		          <li class="nav-item"  role="presentation">
+		          	 <a class="nav-link active"
+	                    id="nav-{data.uid}-1-tab" 
+	                    data-bs-toggle="tab"
+	                    data-toggle="tab" 
+	                    href="#nav-{data.uid}-1" 
+	                    role="tab" 
+	                    type="button"
+	                    aria-controls="nav-{data.uid}-1"
+	                    aria-selected="false">{data.pi_flexform.tabTitle1}</a>       
+		          </li>
+		          <li class="nav-item"  role="presentation">
+		          	 <a class="nav-link"
+	                    id="nav-{data.uid}-2-tab" 
+	                    data-bs-toggle="tab"
+	                    data-toggle="tab" 
+	                    href="#nav-{data.uid}-2" 
+	                    role="tab" 
+	                    type="button"
+	                    aria-controls="nav-{data.uid}-2"
+	                    aria-selected="false">{data.pi_flexform.tabTitle2}</a>          
+		          </li> 
+	              <li class="nav-item"  role="presentation">
+	                 <a class="nav-link"
+	                    id="nav-{data.uid}-3-tab" 
+	                    data-bs-toggle="tab"
+	                    data-toggle="tab" 
+	                    href="#nav-{data.uid}-3" 
+	                    role="tab" 
+	                    type="button"
+	                    aria-controls="nav-{data.uid}-3"
+	                    aria-selected="false">{data.pi_flexform.tabTitle3}</a>          
+	              </li>            
+	              <li class="nav-item"  role="presentation">
+	                 <a class="nav-link"
+	                    id="nav-{data.uid}-4-tab" 
+	                    data-bs-toggle="tab"
+	                    data-toggle="tab" 
+	                    href="#nav-{data.uid}-4" 
+	                    role="tab" 
+	                    type="button"
+	                    aria-controls="nav-{data.uid}-4"
+	                    aria-selected="false">{data.pi_flexform.tabTitle4}</a>          
+	              </li>                
+			</ul>
+	
+		     <div class="tab-content">
+			     	 <div class="tab-pane fade show active"
+			     	 	id="nav-{data.uid}-1" 
+			     	 	role="tabpanel" 
+			     	 	aria-labelledby="nav-{data.uid}-1-tab">
+                        <f:for each="{childrenLeft}" as="child">
+                            <f:format.raw>{child.renderedContent}</f:format.raw>
+                        </f:for>                                   
+			         </div>
+		       	
+	                 <div class="tab-pane fade show "
+	                    id="nav-{data.uid}-2" 
+	                    role="tabpanel" 
+	                    aria-labelledby="nav-{data.uid}-2-tab">
+	                    <f:for each="{childrenCenterLeft}" as="child">
+	                        <f:format.raw>{child.renderedContent}</f:format.raw>
+	                    </f:for>                                     
+	                 </div>  
+	                 <div class="tab-pane fade show "
+	                    id="nav-{data.uid}-3" 
+	                    role="tabpanel" 
+	                    aria-labelledby="nav-{data.uid}-3-tab">
+                        <f:for each="{childrenCenterRight}" as="child">
+                            <f:format.raw>{child.renderedContent}</f:format.raw>
+                        </f:for>                                               
+	                 </div>  
+	                  <div class="tab-pane fade show "
+	                    id="nav-{data.uid}-4" 
+	                    role="tabpanel" 
+	                    aria-labelledby="nav-{data.uid}-4-tab">
+                        <f:for each="{childrenRight}" as="child">
+                            <f:format.raw>{child.renderedContent}</f:format.raw>
+                        </f:for>                                             
+	                 </div>  
+		     </div>
+	     </div>   
+    </f:section>
+  
+</html>
+
+

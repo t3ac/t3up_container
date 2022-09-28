@@ -1,0 +1,9 @@
+plugin.t3up_container{
+	settings.accordionstyle = 1
+
+}
+page.scss {
+        # cat =t3up: scss/t3upextensions/210;  type =string; label =LLL:EXT:t3up_container/Resources/Private/Language/locallang_constants.xlf:scsscontainer
+        scsscontainer                 = EXT:t3up_container/Resources/Public/Sass/_container.scss 
+}
+

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3DataStructure>
+    <meta>
+        <langDisable>1</langDisable>
+    </meta>
+    <sheets>
+        <scontrols>
+            <ROOT type="array">
+                <TCEforms>
+                    <sheetTitle>LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:sheet.controls</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el type="array">
+                   
+                    <animation type="array">
+                        <TCEforms>
+                            <label>LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:slider.animation</label>
+                            <config>
+                                <type>select</type>
+                                <renderType>selectSingle</renderType>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:slider.animation.1</numIndex>
+                                        <numIndex index="1"></numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:slider.animation.2</numIndex>
+                                        <numIndex index="1">carousel-fade</numIndex>
+                                    </numIndex>
+                                </items>
+                            </config>
+                        </TCEforms>
+                    </animation>
+                    
+                    <auto type="array">
+                        <TCEforms>
+                            <label>LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:slider.auto</label>
+                            <config>
+                                <type>select</type>
+                                <renderType>selectSingle</renderType>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.yes</numIndex>
+                                        <numIndex index="1">true</numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.no</numIndex>
+                                        <numIndex index="1">false</numIndex>
+                                    </numIndex>
+                                </items>
+                            </config>
+                        </TCEforms>
+                    </auto>
+                        
+                    <controlNav type="array">
+                        <TCEforms>
+                            <label>LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:slider.controlNav</label>
+                            <config>
+                                <type>select</type>
+                                <renderType>selectSingle</renderType>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.yes</numIndex>
+                                        <numIndex index="1">true</numIndex>
+                                    </numIndex>                 
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.no</numIndex>
+                                        <numIndex index="1">false</numIndex>
+                                    </numIndex>
+
+                                </items>
+                                <default>false</default>
+                            </config>
+                        </TCEforms>
+                    </controlNav>
+                    
+                    <directionNav type="array">
+                        <TCEforms>
+                            <label>LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:slider.directionNav</label>
+                            <config>
+                                <type>select</type>
+                                <renderType>selectSingle</renderType>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.no</numIndex>
+                                        <numIndex index="1">false</numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.yes</numIndex>
+                                        <numIndex index="1">true</numIndex>
+                                    </numIndex>
+                                </items>
+                                <default>false</default>
+                            </config>
+                        </TCEforms>
+                    </directionNav> 
+                    
+                    <slideshowSpeed type="array">
+                        <TCEforms>
+                            <label>LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:slider.sliderSpeed</label>
+                            <config>
+                                <type>input</type>
+                                <size>3</size>
+                                <default>4000</default>
+                                <eval>int</eval>
+                                <range>
+                                    <lower>500</lower>
+                                    <upper>20000</upper>
+                                </range>
+                                <wizards>
+                                    <slideshow>
+                                        <type>slider</type>
+                                        <step>100</step>
+                                    </slideshow>
+                                </wizards>
+                            </config>    
+                        </TCEforms>
+                    </slideshowSpeed>
+                    <style type="array">
+                        <TCEforms>
+                            <label>LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:slideshow.style</label>
+                            <config>
+                                <type>select</type>
+                                <renderType>selectSingle</renderType>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.basic</numIndex>
+                                        <numIndex index="1"></numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.stil1</numIndex>
+                                        <numIndex index="1">bottom_outside</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.stil2</numIndex>
+                                        <numIndex index="1">top_inside</numIndex>
+                                    </numIndex>
+                                    <numIndex index="3" type="array">
+                                        <numIndex index="0">LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.stil3</numIndex>
+                                        <numIndex index="1">top_outside</numIndex>
+                                    </numIndex>
+                                    <numIndex index="4" type="array">
+                                        <numIndex index="0">LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.stil4</numIndex>
+                                        <numIndex index="1">right_inside</numIndex>
+                                    </numIndex>
+                                    <numIndex index="5" type="array">
+                                        <numIndex index="0">LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.stil5</numIndex>
+                                        <numIndex index="1">right_outside</numIndex>
+                                    </numIndex>          
+                                </items>
+                            </config>
+                        </TCEforms>
+                    </style>
+                   
+                </el>
+            </ROOT>
+        </scontrols>      
+        
+    </sheets>
+</T3DataStructure>

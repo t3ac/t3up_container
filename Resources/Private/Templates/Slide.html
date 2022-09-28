@@ -1,0 +1,34 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:spaceless>
+
+	<f:layout name="Default"/>
+
+	<f:section name="Main">
+			<div id="slideshow{data.uid}" class="t3up_slider {data.frame_class} carousel slide {f:if(condition: data.pi_flexform.animation, then: 'carousel-fade')} sliderstyle-{bootstrapslider}" data-bs-ride="carousel" data-bs-interval="{data.pi_flexform.auto}"  >
+			    <ol class="carousel-indicators {data.pi_flexform.style} {f:if(condition: data.pi_flexform.controlNav, then: 'd-none')} ">
+			    	<f:for each="{childrenContent}" as="child" iteration="iteration">
+						<li type="button" data-target="#slideshow{data.uid}"  data-bs-target="#slideshow{data.uid}"   data-slide-to="{iteration.index}" data-bs-slide-to="{iteration.index}" class="{f:if(condition: '{iteration.isFirst}', then: 'active')}"></li>	    	
+					</f:for>
+			    </ol> 
+			  	<div class="carousel-inner">
+				 	<f:for each="{childrenContent}" as="child" iteration="iteration">
+						<div class="carousel-item {f:if(condition:iteration.index, then:'', else:'show active')}" data-bs-interval="{data.pi_flexform.slideshowSpeed}">
+							<f:format.raw>{child.renderedContent}</f:format.raw>
+						</div>
+					</f:for>	
+				</div>	
+				<button class="{f:if(condition: data.pi_flexform.directionNav, then: 'd-none')}  carousel-control-prev d-flex justify-content-center align-items-center" type="button" data-bs-target="#slideshow{data.uid}" data-bs-slide="prev">
+				   <span class="prev">&#xF104</span>
+				   <span class="visually-hidden">Previous</span>
+				</button>
+				<button class="{f:if(condition: data.pi_flexform.directionNav, then: 'd-none')}  carousel-control-next d-flex justify-content-center align-items-center" type="button" data-bs-target="#slideshow{data.uid}" data-bs-slide="next">
+				  <span class="next">&#xF105</span>
+				  <span class="visually-hidden">Next</span>
+			  	</button>
+			</div>
+	</f:section>		
+</f:spaceless>
+</html>
+
+
+

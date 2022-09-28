@@ -1,0 +1,85 @@
+[backend.user.isAdmin]
+    TCEFORM {
+        tt_content {
+            frame_class {
+                removeItems = ruler-before, ruler-after, indent, indent-left, indent-right
+                disableNoMatchingValueElement = 1
+                types {
+                    accordion {
+                        addItems { 
+                            white           = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:white 
+                            darkgrey        = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:darkgrey
+                            grey            = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:grey                        
+                            colored         = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:colored       
+                        }
+                    }
+                    tabs {
+                        addItems { 
+                            white           = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:white 
+                            darkgrey        = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:darkgrey
+                            grey            = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:grey                        
+                            colored         = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:colored       
+                        }
+                    }
+                    2tabs {
+                        addItems { 
+                            white           = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:white 
+                            darkgrey        = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:darkgrey
+                            grey            = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:grey                        
+                            colored         = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:colored       
+                        }
+                    }
+                    3tabs {
+                        addItems { 
+                            white           = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:white 
+                            darkgrey        = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:darkgrey
+                            grey            = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:grey                        
+                            colored         = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:colored       
+                        }
+                    }        
+                    4tabs {
+                        addItems { 
+                            white           = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:white 
+                            darkgrey        = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:darkgrey
+                            grey            = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:grey                        
+                            colored         = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:colored       
+                        }
+                    }
+                    1cols{
+                        addItems { 
+                            white           = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:white 
+                            darkgrey        = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:darkgrey
+                            grey            = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:grey                        
+                            colored         = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:colored       
+                        }
+                    }
+                    2cols{
+                        addItems { 
+                            white           = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:white 
+                            darkgrey        = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:darkgrey
+                            grey            = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:grey                        
+                            colored         = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:colored       
+                        }
+                    }
+                    3cols{
+                        addItems { 
+                            white           = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:white 
+                            darkgrey        = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:darkgrey
+                            grey            = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:grey                        
+                            colored         = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:colored       
+                        }
+                    }        
+                    4cols{
+                        addItems { 
+                            white           = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:white 
+                            darkgrey        = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:darkgrey
+                            grey            = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:grey                        
+                            colored         = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:colored       
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+[END]

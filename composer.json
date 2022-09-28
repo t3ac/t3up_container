@@ -1,0 +1,29 @@
+{
+	"name" : "t3ac/t3up-container",
+	"description" : "T3UP for EXT:container",
+	"authors" : [{
+			"name" : "Michael Lang",
+			"role" : "Developer",
+			"email" : "michael.lang@h-da.de"
+		}
+	],
+	"keywords" : [
+		"TYPO3",
+		"extension",
+		"t3up",
+		"container"
+	],
+	"type" : "typo3-cms-extension",
+	"license" : "GPL-2.0-or-later",
+	"require" : {
+		"b13/container" : "^1.0.0"
+	},
+	"replace" : {
+		"typo3-ter/container_example" : "self.version"
+	},
+	"extra" : {
+		"typo3/cms" : {
+			"extension-key" : "t3up_container"
+		}
+	}
+}

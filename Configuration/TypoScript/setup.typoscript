@@ -1,0 +1,207 @@
+# Fluid_styled_content Elements ###########################################################
+
+page.includeCSS {
+    container        			        = EXT:t3up_container/Resources/Public/Sass/_container.scss
+}
+
+
+lib.containerContentElement =< lib.contentElement
+lib.containerContentElement.templateRootPaths.10 = EXT:t3up_container/Resources/Private/Templates
+lib.containerContentElement.dataProcessing {
+    9876 = T3up\T3upContainer\DataProcessing\FlexFormProcessor
+    9876 {
+        fieldName = pi_flexform
+    }
+}
+
+#########################################################################################
+
+## 1 Column
+tt_content.1cols < lib.containerContentElement
+tt_content.1cols {
+  templateName = 1Cols
+  dataProcessing {
+    101 = B13\Container\DataProcessing\ContainerProcessor
+    101 {
+      colPos = 101
+      as = childrenCenter
+    }
+  }
+}
+
+## 2 Columns
+tt_content.2cols < lib.containerContentElement
+tt_content.2cols {
+  templateName = 2Cols
+  dataProcessing {
+    101 = B13\Container\DataProcessing\ContainerProcessor
+    101 {
+      colPos = 101
+      as = childrenLeft
+    }
+    102 = B13\Container\DataProcessing\ContainerProcessor
+    102 {
+     colPos = 102
+     as = childrenRight
+    }
+  }
+}
+
+## 3 Columns
+tt_content.3cols < lib.containerContentElement
+tt_content.3cols {
+  templateName = 3Cols
+  dataProcessing {
+    101 = B13\Container\DataProcessing\ContainerProcessor
+    101 {
+      colPos = 101
+      as = childrenLeft
+    }
+    102 = B13\Container\DataProcessing\ContainerProcessor
+    102 {
+     colPos = 102
+     as = childrenCenter
+    }
+    103 = B13\Container\DataProcessing\ContainerProcessor
+    103 {
+     colPos = 103
+     as = childrenRight
+    }
+  }
+}
+
+## 4 Columns
+tt_content.4cols < lib.containerContentElement
+tt_content.4cols {
+  templateName = 4Cols
+  dataProcessing {
+    101 = B13\Container\DataProcessing\ContainerProcessor
+    101 {
+      colPos = 101
+      as = childrenLeft
+    }
+    102 = B13\Container\DataProcessing\ContainerProcessor
+    102 {
+     colPos = 102
+     as = childrenCenterLeft
+    }
+    103 = B13\Container\DataProcessing\ContainerProcessor
+    103 {
+     colPos = 103
+     as = childrenCenterRight
+    }
+    104 = B13\Container\DataProcessing\ContainerProcessor
+    104 {
+     colPos = 104
+     as = childrenRight
+    }
+  } 
+}
+
+## Accordion
+tt_content.accordion < lib.containerContentElement
+tt_content.accordion {
+  templateName = Accordion
+  dataProcessing {
+    101 = B13\Container\DataProcessing\ContainerProcessor
+    101 {
+      colPos = 101
+      as = childrenContent
+    }
+  }
+}
+
+## Tabulatoren
+tt_content.tabs < lib.containerContentElement
+tt_content.tabs {
+  templateName = Tabs
+  dataProcessing {
+    101 = B13\Container\DataProcessing\ContainerProcessor
+    101 {
+      colPos = 101
+      as = childrenContent
+    }
+  }
+}
+
+## 2 Tabs
+tt_content.2tabs < lib.containerContentElement
+tt_content.2tabs {
+  templateName = 2Tabs
+  dataProcessing {
+    101 = B13\Container\DataProcessing\ContainerProcessor
+    101 {
+      colPos = 101
+      as = childrenLeft
+    }
+    102 = B13\Container\DataProcessing\ContainerProcessor
+    102 {
+     colPos = 102
+     as = childrenRight
+    }
+  }
+}
+
+## 3 Tabs
+tt_content.3tabs < lib.containerContentElement
+tt_content.3tabs {
+  templateName = 3Tabs
+  dataProcessing {
+    101 = B13\Container\DataProcessing\ContainerProcessor
+    101 {
+      colPos = 101
+      as = childrenLeft
+    }
+    102 = B13\Container\DataProcessing\ContainerProcessor
+    102 {
+     colPos = 102
+     as = childrenCenter
+    }
+    103 = B13\Container\DataProcessing\ContainerProcessor
+    103 {
+     colPos = 103
+     as = childrenRight
+    }
+  }
+}
+
+## 4 Tabs
+tt_content.4tabs < lib.containerContentElement
+tt_content.4tabs {
+  templateName = 4Tabs
+  dataProcessing {
+    101 = B13\Container\DataProcessing\ContainerProcessor
+    101 {
+      colPos = 101
+      as = childrenLeft
+    }
+    102 = B13\Container\DataProcessing\ContainerProcessor
+    102 {
+     colPos = 102
+     as = childrenCenterLeft
+    }
+    103 = B13\Container\DataProcessing\ContainerProcessor
+    103 {
+     colPos = 103
+     as = childrenCenterRight
+    }
+    104 = B13\Container\DataProcessing\ContainerProcessor
+    104 {
+     colPos = 104
+     as = childrenRight
+    }
+  } 
+}
+
+## Slider
+tt_content.slide < lib.containerContentElement
+tt_content.slide {
+  templateName = Slide
+  dataProcessing {
+    101 = B13\Container\DataProcessing\ContainerProcessor
+    101 {
+      colPos = 101
+      as = childrenContent
+    }
+  }
+}

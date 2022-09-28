@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2014-09-22T11:44:12Z" product-name="t3up_container">
+ 	<header/>
+		<body>
+		
+			/* -- BACKENDLAYOUTS ------------------------- */
+
+            <trans-unit id="container">
+                 <source>Container</source>
+            </trans-unit>           
+                    
+
+
+            <trans-unit id="wizzard">
+                 <source>T3UP</source>
+            </trans-unit>           
+                    
+             <trans-unit id="1Cols">
+                 <source>1-Col-Layout</source>
+            </trans-unit>
+            <trans-unit id="1ColsDes">
+                 <source>Bootstrap Layout for 1 column</source>
+            </trans-unit>                        
+                    
+            <trans-unit id="2Cols">
+                 <source>2-Col-Layout</source>
+            </trans-unit>
+            <trans-unit id="2ColsDes">
+                 <source>Bootstrap Layout for 2 columns</source>
+            </trans-unit>
+
+            <trans-unit id="3Cols">
+                 <source>3-Col-Layout</source>
+            </trans-unit>
+            <trans-unit id="3ColsDes">
+                 <source>Bootstrap Layout for 3 columns</source>
+            </trans-unit>   
+            
+            <trans-unit id="4Cols">
+                 <source>4-Col-Layout</source>
+            </trans-unit>
+            <trans-unit id="4ColsDes">
+                 <source>Bootstrap Layout for 4 columns</source>
+            </trans-unit>   
+            
+            <trans-unit id="accordion">
+                 <source>Accordion</source>
+            </trans-unit>
+            <trans-unit id="accordionDes">
+                 <source>with three diffrent behaviors.</source>
+            </trans-unit>   
+
+            <trans-unit id="tabs">
+                 <source>Tabulator</source>
+            </trans-unit>
+            <trans-unit id="tabsDes">
+                 <source>shows content in tabs.</source>
+            </trans-unit>   
+
+            <trans-unit id="2tabs">
+                 <source>2-Tabulator</source>
+            </trans-unit>
+            <trans-unit id="2tabsDes">
+                 <source>shows content in tabs with 2 sections.</source>
+            </trans-unit>   
+
+            <trans-unit id="3tabs">
+                 <source>3-Tabulator</source>
+            </trans-unit>
+            <trans-unit id="3tabsDes">
+                 <source>shows content in tabs with 3 sections.</source>
+            </trans-unit>  
+            
+            <trans-unit id="4tabs">
+                 <source>4-Tabulator</source>
+            </trans-unit>
+            <trans-unit id="4tabsDes">
+                 <source>shows content in tabs with 4 sections.</source>
+            </trans-unit>  
+                        
+            
+            
+            <trans-unit id="slider">
+                 <source>Slider</source>
+            </trans-unit>
+            <trans-unit id="sliderDes">
+                 <source>bootstrap slider from content.</source>
+            </trans-unit>   
+
+            <trans-unit id="left">
+                 <source>Left Column</source>
+            </trans-unit>
+            
+            <trans-unit id="center">
+                 <source>Center Column</source>
+            </trans-unit>   
+            
+            <trans-unit id="centerLeft">
+                 <source>Left Center Column</source>
+            </trans-unit>     
+            
+            <trans-unit id="centerRight">
+                 <source>Right Center Column</source>
+            </trans-unit>             
+            
+            <trans-unit id="right">
+                 <source>Right Column</source>
+            </trans-unit>
+		    
+		    
+		    
+		    
+		    
+		    
+		    
+		    
+		    
+		    
+		    
+		    
+		    
+		    
+		    
+		    
+		    
+            <trans-unit id="options">
+                <source>Options</source>
+            </trans-unit>  		    
+		    
+		    
+		    
+		    
+		    
+		    
+		    
+		    
+		    
+		    
+		    
+		    
+		    
+		    <trans-unit id="align-items-stretch">
+			     <source>Stretching the items</source>
+		    </trans-unit>
+		    <trans-unit id="align-items-end">
+			     <source>Aling the items to the bottom</source>
+		    </trans-unit>
+		    <trans-unit id="align-items-center">
+			     <source>Aling the items to the center</source>
+		    </trans-unit>		    
+		    <trans-unit id="align-items-baseline">
+			     <source>Aling the items to the baseline</source>
+		    </trans-unit>		    
+		    
+		    
+		    
+		    
+		    
+		    	
+		    <trans-unit id="accordion1">
+			     <source>All items closed</source>
+		    </trans-unit>		    	
+		    <trans-unit id="accordion2">
+			     <source>First open</source>
+		    </trans-unit>	    	
+		    <trans-unit id="accordion3">
+			     <source>Multiple select</source>
+		    </trans-unit>	 	    	
+	    
+	    
+	    
+	    
+
+		    
+		</body>
+	</file>
+</xliff>

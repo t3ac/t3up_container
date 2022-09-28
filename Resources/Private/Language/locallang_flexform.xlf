@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2014-09-22T11:44:12Z" product-name="t3up_container">
+    <header/>
+        <body>
+        
+            <trans-unit id="sheet.smallDevices" xml:space="preserve">
+                 <source>Mobil</source>
+            </trans-unit>
+            <trans-unit id="sheet.mediumDevices" xml:space="preserve">
+                 <source>Tablet</source>
+            </trans-unit>       
+             <trans-unit id="sheet.largeDevices" xml:space="preserve">
+                 <source>Desktop</source>
+            </trans-unit>
+
+        
+            <trans-unit id="label.col1" xml:space="preserve">
+                 <source>Column 1</source>
+            </trans-unit>      
+            <trans-unit id="label.col2" xml:space="preserve">
+                 <source>Column 2</source>
+            </trans-unit>             
+            <trans-unit id="label.col3" xml:space="preserve">
+                 <source>Column 3</source>
+            </trans-unit>          
+            <trans-unit id="label.col4" xml:space="preserve">
+                 <source>Column 4</source>
+            </trans-unit>        
+            <trans-unit id="sheet.customClasses" xml:space="preserve">
+                 <source>Custom classes</source>
+            </trans-unit>        
+
+            <trans-unit id="label.style" xml:space="preserve">
+                <source>Styles</source>
+            </trans-unit>   
+            <trans-unit id="sheet.layout" xml:space="preserve">
+                <source>Layouts</source>
+            </trans-unit>     
+            <trans-unit id="label.moreWidth" xml:space="preserve">
+                <source>More width</source>
+            </trans-unit>
+            <trans-unit id="label.autoLayout" xml:space="preserve">
+                <source>Auto</source>
+            </trans-unit>
+            <trans-unit id="label.notset" xml:space="preserve">
+                <source>not set</source>
+            </trans-unit>
+            <trans-unit id="label.moreOptions" xml:space="preserve">
+                <source>More options</source>
+            </trans-unit>
+            <trans-unit id="label.special" xml:space="preserve">
+                <source>Special</source>
+            </trans-unit>
+            <trans-unit id="label.hidden" xml:space="preserve">
+                <source>hidden</source>
+            </trans-unit>
+            <trans-unit id="label.visible" xml:space="preserve">
+                <source>only visible</source>
+            </trans-unit>
+            <trans-unit id="label.variableWidth" xml:space="preserve">
+                <source>variable width</source>
+            </trans-unit>
+             <trans-unit id="sheet.customClassess">
+                 <source>Custom classes</source>
+            </trans-unit>              
+
+
+            /* Accordion classes */        
+            <trans-unit id="accordion.style.1" xml:space="preserve">
+                 <source>Collapse</source>
+            </trans-unit>         
+            <trans-unit id="accordion.style.2" xml:space="preserve">
+                 <source>First open</source>
+            </trans-unit>         
+            <trans-unit id="accordion.style.3" xml:space="preserve">
+                 <source>Multipe</source>
+            </trans-unit>       
+            
+ 
+            /* Tab classes */        
+            <trans-unit id="label.tabTitle1" xml:space="preserve">
+                 <source>Tab 1 title</source>
+            </trans-unit>         
+            <trans-unit id="label.tabTitle2" xml:space="preserve">
+                 <source>Tab 2 title</source>
+            </trans-unit>   
+            <trans-unit id="label.tabTitle3" xml:space="preserve">
+                 <source>Tab 3 title</source>
+            </trans-unit>       
+            <trans-unit id="label.tabTitle4" xml:space="preserve">
+                 <source>Tab 4 title</source>
+            </trans-unit>                
+        
+            /* Flex classes */
+            <trans-unit id="sheet.rowClasses" xml:space="preserve">
+                 <source>Flex classes</source>
+            </trans-unit>           
+            <trans-unit id="label.rowValign" xml:space="preserve">
+                 <source>Vertical-alignments</source>
+            </trans-unit>
+            <trans-unit id="rowValign.alignItemsStart" xml:space="preserve">
+                 <source>Vertical-alignment: top</source>
+            </trans-unit> 
+            <trans-unit id="rowValign.alignItemsCenter" xml:space="preserve">
+                 <source>Vertical-alignment: center</source>
+            </trans-unit>           
+            <trans-unit id="rowValign.alignItemsEnd" xml:space="preserve">
+                 <source>Vertical-alignment: bottom</source>
+            </trans-unit>                   
+            <trans-unit id="rowValign.alignItemsBaseline" xml:space="preserve">
+                 <source>Vertical-alignment: baseline</source>
+            </trans-unit>   
+            <trans-unit id="rowValign.alignItemsStretch" xml:space="preserve">
+                 <source>Vertical-alignment: streching the content</source>
+            </trans-unit>               
+
+            <trans-unit id="label.rowHalign" xml:space="preserve">
+                 <source>Horizontal-alignments</source>
+            </trans-unit>
+            <trans-unit id="rowHalign.justifyContentStart" xml:space="preserve">
+                 <source>Horizontal-alignment: Left</source>
+            </trans-unit>                   
+            <trans-unit id="rowHalign.justifyContentCenter" xml:space="preserve">
+                 <source>Horizontal-alignment: center</source>
+            </trans-unit>   
+            <trans-unit id="rowHalign.justifyContentEnd" xml:space="preserve">
+                 <source>Horizontal-alignment: right</source>
+            </trans-unit>   
+            <trans-unit id="rowHalign.justifyContentAround" xml:space="preserve">
+                 <source>Horizontal-alignment: space around</source>
+            </trans-unit>                   
+            <trans-unit id="rowHalign.justifyContentBetween" xml:space="preserve">
+                 <source>Horizontal-alignment: stretch left to right</source>
+            </trans-unit>   
+            
+            /* Slider */
+            <trans-unit id="sheet.controls" xml:space="preserve">
+                 <source>Control</source>
+            </trans-unit>            
+            <trans-unit id="slider.animation" xml:space="preserve">
+                 <source>Animation</source>
+            </trans-unit>              
+            <trans-unit id="slider.animation.1" xml:space="preserve">
+                 <source>Slide</source>
+            </trans-unit>              
+            <trans-unit id="slider.animation.2" xml:space="preserve">
+                 <source>Fade</source>
+            </trans-unit> 
+            <trans-unit id="slider.auto" xml:space="preserve">
+                 <source>Start</source>
+            </trans-unit>             
+            <trans-unit id="label.true" xml:space="preserve">
+                 <source>True</source>
+            </trans-unit>             
+            <trans-unit id="label.false" xml:space="preserve">
+                 <source>False</source>
+            </trans-unit>      
+                   
+            <trans-unit id="slider.controlNav" xml:space="preserve">
+                 <source>Hide control elements</source>
+            </trans-unit> 
+            <trans-unit id="slider.directionNav" xml:space="preserve">
+                 <source>Hide control directions</source>
+            </trans-unit> 
+            <trans-unit id="slider.sliderSpeed" xml:space="preserve">
+                 <source>Sliderspeed in MSec</source>
+            </trans-unit>  
+             <trans-unit id="slideshow.style" xml:space="preserve">
+                 <source>Styles</source>
+            </trans-unit>            
+             <trans-unit id="label.basic" xml:space="preserve">
+                 <source>Basic</source>
+            </trans-unit>             
+             <trans-unit id="label.stil1" xml:space="preserve">
+                 <source>bottom outside</source>
+            </trans-unit>     
+             <trans-unit id="label.stil2" xml:space="preserve">
+                 <source>top</source>
+            </trans-unit>   
+             <trans-unit id="label.stil3" xml:space="preserve">
+                 <source>top outside</source>
+            </trans-unit>   
+             <trans-unit id="label.stil4" xml:space="preserve">
+                 <source>right</source>
+            </trans-unit>   
+             <trans-unit id="label.stil5" xml:space="preserve">
+                 <source>right outside</source>
+            </trans-unit>    
+
+
+            /* Misc classes */
+            <trans-unit id="label.none" xml:space="preserve">
+                <source>none</source>
+            </trans-unit>
+            <trans-unit id="label.stil1" xml:space="preserve">
+                <source>Stil1</source>
+            </trans-unit>
+            <trans-unit id="label.yes" xml:space="preserve">
+                <source>yes</source>
+            </trans-unit>
+            <trans-unit id="label.no" xml:space="preserve">
+                <source>no</source>
+            </trans-unit>
+            
+                        
+        </body>
+    </file>
+</xliff>        

@@ -1,0 +1,59 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:spaceless>
+    <f:layout name="Default"/>
+    <f:section name="Main">
+      <div class="t3up_tabulator tabssstyle-{bootstraptabs}">
+       	<ul class="nav nav-tabs p-0" role="tablist" id="tabs-{f:if(condition:data._LOCALIZED_UID, then:data._LOCALIZED_UID, else:data.uid)}">
+                 <li class="nav-item"  role="presentation">
+                 	 <a class="nav-link active"
+                       id="nav-{data.uid}-1-tab" 
+                       data-bs-toggle="tab"
+                       data-toggle="tab" 
+                       href="#nav-{data.uid}-1" 
+                       role="tab" 
+                       type="button"
+                       aria-controls="nav-{data.uid}-1"
+                       aria-selected="false">{data.pi_flexform.tabTitle1}</a>       
+                 </li>
+                 <li class="nav-item"  role="presentation">
+                 	 <a class="nav-link"
+                       id="nav-{data.uid}-2-tab" 
+                       data-bs-toggle="tab"
+                       data-toggle="tab" 
+                       href="#nav-{data.uid}-2" 
+                       role="tab" 
+                       type="button"
+                       aria-controls="nav-{data.uid}-2"
+                       aria-selected="false">{data.pi_flexform.tabTitle2}</a>          
+                 </li>          
+       	</ul>
+       
+            <div class="tab-content">
+   	     	 <div class="tab-pane fade show active"
+   	     	 	id="nav-{data.uid}-1" 
+   	     	 	role="tabpanel" 
+   	     	 	aria-labelledby="nav-{data.uid}-1-tab">
+                    <f:for each="{childrenLeft}" as="child">
+                        <f:format.raw>{child.renderedContent}</f:format.raw>
+                    </f:for>                         
+   	         </div>
+          	
+   	     	 <div class="tab-pane fade show "
+   	     	 	id="nav-{data.uid}-2" 
+   	     	 	role="tabpanel" 
+   	     	 	aria-labelledby="nav-{data.uid}-2-tab">
+	            <f:if condition="{childrenRight}">
+	                <div class="{data.pi_flexform.Col2} {data.pi_flexform.mdCol2} {data.pi_flexform.lgCol2} {data.pi_flexform.col22class}">
+	                    <f:for each="{childrenRight}" as="child">
+	                        <f:format.raw>{child.renderedContent}</f:format.raw>
+	                    </f:for>
+	                </div>
+	            </f:if>                                     
+   	         </div>   
+           </div>
+       </div>     
+    </f:section>    
+</f:spaceless>
+</html>
+
+

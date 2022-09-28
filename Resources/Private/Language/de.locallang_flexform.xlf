@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2014-09-22T11:44:12Z" product-name="t3up_container">
+    <header/>
+        <body>
+        
+            <trans-unit id="sheet.smallDevices" xml:space="preserve">
+                 <source>Mobil</source>
+                 <target state="translated">Mobil</target>      
+            </trans-unit>
+            <trans-unit id="sheet.mediumDevices" xml:space="preserve">
+                 <source>Tablet</source>
+                 <target state="translated">Tablets</target>  
+            </trans-unit>       
+             <trans-unit id="sheet.largeDevices" xml:space="preserve">
+                 <source>Desktop</source>
+                 <target state="translated">Desktop</target>                   
+            </trans-unit>
+
+        
+            <trans-unit id="label.col1" xml:space="preserve">
+                 <source>Column 1</source>
+                 <target state="translated">Spalte 1</target>                 
+            </trans-unit>      
+            <trans-unit id="label.col2" xml:space="preserve">
+                 <source>Column 2</source>
+                 <target state="translated">Spalte 2</target>                  
+            </trans-unit>             
+            <trans-unit id="label.col3" xml:space="preserve">
+                 <source>Column 3</source>
+                 <target state="translated">Spalte 3</target>                 
+            </trans-unit>          
+            <trans-unit id="label.col4" xml:space="preserve">
+                 <source>Column 4</source>
+                 <target state="translated">Spalte 4</target>                  
+            </trans-unit>        
+            <trans-unit id="sheet.customClasses" xml:space="preserve">
+                 <source>Custom classes</source>
+                 <target state="translated">Eigene Css-Klasse</target>                
+            </trans-unit>        
+
+            <trans-unit id="label.style" xml:space="preserve">
+                <source>Styles</source>
+                <target state="translated">Designs</target>                 
+            </trans-unit>   
+            <trans-unit id="sheet.layout" xml:space="preserve">
+                <source>Layouts</source>
+                <target state="translated">Layout</target>                     
+            </trans-unit>     
+            <trans-unit id="label.moreWidth" xml:space="preserve">
+                <source>More width</source>
+                <target state="translated">Weitere Breiten</target>
+            </trans-unit>
+            <trans-unit id="label.autoLayout" xml:space="preserve">
+                <source>Auto</source>
+                <target state="translated">Auto</target>
+            </trans-unit>
+            <trans-unit id="label.notset" xml:space="preserve">
+                <source>not set</source>
+                <target state="translated">Nicht gesetzt</target>
+            </trans-unit>
+            <trans-unit id="label.moreOptions" xml:space="preserve">
+                <source>More options</source>
+                <target state="translated">Weitere Einstellungen</target>
+            </trans-unit>
+            <trans-unit id="label.special" xml:space="preserve">
+                <source>Special</source>
+                <target state="translated">Spezielle Einstellung</target>     
+            </trans-unit>
+            <trans-unit id="label.hidden" xml:space="preserve">
+                <source>hidden</source>
+                <target state="translated">Versteckt</target>  
+            </trans-unit>
+            <trans-unit id="label.visible" xml:space="preserve">
+                <source>only visible</source>
+                <target state="translated">Nur sichtbar</target>  
+            </trans-unit>
+            <trans-unit id="label.variableWidth" xml:space="preserve">
+                <source>variable width</source>
+                <target state="translated">variable Breite</target>
+            </trans-unit>
+             <trans-unit id="sheet.customClassess">
+                 <source>Custom classes</source>
+                 <target state="translated">Eigene Css-Klasse</target>
+            </trans-unit>              
+
+
+            /* Accordion classes */        
+            <trans-unit id="accordion.style.1" xml:space="preserve">
+                 <source>Collapse</source>
+                 <target state="translated">Alle geschlossen</target>
+            </trans-unit>         
+            <trans-unit id="accordion.style.2" xml:space="preserve">
+                 <source>First open</source>
+                 <target state="translated">Erstes geöffnet</target>
+            </trans-unit>         
+            <trans-unit id="accordion.style.3" xml:space="preserve">
+                 <source>Multipe</source>
+                 <target state="translated">Individuell</target>
+            </trans-unit>       
+            
+ 
+            /* Tab classes */        
+            <trans-unit id="label.tabTitle1" xml:space="preserve">
+                 <source>Tab 1 title</source>
+                 <target state="translated">1.Tab-Titel</target>
+            </trans-unit>         
+            <trans-unit id="label.tabTitle2" xml:space="preserve">
+                 <source>Tab 2 title</source>
+                 <target state="translated">2.Tab-Titel</target>
+            </trans-unit>   
+            <trans-unit id="label.tabTitle3" xml:space="preserve">
+                 <source>Tab 3 title</source>
+                 <target state="translated">3.Tab-Titel</target>
+            </trans-unit>       
+            <trans-unit id="label.tabTitle4" xml:space="preserve">
+                 <source>Tab 4 title</source>
+                 <target state="translated">4.Tab-Titel</target>
+            </trans-unit>                
+        
+            /* Flex classes */
+            <trans-unit id="sheet.rowClasses" xml:space="preserve">
+                 <source>Flex classes</source>
+                 <target state="translated">Flex Klassen</target>
+            </trans-unit>           
+            <trans-unit id="label.rowValign" xml:space="preserve">
+                 <source>Vertical-alignments</source>
+                 <target state="translated">Vertikale Ausrichtung</target>
+            </trans-unit>
+            <trans-unit id="rowValign.alignItemsStart" xml:space="preserve">
+                 <source>Vertical-alignment: top</source>
+                 <target state="translated">Vertikale Ausrichtung: oben</target>
+            </trans-unit> 
+            <trans-unit id="rowValign.alignItemsCenter" xml:space="preserve">
+                 <source>Vertical-alignment: center</source>
+                 <target state="translated">Vertikale Ausrichtung: zentriert</target>
+            </trans-unit>           
+            <trans-unit id="rowValign.alignItemsEnd" xml:space="preserve">
+                 <source>Vertical-alignment: bottom</source>
+                 <target state="translated">Vertikale Ausrichtung: unten</target>
+            </trans-unit>                   
+            <trans-unit id="rowValign.alignItemsBaseline" xml:space="preserve">
+                 <source>Vertical-alignment: baseline</source>
+                 <target state="translated">Vertikale Ausrichtung: Grundlinie</target>
+            </trans-unit>   
+            <trans-unit id="rowValign.alignItemsStretch" xml:space="preserve">
+                 <source>Vertical-alignment: streching the content</source>
+                 <target state="translated">Vertikale Ausrichtung: Spreizen</target>
+            </trans-unit>               
+
+            <trans-unit id="label.rowHalign" xml:space="preserve">
+                 <source>Horizontal-alignments</source>
+                 <target state="translated">Horizontale Ausrichtung</target>
+            </trans-unit>
+            <trans-unit id="rowHalign.justifyContentStart" xml:space="preserve">
+                 <source>Horizontal-alignment: Left</source>
+                 <target state="translated">Horizontale Ausrichtung: Links</target>
+            </trans-unit>                   
+            <trans-unit id="rowHalign.justifyContentCenter" xml:space="preserve">
+                 <source>Horizontal-alignment: center</source>
+                 <target state="translated">Horizontale Ausrichtung: zentriert</target>
+            </trans-unit>   
+            <trans-unit id="rowHalign.justifyContentEnd" xml:space="preserve">
+                 <source>Horizontal-alignment: right</source>
+                 <target state="translated">Horizontale Ausrichtung: rechts</target>
+            </trans-unit>   
+            <trans-unit id="rowHalign.justifyContentAround" xml:space="preserve">
+                 <source>Horizontal-alignment: space around</source>
+                 <target state="translated">Horizontale Ausrichtung: mit Abstand</target>
+            </trans-unit>                   
+            <trans-unit id="rowHalign.justifyContentBetween" xml:space="preserve">
+                 <source>Horizontal-alignment: stretch left to right</source>
+                 <target state="translated">Horizontale Ausrichtung: aufgespreizt</target>
+            </trans-unit>   
+            
+            /* Slider */
+            <trans-unit id="sheet.controls" xml:space="preserve">
+                 <source>Control</source>
+                 <target state="translated">Einstellungen</target>
+            </trans-unit>            
+            <trans-unit id="slider.animation" xml:space="preserve">
+                 <source>Animation</source>
+                 <target state="translated">Animation</target>
+            </trans-unit>              
+            <trans-unit id="slider.animation.1" xml:space="preserve">
+                 <source>Slide</source>
+                 <target state="translated">Verschieben</target>
+            </trans-unit>              
+            <trans-unit id="slider.animation.2" xml:space="preserve">
+                 <source>Fade</source>
+                 <target state="translated">Einblenden</target>
+            </trans-unit> 
+            <trans-unit id="slider.auto" xml:space="preserve">
+                 <source>Start</source>
+                 <target state="translated">Automatischer Start</target>
+            </trans-unit>             
+                   
+            <trans-unit id="slider.controlNav" xml:space="preserve">
+                 <source>Hide control elements</source>
+                 <target state="translated">Verstecke Kontrollpunkte</target>
+            </trans-unit> 
+            <trans-unit id="slider.directionNav" xml:space="preserve">
+                 <source>Hide control directions</source>
+                 <target state="translated">Verstecke Richtungspfeile</target>
+            </trans-unit> 
+            <trans-unit id="slider.sliderSpeed" xml:space="preserve">
+                 <source>Sliderspeed in MSec</source>
+                 <target state="translated">Übergangsgeschwindigkeit</target>
+            </trans-unit>  
+             <trans-unit id="slideshow.style" xml:space="preserve">
+                 <source>Styles</source>
+                 <target state="translated">Stile</target>
+            </trans-unit>            
+             <trans-unit id="label.basic" xml:space="preserve">
+                 <source>Basic</source>
+                 <target state="translated">Basis</target>
+            </trans-unit>              
+             <trans-unit id="label.stil1" xml:space="preserve">
+                 <source>bottom outside</source>
+                 <target state="translated">Unten ausserhalb</target>
+            </trans-unit>     
+             <trans-unit id="label.stil2" xml:space="preserve">
+                 <source>top</source>
+                 <target state="translated">Oben</target>
+            </trans-unit>   
+             <trans-unit id="label.stil3" xml:space="preserve">
+                 <source>top outside</source>
+                 <target state="translated">Oben ausserhalb</target>
+            </trans-unit>   
+             <trans-unit id="label.stil4" xml:space="preserve">
+                 <source>right</source>
+                 <target state="translated">Oben rechts</target>
+            </trans-unit>   
+             <trans-unit id="label.stil5" xml:space="preserve">
+                 <source>right outside</source>
+                 <target state="translated">Oben rechts ausserhalb</target>
+            </trans-unit>    
+
+            /* Misc classes */
+            <trans-unit id="label.none" xml:space="preserve">
+                <source>none</source>
+                <target state="translated">keine</target>
+            </trans-unit>
+            <trans-unit id="label.yes" xml:space="preserve">
+                <source>yes</source>
+                <target state="translated">Ja</target>
+            </trans-unit>
+            <trans-unit id="label.no" xml:space="preserve">
+                <source>no</source>
+                <target state="translated">nein</target>
+            </trans-unit>
+            
+                        
+        </body>
+    </file>
+</xliff>        
