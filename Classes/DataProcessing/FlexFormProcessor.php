@@ -8,7 +8,7 @@ declare(strict_types = 1);
  * LICENSE file that was distributed with this source code.
  */
 
-namespace T3up\T3upContainer\DataProcessing;
+namespace T3ac\T3upContainer\DataProcessing;
 
 use TYPO3\CMS\Core\Service\FlexFormService;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
@@ -33,6 +33,7 @@ use TYPO3\CMS\Frontend\ContentObject\DataProcessorInterface;
  *   as = flexform
  * }
  */
+
 class FlexFormProcessor implements DataProcessorInterface
 {
     /**

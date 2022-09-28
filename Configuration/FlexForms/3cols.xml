@@ -18,7 +18,7 @@
                             <config type="array">
                                 <type>select</type>
                                 <renderType>selectSingle</renderType>
-                                <itemsProcFunc>T3up\T3upContainer\Controller\FlexFormController->getThreeColumnOptions</itemsProcFunc>
+                                <itemsProcFunc>T3ac\T3upContainer\Controller\FlexFormController->getThreeColumnOptions</itemsProcFunc>
                                  <default>col-12</default>
                             </config>
                         </TCEforms>
@@ -29,7 +29,7 @@
                             <config type="array">
                                 <type>select</type>
                                 <renderType>selectSingle</renderType>
-                                <itemsProcFunc>T3up\T3upContainer\Controller\FlexFormController->getThreeColumnOptions</itemsProcFunc>
+                                <itemsProcFunc>T3ac\T3upContainer\Controller\FlexFormController->getThreeColumnOptions</itemsProcFunc>
                                 <default>col-12</default>
                             </config>
                         </TCEforms>
@@ -40,7 +40,7 @@
                             <config type="array">
                                 <type>select</type>
                                 <renderType>selectSingle</renderType>
-                                <itemsProcFunc>T3up\T3upContainer\Controller\FlexFormController->getThreeColumnOptions</itemsProcFunc>
+                                <itemsProcFunc>T3ac\T3upContainer\Controller\FlexFormController->getThreeColumnOptions</itemsProcFunc>
                                 <default>col-12</default>
                             </config>
                         </TCEforms>
@@ -62,7 +62,7 @@
                             <config type="array">
                                 <type>select</type>
                                 <renderType>selectSingle</renderType>
-                                <itemsProcFunc>T3up\T3upContainer\Controller\FlexFormController->getThreeColumnOptions</itemsProcFunc>
+                                <itemsProcFunc>T3ac\T3upContainer\Controller\FlexFormController->getThreeColumnOptions</itemsProcFunc>
                                 <default>col-md-4</default>
                             </config>
                         </TCEforms>
@@ -73,7 +73,7 @@
                             <config type="array">
                                 <type>select</type>
                                 <renderType>selectSingle</renderType>
-                                <itemsProcFunc>T3up\T3upContainer\Controller\FlexFormController->getThreeColumnOptions</itemsProcFunc>
+                                <itemsProcFunc>T3ac\T3upContainer\Controller\FlexFormController->getThreeColumnOptions</itemsProcFunc>
                                 <default>col-md-4</default>
                             </config>  
                         </TCEforms>
@@ -84,7 +84,7 @@
                             <config type="array">
                                 <type>select</type>
                                 <renderType>selectSingle</renderType>
-                                <itemsProcFunc>T3up\T3upContainer\Controller\FlexFormController->getThreeColumnOptions</itemsProcFunc>
+                                <itemsProcFunc>T3ac\T3upContainer\Controller\FlexFormController->getThreeColumnOptions</itemsProcFunc>
                                 <default>col-md-4</default>
                             </config>  
                         </TCEforms>
@@ -107,7 +107,7 @@
                             <config type="array">
                                 <type>select</type>
                                 <renderType>selectSingle</renderType>
-                                <itemsProcFunc>T3up\T3upContainer\Controller\FlexFormController->getThreeColumnOptions</itemsProcFunc>
+                                <itemsProcFunc>T3ac\T3upContainer\Controller\FlexFormController->getThreeColumnOptions</itemsProcFunc>
                             </config>
                         </TCEforms>
                     </lgCol1>
@@ -117,7 +117,7 @@
                             <config type="array">
                                 <type>select</type>
                                 <renderType>selectSingle</renderType>
-                                <itemsProcFunc>T3up\T3upContainer\Controller\FlexFormController->getThreeColumnOptions</itemsProcFunc>
+                                <itemsProcFunc>T3ac\T3upContainer\Controller\FlexFormController->getThreeColumnOptions</itemsProcFunc>
                             </config>
                         </TCEforms>
                     </lgCol2>
@@ -127,7 +127,7 @@
                             <config type="array">
                                 <type>select</type>
                                 <renderType>selectSingle</renderType>
-                                <itemsProcFunc>T3up\T3upContainer\Controller\FlexFormController->getThreeColumnOptions</itemsProcFunc>
+                                <itemsProcFunc>T3ac\T3upContainer\Controller\FlexFormController->getThreeColumnOptions</itemsProcFunc>
                             </config>
                         </TCEforms>
                     </lgCol3>                   
