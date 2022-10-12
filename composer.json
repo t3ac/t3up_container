@@ -16,7 +16,7 @@
 	"type" : "typo3-cms-extension",
 	"license" : "GPL-2.0-or-later",
 	"require" : {
-		"b13/container" : "^1.6.0"
+		"b13/container" : "^1.6.0 || ^2"
 	},
 	"replace" : {
 		"typo3-ter/container_example" : "self.version"
