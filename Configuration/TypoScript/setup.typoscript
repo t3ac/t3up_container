@@ -8,10 +8,6 @@ lib.containerContentElement =< lib.contentElement
 lib.containerContentElement.templateRootPaths.10 = EXT:t3up_container/Resources/Private/Templates
 lib.containerContentElement.dataProcessing {
     999 = T3ac\T3upContainer\DataProcessing\FlexFormProcessor
-    999 {
-        fieldName = pi_flexform
-        as = flexform
-    }
 }
 
 #########################################################################################

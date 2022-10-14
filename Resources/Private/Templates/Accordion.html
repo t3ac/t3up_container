@@ -2,7 +2,7 @@
 	<f:layout name="Default"/>	
 	<f:section name="Main">
 		<div id="accordion-{f:if(condition:data._LOCALIZED_UID, then:data._LOCALIZED_UID, else:data.uid)}"  class="t3up_accordion accordion accordion-flush accordionstyle-{bootstrapaccordion}">
-	        <f:for each="{childrenContent}" as="child" iteration="iteration">
+			<f:for each="{childrenContent}" as="child" iteration="iteration">
 	        	<f:if condition="{{data.pi_flexform.style} == '0'">
     				<div class="accordion-item">
 	    				  <div class="accordion-header" id="heading-c{child.uid}" >
@@ -104,7 +104,7 @@
 				  </div>
 				</f:if>
 							
-	        </f:for>
+	        </f:for>   
 		</div>
 	</f:section>		
 </html>
