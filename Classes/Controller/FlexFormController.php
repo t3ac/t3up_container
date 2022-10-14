@@ -15,7 +15,7 @@ class FlexFormController {
      */
     public function getOneColumnOptions($config): array
     {
-        return \T3up\T3upContainer\Controller\FlexFormController::getColumnOptions($config);
+        return \T3ac\T3upContainer\Controller\FlexFormController::getColumnOptions($config);
     }
 	
     /**
@@ -24,7 +24,7 @@ class FlexFormController {
      */
     public function getTwoColumnOptions($config): array
     {
-        return \T3up\T3upContainer\Controller\FlexFormController::getColumnOptions($config);
+        return \T3ac\T3upContainer\Controller\FlexFormController::getColumnOptions($config);
     }
 
     /**
@@ -33,7 +33,7 @@ class FlexFormController {
      */
     public function getThreeColumnOptions($config): array
     {
-        return \T3up\T3upContainer\Controller\FlexFormController::getColumnOptions($config);
+        return \T3ac\T3upContainer\Controller\FlexFormController::getColumnOptions($config);
     }
 
     /**
@@ -42,7 +42,7 @@ class FlexFormController {
      */
     public function getFourColumnOptions($config): array
     {
-        return \T3up\T3upContainer\Controller\FlexFormController::getColumnOptions($config);
+        return \T3ac\T3upContainer\Controller\FlexFormController::getColumnOptions($config);
     }
 
     /**

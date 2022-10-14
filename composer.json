@@ -1,6 +1,6 @@
 {
 	"name" : "t3ac/t3up-container",
-	"description" : "T3UP for EXT:container",
+	"description" : "T3UP-Container for EXT:container",
 	"authors" : [{
 			"name" : "Michael Lang",
 			"role" : "Developer",

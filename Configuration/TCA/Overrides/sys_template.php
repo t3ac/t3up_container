@@ -10,7 +10,7 @@ call_user_func(
         TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
             't3up_container',
             'Configuration/TypoScript/',
-            'T3UP - Container (bootstrap)'
+            'T3UP - Container (Bootstrap)'
         );
     },
     't3upcontainer'
