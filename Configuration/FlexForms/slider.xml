@@ -116,6 +116,51 @@
                             </config>    
                         </TCEforms>
                     </slideshowSpeed>
+                    
+                    <maxheight type="array">
+                        <TCEforms>
+                            <label>LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:slider.maxheight</label>
+							<config>
+					            <type>input</type>
+					            <size>3</size>
+					            <default></default>
+					            <eval>int</eval>
+					            <range>
+					                <lower></lower>
+					                <upper>1600</upper>
+					            </range>
+					            <wizards>
+					                <slideshow>
+					                    <type>slider</type>
+					                    <step>10</step>
+					                </slideshow>
+					            </wizards>
+				        	</config>    
+                        </TCEforms>
+                    </maxheight> 
+                    
+                    <minheight type="array">
+                        <TCEforms>
+                            <label>LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:slider.minheight</label>
+							<config>
+					            <type>input</type>
+					            <size>3</size>
+					            <default></default>
+					            <eval>int</eval>
+					            <range>
+					                <lower></lower>
+					                <upper>1600</upper>
+					            </range>
+					            <wizards>
+					                <slideshow>
+					                    <type>slider</type>
+					                    <step>10</step>
+					                </slideshow>
+					            </wizards>
+				        	</config>    
+                        </TCEforms>
+                    </minheight> 
+
                     <style type="array">
                         <TCEforms>
                             <label>LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:slideshow.style</label>

@@ -1,22 +1,7 @@
 /* Columns Layout */
 
-.frame-type-2cols .row.frame-align-items-stretch > div > div {height: 100%}
+.frame-2cols .row.align-items-stretch > .h-100 > div 			{height: 100%}
 
-.frame-type-3cols .row.frame-align-items-stretch > div > div {height: 100%}
+.frame-3cols .row.align-items-stretch > .h-100 > div 			{height: 100%}
 
-.frame-type-4cols .row.frame-align-items-stretch > div > div {height: 100%}
-
-
-
-.oneColumn .content{
-    > div {padding: 0}
-    > div > .container {padding-right: calc(var(--bs-gutter-x) / 2);  padding-left: calc(var(--bs-gutter-x) / 2);}
-}
-
-
-@media screen and (min-width: 992px) {
-    .oneColumn .content{  
-        > div > .container > .row {margin-right: calc(var(--bs-gutter-x) * -1);  margin-left: calc(var(--bs-gutter-x) * -1);}
-    }  
-      
-}
+.frame-4cols .row.align-items-stretch > .h-100 > div 			{height: 100%}

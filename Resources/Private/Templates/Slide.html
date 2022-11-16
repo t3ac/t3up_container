@@ -4,13 +4,13 @@
 	<f:layout name="Default"/>
 
 	<f:section name="Main">
-			<div id="slideshow{data.uid}" class="t3up_slider {data.frame_class} carousel slide {f:if(condition: data.pi_flexform.animation, then: 'carousel-fade')} sliderstyle-{bootstrapslider}" data-bs-ride="carousel" data-bs-interval="{data.pi_flexform.auto}"  >
+			<div id="slideshow{data.uid}" class="t3up_slider {data.frame_class} carousel slide {f:if(condition: data.pi_flexform.animation, then: 'carousel-fade')} sliderstyle-{bootstrapslider}"   data-bs-ride="carousel" data-bs-interval="{data.pi_flexform.auto}"  >
 			    <ol class="carousel-indicators {data.pi_flexform.style} {f:if(condition: data.pi_flexform.controlNav, then: 'd-none')} ">
 			    	<f:for each="{childrenContent}" as="child" iteration="iteration">
 						<li type="button" data-target="#slideshow{data.uid}"  data-bs-target="#slideshow{data.uid}"   data-slide-to="{iteration.index}" data-bs-slide-to="{iteration.index}" class="{f:if(condition: '{iteration.isFirst}', then: 'active')}"></li>	    	
 					</f:for>
 			    </ol> 
-			  	<div class="carousel-inner">
+			  	<div class="carousel-inner"  style="{f:if(condition: '{data.pi_flexform.minheight}', then: ' min-height:{data.pi_flexform.minheight}px;')}{f:if(condition: '{data.pi_flexform.maxheight}', then: ' max-height:{data.pi_flexform.maxheight}px;')}">
 				 	<f:for each="{childrenContent}" as="child" iteration="iteration">
 						<div class="carousel-item {f:if(condition:iteration.index, then:'', else:'show active')}" data-bs-interval="{data.pi_flexform.slideshowSpeed}">
 							<f:format.raw>{child.renderedContent}</f:format.raw>

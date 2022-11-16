@@ -25,7 +25,7 @@ defined('TYPO3') or die('Access denied.');
                 $L.'accordionDes',
                 [
                     [
-                        ['name' => $L.'center',  'colPos' => 101, 'disallowed' => ['CType' => 'headerimage_content, accordion'] ],
+                        ['name' => $L.'center',  'colPos' => 101, 'disallowed' => ['CType' => 'headerimage_content,image,textpic,tabs,2tabs,3tabs,4tabs,slide']],
                     ]
                 ]
                 )

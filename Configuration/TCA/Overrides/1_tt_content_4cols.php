@@ -25,10 +25,10 @@ defined('TYPO3') or die('Access denied.');
                 $L.'4ColsDes',
                 [
                     [
-                        ['name' => $L.'left',         'colPos' => 101, 'allowed' => ['CType' => 'header, textmedia, text']],
-                        ['name' => $L.'centerLeft',   'colPos' => 102, 'allowed' => ['CType' => 'header, textmedia, text']],
-                        ['name' => $L.'centerRight',  'colPos' => 103, 'allowed' => ['CType' => 'header, textmedia, text']],
-                        ['name' => $L.'right',        'colPos' => 104, 'allowed' => ['CType' => 'header, textmedia, text']],
+                        ['name' => $L.'left',         'colPos' => 101, 'disallowed' => ['CType' => 'headerimage_content,image,textpic,2cols,3cols,4cols']],
+                        ['name' => $L.'centerLeft',   'colPos' => 102, 'disallowed' => ['CType' => 'headerimage_content,image,textpic,2cols,3cols,4cols']],
+                        ['name' => $L.'centerRight',  'colPos' => 103, 'disallowed' => ['CType' => 'headerimage_content,image,textpic,2cols,3cols,4cols']],
+                        ['name' => $L.'right',        'colPos' => 104, 'disallowed' => ['CType' => 'headerimage_content,image,textpic,2cols,3cols,4cols']]
                     ]
                 ]
                 )

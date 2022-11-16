@@ -3,7 +3,6 @@
 	<file source-language="en" datatype="plaintext" original="messages" date="2014-09-22T11:44:12Z" product-name="t3up_container">
  	<header/>
 		<body>
-		
 			/* -- BACKENDLAYOUTS ------------------------- */
 
             <trans-unit id="container">
@@ -109,36 +108,10 @@
             </trans-unit>
 		    
 		    
-		    
-		    
-		    
-		    
-		    
-		    
-		    
-		    
-		    
-		    
-		    
-		    
-		    
-		    
-		    
             <trans-unit id="options">
                 <source>Options</source>
-            </trans-unit>  		    
-		    
-		    
-		    
-		    
-		    
-		    
-		    
-		    
-		    
-		    
-		    
-		    
+            </trans-unit>  	
+            
 		    
 		    <trans-unit id="align-items-stretch">
 			     <source>Stretching the items</source>
@@ -152,11 +125,7 @@
 		    <trans-unit id="align-items-baseline">
 			     <source>Aling the items to the baseline</source>
 		    </trans-unit>		    
-		    
-		    
-		    
-		    
-		    
+
 		    	
 		    <trans-unit id="accordion1">
 			     <source>All items closed</source>
@@ -168,11 +137,24 @@
 			     <source>Multiple select</source>
 		    </trans-unit>	 	    	
 	    
-	    
-	    
-	    
-
 		    
+		   /* -- Designs ----------- */
+  
+			<trans-unit id="darkgrey">
+			     <source>Darkgrey background</source>
+		    </trans-unit>	  
+            <trans-unit id="white">
+			     <source>White background</source>
+            </trans-unit> 
+            <trans-unit id="colored">
+			     <source>Colored background</source>
+            </trans-unit>   
+            <trans-unit id="lightgrey">
+			     <source>Lightgrey background</source>
+            </trans-unit>   
+            <trans-unit id="grey">
+			     <source>Grey background</source>
+            </trans-unit>  
 		</body>
 	</file>
 </xliff>

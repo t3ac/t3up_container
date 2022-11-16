@@ -25,9 +25,9 @@ defined('TYPO3') or die('Access denied.');
                 $L.'3tabsDes',
                 [
                     [
-                        ['name' => $L.'left',   'colPos' => 101, 'disallowed' => ['CType' => 'headerimage_content,2cols,3cols,4cols,image,textpic,tabs,2tabs,3tabs,4tabs']],
-                        ['name' => $L.'center', 'colPos' => 102, 'disallowed' => ['CType' => 'headerimage_content,2cols,3cols,4cols,image,textpic,tabs,2tabs,3tabs,4tabs']],
-                        ['name' => $L.'right',  'colPos' => 103, 'disallowed' => ['CType' => 'headerimage_content,2cols,3cols,4cols,image,textpic,tabs,2tabs,3tabs,4tabs']],
+                        ['name' => $L.'left',   'colPos' => 101, 'disallowed' => ['CType' => 'headerimage_content,2cols,3cols,4cols,image,textpic,tabs,2tabs,3tabs,4tabs,slide,accordion']],
+                        ['name' => $L.'center', 'colPos' => 102, 'disallowed' => ['CType' => 'headerimage_content,2cols,3cols,4cols,image,textpic,tabs,2tabs,3tabs,4tabs,slide,accordion']],
+                        ['name' => $L.'right',  'colPos' => 103, 'disallowed' => ['CType' => 'headerimage_content,2cols,3cols,4cols,image,textpic,tabs,2tabs,3tabs,4tabs,slide,accordion']]
                     ]
                 ]
                 )

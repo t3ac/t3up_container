@@ -130,7 +130,7 @@
                                 <type>select</type>
                                 <renderType>selectSingle</renderType>
                                 <itemsProcFunc>T3ac\T3upContainer\Controller\FlexFormController->getFourColumnOptions</itemsProcFunc>
-                                <default>col-md-3</default>
+                                <default>col-lg-3</default>
                             </config>
                         </TCEforms>
                     </lgCol1>
@@ -141,7 +141,7 @@
                                 <type>select</type>
                                 <renderType>selectSingle</renderType>
                                 <itemsProcFunc>T3ac\T3upContainer\Controller\FlexFormController->getFourColumnOptions</itemsProcFunc>
-                                <default>col-md-3</default>
+                                <default>col-lg-3</default>
                             </config>
                         </TCEforms>
                     </lgCol2>
@@ -152,7 +152,7 @@
                                 <type>select</type>
                                 <renderType>selectSingle</renderType>
                                 <itemsProcFunc>T3ac\T3upContainer\Controller\FlexFormController->getFourColumnOptions</itemsProcFunc>
-                                <default>col-md-3</default>
+                                <default>col-lg-3</default>
                             </config>
                         </TCEforms>
                     </lgCol3>  
@@ -163,7 +163,7 @@
                                 <type>select</type>
                                 <renderType>selectSingle</renderType>
                                 <itemsProcFunc>T3ac\T3upContainer\Controller\FlexFormController->getFourColumnOptions</itemsProcFunc>
-                                <default>col-md-3</default>
+                                <default>col-lg-3</default>
                             </config>
                         </TCEforms>
                     </lgCol4>                   

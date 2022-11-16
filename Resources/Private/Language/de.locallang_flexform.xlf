@@ -194,7 +194,15 @@
                  <source>Start</source>
                  <target state="translated">Automatischer Start</target>
             </trans-unit>             
-                   
+			<trans-unit id="slider.maxheight">
+			     <source>Max. height of the slider</source>
+			     <target state="translated">Maximale Höhe des Sliders (px), 0 - kein Wert</target>
+		    </trans-unit>	 
+			<trans-unit id="slider.minheight">
+			     <source>Min. height of the slider (px)</source>
+			     <target state="translated">Minimale Höhe des Sliders (px), 0 - kein Wert</target>
+		    </trans-unit>
+		    
             <trans-unit id="slider.controlNav" xml:space="preserve">
                  <source>Hide control elements</source>
                  <target state="translated">Verstecke Kontrollpunkte</target>

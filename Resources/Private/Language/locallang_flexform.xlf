@@ -156,7 +156,13 @@
             <trans-unit id="label.false" xml:space="preserve">
                  <source>False</source>
             </trans-unit>      
-                   
+			<trans-unit id="slider.maxheight">
+			     <source>Max. height of the slider (px)</source>
+		    </trans-unit>	 
+			<trans-unit id="slider.minheight">
+			     <source>Min. height of the slider (px)</source>
+		    </trans-unit>
+		    
             <trans-unit id="slider.controlNav" xml:space="preserve">
                  <source>Hide control elements</source>
             </trans-unit> 
