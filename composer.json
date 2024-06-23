@@ -16,7 +16,9 @@
 	"type" : "typo3-cms-extension",
 	"license" : "GPL-2.0-or-later",
 	"require" : {
-		"b13/container" : "^1.6.0 || ^2"
+		"t3ac/t3up" : "^12.0 || ^2",
+		"b13/container" : "^2.3",
+		"ichhabrecht/content-defender" : "^3.4"
 	},
     "autoload": {
         "psr-4": {
