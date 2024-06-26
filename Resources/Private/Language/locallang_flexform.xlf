@@ -75,9 +75,77 @@
             </trans-unit>         
             <trans-unit id="accordion.style.3" xml:space="preserve">
                  <source>Multipe</source>
+            </trans-unit>            
+            <trans-unit id="accordion.style.1" xml:space="preserve">
+                 <source>Collapse</source>
+            </trans-unit>         
+            <trans-unit id="accordion.style.2" xml:space="preserve">
+                 <source>First open</source>
+            </trans-unit>         
+            <trans-unit id="accordion.style.3" xml:space="preserve">
+                 <source>Multipe</source>
             </trans-unit>       
+              
+             /* Button classes */             
+            <trans-unit id="label.items" xml:space="preserve">
+                 <source>Items in a row</source>
+            </trans-unit>  
+            <trans-unit id="label.1item" xml:space="preserve">
+                 <source>One Item</source>
+            </trans-unit>              
+             <trans-unit id="label.2items" xml:space="preserve">
+                 <source>Two Items</source>
+            </trans-unit>           
+             <trans-unit id="label.3items" xml:space="preserve">
+                 <source>Three Items</source>
+            </trans-unit>           
+             <trans-unit id="label.4items" xml:space="preserve">
+                 <source>Four Items</source>
+            </trans-unit>  
+             <trans-unit id="label.5items" xml:space="preserve">
+                 <source>Five Items</source>
+            </trans-unit>           
+             <trans-unit id="label.6items" xml:space="preserve">
+                 <source>Six Items</source>
+            </trans-unit>          
+             <trans-unit id="label.7items" xml:space="preserve">
+                 <source>Seven Items</source>
+            </trans-unit>           
+             <trans-unit id="label.8items" xml:space="preserve">
+                 <source>Eight Items</source>
+            </trans-unit>     
+            <trans-unit id="label.interspace" xml:space="preserve">
+                 <source>Interspace (default: 10 i.e. 1.0vw)</source>
+            </trans-unit> 
+            <trans-unit id="label.bgcolor" xml:space="preserve">
+                 <source>Backgroundcolor</source>
+            </trans-unit> 
+            <trans-unit id="label.format" xml:space="preserve">
+                 <source>Format</source>
+            </trans-unit> 
+            <trans-unit id="label.format0" xml:space="preserve">
+                 <source>None</source>
+            </trans-unit>               
+            <trans-unit id="label.format1" xml:space="preserve">
+                 <source>Square</source>
+            </trans-unit>                                                                                                
+            <trans-unit id="label.format2" xml:space="preserve">
+                 <source>circle</source>
+            </trans-unit>   
+            <trans-unit id="label.round" xml:space="preserve">
+                 <source>Round corner</source>
+            </trans-unit>  
+            <trans-unit id="label.color" xml:space="preserve">
+                 <source>Textcolor</source>
+            </trans-unit>  
+            <trans-unit id="label.border" xml:space="preserve">
+                 <source>Border thickness (in px)</source>
+            </trans-unit>  
+            <trans-unit id="label.bordercolor" xml:space="preserve">
+                 <source>Bordercolor</source>
+            </trans-unit>  
             
- 
+            
             /* Tab classes */        
             <trans-unit id="label.tabTitle1" xml:space="preserve">
                  <source>Tab 1 title</source>

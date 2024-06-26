@@ -99,7 +99,86 @@
                  <target state="translated">Individuell</target>
             </trans-unit>       
             
- 
+
+             /* Button classes */             
+            <trans-unit id="label.items" xml:space="preserve">
+                 <source>Items in a row</source>
+                 <target state="translated">Elemente in einer Reihe</target>
+            </trans-unit>  
+            <trans-unit id="label.1item" xml:space="preserve">
+                 <source>One Item</source>
+                  <target state="translated">Ein Element</target>
+            </trans-unit>              
+             <trans-unit id="label.2items" xml:space="preserve">
+                 <source>Two Items</source>
+                  <target state="translated">Zwei Elemente</target>
+            </trans-unit>           
+             <trans-unit id="label.3items" xml:space="preserve">
+                 <source>Three Items</source>
+                  <target state="translated">Drei Elemente</target>
+            </trans-unit>           
+             <trans-unit id="label.4items" xml:space="preserve">
+                 <source>Four Items</source>
+                  <target state="translated">Vier Elemente</target>
+            </trans-unit>  
+             <trans-unit id="label.5items" xml:space="preserve">
+                 <source>Five Items</source>
+                  <target state="translated">Fünf Elemente</target>
+            </trans-unit>           
+             <trans-unit id="label.6items" xml:space="preserve">
+                 <source>Six Items</source>
+                  <target state="translated">Sechs Elemente</target>
+            </trans-unit>          
+             <trans-unit id="label.7items" xml:space="preserve">
+                 <source>Seven Items</source>
+                  <target state="translated">Sieben Elemente</target>
+            </trans-unit>           
+             <trans-unit id="label.8items" xml:space="preserve">
+                 <source>Eight Items</source>
+                  <target state="translated">Acht Elemente</target>
+            </trans-unit> 
+
+            <trans-unit id="label.interspace" xml:space="preserve">
+                  <source>Interspace (default: 10 i.e. 1.0vw)</source>
+                  <target state="translated">Zwischenräume (Vorgabe: 10 entspricht 1.0vw)</target>
+            </trans-unit> 
+            <trans-unit id="label.bgcolor" xml:space="preserve">
+                 <source>Backgroundcolor</source>
+                  <target state="translated">Hintergrundfarbe</target>
+            </trans-unit> 
+            <trans-unit id="label.format" xml:space="preserve">
+                 <source>Format</source>
+                  <target state="translated">Format</target>
+            </trans-unit> 
+            <trans-unit id="label.format0" xml:space="preserve">
+                 <source>None</source>
+                  <target state="translated">Ohne</target>
+            </trans-unit>               
+            <trans-unit id="label.format1" xml:space="preserve">
+                 <source>Square</source>
+                  <target state="translated">Quadrat</target>
+            </trans-unit>                                                                                                
+            <trans-unit id="label.format2" xml:space="preserve">
+                 <source>circle</source>
+                  <target state="translated">Kreis</target>
+            </trans-unit>   
+            <trans-unit id="label.round" xml:space="preserve">
+                 <source>Round corner</source>
+                  <target state="translated">Runde Ecken</target>
+            </trans-unit>  
+            <trans-unit id="label.color" xml:space="preserve">
+                 <source>Textcolor</source>
+                  <target state="translated">Textfarbe</target>
+            </trans-unit>  
+            <trans-unit id="label.border" xml:space="preserve">
+                 <source>Border thickness (in px)</source>
+                  <target state="translated">Rahmendicke (in px)</target>
+            </trans-unit>  
+            <trans-unit id="label.bordercolor" xml:space="preserve">
+                 <source>Bordercolor</source>
+                  <target state="translated">Rahmenfarbe</target>
+            </trans-unit>  
+
             /* Tab classes */        
             <trans-unit id="label.tabTitle1" xml:space="preserve">
                  <source>Tab 1 title</source>

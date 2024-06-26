@@ -79,6 +79,13 @@
             </trans-unit>  
                         
             
+             <trans-unit id="buttons">
+                 <source>Buttons</source>
+            </trans-unit>
+            <trans-unit id="buttonsDes">
+                 <source>Buttons in columns and rows.</source>
+            </trans-unit>              
+            
             
             <trans-unit id="slider">
                  <source>Slider</source>

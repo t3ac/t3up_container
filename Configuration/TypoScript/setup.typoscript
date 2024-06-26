@@ -4,11 +4,124 @@ page.includeCSS {
     container = EXT:t3up_container/Resources/Public/Sass/_container.scss
 }
 
+
+lib.flexformContentInterspace = CONTENT
+lib.flexformContentInterspace {
+    table = tt_content
+    select {
+        pidInList = this
+    }
+
+    renderObj = COA
+    renderObj {
+        10 = TEXT
+        10 {
+            data = flexform: pi_flexform:interspace
+        }
+    }
+    wrap = |vw
+}
+
+lib.flexformContentbuttonbordercolor = CONTENT
+lib.flexformContentbuttonbordercolor {
+    table = tt_content
+    select {
+        pidInList = this
+    }
+
+    renderObj = COA
+    renderObj {
+        10 = TEXT
+        10 {
+            data = flexform: pi_flexform:bordercolor
+        }
+    }
+    wrap = |
+}
+
+lib.flexformContentbuttonborderwidth = CONTENT
+lib.flexformContentbuttonborderwidth {
+    table = tt_content
+    select {
+        pidInList = this
+    }
+
+    renderObj = COA
+    renderObj {
+        10 = TEXT
+        10 {
+            data = flexform: pi_flexform:border
+        }
+    }
+    wrap = |px
+}
+
+lib.flexformContentbgcolor = CONTENT
+lib.flexformContentbgcolor {
+    table = tt_content
+    select {
+        pidInList = this
+    }
+
+    renderObj = COA
+    renderObj {
+        10 = TEXT
+        10 {
+            data = flexform: pi_flexform:bgcolor 
+        }
+    }
+    wrap = |
+}
+
+lib.flexformContentcolor = CONTENT
+lib.flexformContentcolor {
+    table = tt_content
+    select {
+        pidInList = this
+    }
+
+    renderObj = COA
+    renderObj {
+        10 = TEXT
+        10 {
+            data = flexform: pi_flexform:color 
+        }
+    }
+    wrap = |
+}
+
+
+plugin.tx_wsscss.variables {
+	interspace < lib.flexformContentInterspace
+	buttonbordercolor < lib.flexformContentbuttonbordercolor
+	buttonborderwidth < lib.flexformContentbuttonborderwidth
+	buttonbgcolor < lib.flexformContentbgcolor
+	buttoncolor < lib.flexformContentcolor
+}
+
+
+page.includeJSFooterlibs {
+        buttonbox          	     = EXT:t3up_container/Resources/Public/JavaScript/basic.js
+        buttonbox.async          = 1 
+} 
+
+
+
 lib.containerContentElement =< lib.contentElement
 lib.containerContentElement.templateRootPaths.10 = EXT:t3up_container/Resources/Private/Templates
-lib.containerContentElement.dataProcessing {
-    999 = T3ac\T3upContainer\DataProcessing\FlexFormProcessor
+
+lib.containerContentElement {
+    dataProcessing {
+        111 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+        111 {
+            references.fieldName = bgimage
+        }
+        999 = T3ac\T3upContainer\DataProcessing\FlexFormProcessor
+    }
 }
+
+
+
 
 #########################################################################################
 
@@ -193,6 +306,20 @@ tt_content.accordion {
 tt_content.slide < lib.containerContentElement
 tt_content.slide {
   templateName = Slide
+  dataProcessing {
+    101 = B13\Container\DataProcessing\ContainerProcessor
+    101 {
+      colPos = 101
+      as = childrenContent
+    }
+  }
+}
+
+
+## Buttons
+tt_content.buttons < lib.containerContentElement
+tt_content.buttons {
+  templateName = Buttons
   dataProcessing {
     101 = B13\Container\DataProcessing\ContainerProcessor
     101 {

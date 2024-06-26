@@ -12,7 +12,7 @@ defined('TYPO3') or die('Access denied.');
 
 (static function (): void {
     /**
-     * Register 1cols
+     * Register buttons
      */
     
     $L = 'LLL:EXT:t3up_container/Resources/Private/Language/locallang_backend.xlf:'; 
@@ -20,17 +20,17 @@ defined('TYPO3') or die('Access denied.');
     \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\B13\Container\Tca\Registry::class)->configureContainer(
         (
             new \B13\Container\Tca\ContainerConfiguration(
-                '1cols',
-                $L.'1Cols',
-                $L.'1ColsDes',
+                'buttons',
+                $L.'buttons',
+                $L.'buttonsDes',
                 [
                     [
-                        ['name' => $L.'center', 'colPos' => 101, 'disallowed' => ['CType' => 'headerimage_content,image,textpic']],
+                        ['name' => $L.'center', 'colPos' => 101, 'allowed' => ['CType' => 'text,header,textmedia']],
                     ]
                 ]
                 )
             )
-        ->setIcon('EXT:t3up_container/Resources/Public/Icons/gridlayout_col1.svg')
+        ->setIcon('EXT:t3up_container/Resources/Public/Icons/gridlayout_buttons.svg')
         ->setBackendTemplate('EXT:t3up_container/Resources/Private/Backend/Backend.html')
         ->setSaveAndCloseInNewContentElementWizard(true)
         );
@@ -40,7 +40,7 @@ defined('TYPO3') or die('Access denied.');
      */
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue(
         '*',
-        'FILE:EXT:t3up_container/Configuration/FlexForms/1cols.xml',
-        '1cols'
+        'FILE:EXT:t3up_container/Configuration/FlexForms/buttons.xml',
+        'buttons'
         );
 })();
