@@ -1,0 +1,193 @@
+/* Columns Layout *****************************************************************************************************/
+.frame-2cols .row.align-items-stretch > .h-100 > div 			{height: 100%}
+.frame-2cols > .row												{margin-left: $-v3; margin-right: $-v3;}
+.frame-3cols .row.align-items-stretch > .h-100 > div 			{height: 100%}
+.frame-3cols > .row												{margin-left: $-v3; margin-right: $-v3;}
+.frame-4cols .row.align-items-stretch > .h-100 > div 			{height: 100%}
+.frame-4cols > .row												{margin-left: $-v3; margin-right: $-v3;}
+
+
+/* Buttons ***********************************************************************************************************/
+
+.containerbuttons > .containerbutton > .frame-textmedia         {position: relative; padding: 0 ; overflow: hidden;}
+
+.containerbuttons > .containerbutton > .frame-textmedia  h2,
+.containerbuttons > .containerbutton > .frame-textmedia  h3, 
+.containerbuttons > .containerbutton > .frame-textmedia  h4     {width: 100%; position: absolute; top: 0; z-index: 3; padding: .66rem;}
+
+.containerbuttons > .containerbutton > .frame-textmedia  .ce-bodytext     {width: 100%; position: absolute; bottom: 0; z-index: 4; padding: .66rem;}
+.containerbuttons > .containerbutton > .frame-textmedia  .ce-bodytext  *  {margin: 0;}
+.containerbuttons > .containerbutton > .frame-textmedia   figure {margin: 0;}
+.containerbuttons > .containerbutton > .frame-textmedia   figure.image  picture   {height: 101%; width: 101%; margin: 0;}
+
+
+.containerbuttons > .containerbutton.format2 > *                {border-radius: 50% !important; text-align: center !important;}  
+
+.containerbuttons > .containerbutton.format2 > .frame-textmedia  h2,
+.containerbuttons > .containerbutton.format2 > .frame-textmedia  h3, 
+.containerbuttons > .containerbutton.format2 > .frame-textmedia  h4     {padding: 1.33rem 1rem .66rem;}
+.containerbuttons > .containerbutton.format2 > .frame-text .ce-text     {padding: 1rem}
+
+.containerbuttons                                               {flex-wrap: wrap; margin-right: calc(#{$interspace} / -20); margin-left: calc(#{$interspace} / -20);  }
+.containerbuttons > .containerbutton 					        {position: relative; min-width: 100%; margin-bottom: calc(#{$interspace} / 10); overflow: hidden; }
+.containerbuttons > .containerbutton > *                        {background-color: $buttonbgcolor; border: $buttonborderwidth solid $buttonbordercolor; padding: 2vw; height: 100%; color: $buttoncolor}
+.containerbuttons > .containerbutton.roundtrue > *              {border-radius: 2vw; transition: all ease .3s;} 
+
+
+.containerbuttons > .containerbutton 					     	{padding-right: calc(#{$interspace} / 20); padding-left: calc(#{$interspace} / 20); }	
+
+.containerbuttons.Item3{
+	.containerbutton 				                         	{min-width: 50%; width: 50%; }
+}	
+.containerbuttons.Item4{                                     
+	.containerbutton 					                     	{min-width: 50%; width: 50%; }
+}
+.containerbuttons.Item5{
+	.containerbutton 				                         	{min-width: 33.33%; width: 33.33%;}
+}
+.containerbuttons.Item6{
+	.containerbutton 					                     	{min-width: 33.33%; width: 33.33%;}
+}	
+.containerbuttons.Item7{
+	.containerbutton 				                         	{min-width: 25%; width: 25%;}
+}
+.containerbuttons.Item8{
+	.containerbutton 					                     	{min-width: 25%; width: 52%;}
+}	
+
+/**********************************************************************************************************************/
+
+
+@media screen and (min-width: 576px) { 
+
+    .containerbuttons > .containerbutton 					     {padding-right: calc(#{$interspace} / 20); padding-left: calc(#{$interspace} / 20); min-width: 50%; width: 50%; }	
+    .containerbuttons > .containerbutton > *                     {padding: 1.5vw; }
+	.containerbuttons > .containerbutton > *.roundtrue           {border-radius: 1.5vw;} 
+    .containerbuttons > .containerbutton h2,
+    .containerbuttons > .containerbutton h3                      {font-size: calc(#{$h2} * .66); margin: 0;}	
+		
+
+	.containerbuttons.Item5{
+		> .containerbutton 				                         {min-width: 33.33%; width: 33.33%;}
+    	> .containerbuttons > .containerbutton h2,
+    	> .containerbuttons > .containerbutton h3                {font-size: calc(#{$h2} * .5); margin: 0;}	
+	}
+	.containerbuttons.Item6{
+		>.containerbutton 					                     {min-width: 33.33%; width: 33.33%;}
+    	> .containerbuttons > .containerbutton h2,
+    	> .containerbuttons > .containerbutton h3                {font-size: calc(#{$h2} * .5); margin: 0;}	
+	}	
+	.containerbuttons.Item7{
+		> .containerbutton 					                     {min-width: 33.33%; width: 33.33%;}
+    	> .containerbuttons > .containerbutton h2,
+    	> .containerbuttons > .containerbutton h3                {font-size: calc(#{$h2} * .5); margin: 0;}	
+	}
+	.containerbuttons.Item8{
+		> .containerbutton 					                     {min-width: 33.33%; width: 33.33%;}
+    	> .containerbuttons > .containerbutton h2,
+    	> .containerbuttons > .containerbutton h3                {font-size: calc(#{$h2} * .5); margin: 0;}	
+	}	
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+    .containerbuttons > .containerbutton > *                     {padding: 1.25vw; }
+	.containerbuttons > .containerbutton > *.roundtrue           {border-radius: 1.25vw;} 
+    .containerbuttons > .containerbutton h2,
+    .containerbuttons > .containerbutton h3                      {font-size: calc(#{$h2} * .5); margin: 0;}	
+		
+	.containerbuttons.Item2 { 
+		> .containerbutton 					                 	 {min-width: 50%; width: 50%;}
+    	> .containerbuttons > .containerbutton h2,
+    	> .containerbuttons > .containerbutton h3                {font-size: calc(#{$h2} * .66); margin: 0;}		
+	}
+	
+	.containerbuttons.Item3{	
+    	> .containerbutton 					                     {min-width: 33.33%; width: 33.33%;}		
+	}
+	.containerbuttons.Item4{	
+    	> .containerbutton 					                     {min-width: 33.33%; width: 33.33%;}		
+	}
+	.containerbuttons.Item5{	
+    	> .containerbutton 					                     {min-width: 33.33%; width: 33.33%;}		
+	}
+	.containerbuttons.Item6{	
+    	> .containerbutton 					                     {min-width: 33.33%; width: 33.33%;}		
+	}	
+	.containerbuttons.Item7{
+		> .containerbutton 					                     {min-width: 25%; width: 25%;}
+    	> .containerbuttons > .containerbutton h2,
+    	> .containerbuttons > .containerbutton h3                {font-size: calc(#{$h2} * .5); margin: 0;}	
+	}
+	.containerbuttons.Item8{
+		> .containerbutton 					                     {min-width: 25%; width: 25%;}
+    	> .containerbuttons > .containerbutton h2,
+    	> .containerbuttons > .containerbutton h3                {font-size: calc(#{$h2} * .5); margin: 0;}	
+	}	
+	
+}
+
+
+@media screen and (min-width: 992px) {
+    .containerbuttons > .containerbutton > *                     {padding: 1vw; }
+	.containerbuttons > .containerbutton > *.roundtrue           {border-radius: 1vw;} 
+    .containerbuttons > .containerbutton h2,
+    .containerbuttons > .containerbutton h3                      {font-size: calc(#{$h2} * .5); margin: 0;}	
+    
+	.containerbuttons.Item2 { 
+		> .containerbutton 										 {min-width: 50%;}
+	}
+	.containerbuttons.Item3{
+		.containerbutton 				    					 {min-width: 33.33%; width: 33.33%;}
+	}	
+	.containerbuttons.Item4{	
+    	> .containerbutton 					                     {min-width: 25%; width: 25%;}	
+	}
+	.containerbuttons.Item5{	
+    	> .containerbutton 					                     {min-width: 25%; width: 25%;}		
+	}
+	.containerbuttons.Item6{	
+    	> .containerbutton 					                     {min-width: 20%; width: 20;}		
+	}	
+	.containerbuttons.Item7{	
+    	> .containerbutton 					                     {min-width: 20%; width: 20%;}		
+	}
+	.containerbuttons.Item8{	
+    	> .containerbutton 					                     {min-width: 20%; width: 20;}		
+	}	
+}
+
+
+
+@media screen and (min-width: 1200px) {
+	.containerbuttons > .containerbutton > *.roundtrue          {border-radius: .75vw;} 
+	.containerbuttons.Item2 { 
+		.containerbutton 										{min-width: 50%; width: 50%;}
+	}
+	.containerbuttons.Item3{
+		.containerbutton 				    					{min-width: 33.33%; width: 33.33%;}
+	}	
+	.containerbuttons.Item4{
+		.containerbutton 										{min-width: 25%; width: 25%;}
+	}
+	.containerbuttons.Item5{
+		.containerbutton 				    					{min-width: 20%; width: 20%;}
+	}
+	.containerbuttons.Item6{
+		.containerbutton 										{min-width: 16.6665%; width: 16.6665%; }
+	}	
+	.containerbuttons.Item7{
+		.containerbutton 				    					{min-width: 14.25%; width: 14.25%;}
+	}
+	.containerbuttons.Item8{
+		.containerbutton 										{min-width: 12.5%; width: 12.5%; }
+	}	
+}
+
+@media screen and (min-width: 1400px) {	
+	.containerbuttons > .containerbutton >*.roundtrue          {border-radius: .5vw;} 
+    .containerbuttons > .containerbutton h2,
+    .containerbuttons > .containerbutton h3                    {font-size: 1.75rem;}	
+}

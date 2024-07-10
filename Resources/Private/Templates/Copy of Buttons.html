@@ -1,0 +1,184 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:spaceless>
+
+	<f:layout name="Default"/>
+
+	<f:section name="Main">
+	
+		<f:comment>1 Items Flex </f:comment>
+		<f:if condition="{data.pi_flexform.items} == 1">
+			<div class="containerbuttons oneItem interspace{data.pi_flexform.interspace}">		
+				<f:for each="{childrenContent}" as="child" iteration="iterator">
+					<f:render section="element" arguments="{_all}"/>
+				</f:for>
+			</div>	
+		</f:if>  
+		
+		<f:comment>2 Items Flex </f:comment>
+		<f:if condition="{data.pi_flexform.items} == 2">
+			<div class="containerbuttons twoItems interspace{data.pi_flexform.interspace}">		
+				<f:for each="{childrenContent}" as="child" iteration="iterator">
+				    <f:if condition="{iterator.isFirst}">
+				        <div class="row align-items-stretch m-0">
+				    </f:if>
+				    <f:if condition="{iterator.cycle} % 2">
+				        <f:then>
+							<f:render section="element" arguments="{_all}"/>
+				        </f:then>
+				        <f:else>
+							<f:render section="element" arguments="{_all}"/>
+				            <f:if condition="{iterator.isLast}">
+				                <f:then></f:then>
+				                <f:else>
+				                    </div><div class="row align-items-stretch m-0">
+				                </f:else>
+				            </f:if>
+				        </f:else>
+				    </f:if>
+				    <f:if condition="{iterator.isLast}">
+				        </div>
+				    </f:if>
+				</f:for>
+			</div>                     
+  	   </f:if>
+			
+		<f:comment>3 Items Flex </f:comment>
+		<f:if condition="{data.pi_flexform.items} == 3">
+	 	  	<div class="containerbuttons treeItems interspace{data.pi_flexform.interspace}">
+				<f:for each="{childrenContent}" as="child" iteration="iterator">
+				    <f:if condition="{iterator.isFirst}">
+				        <div class="row align-items-stretch m-0">
+				    </f:if>
+				    <f:if condition="{iterator.cycle} % 3">
+				        <f:then>
+							<f:render section="element" arguments="{_all}"/>
+				        </f:then>
+				
+				        <f:else>
+							<f:render section="element" arguments="{_all}"/>
+				
+				            <f:if condition="{iterator.isLast}">
+				                <f:then></f:then>
+				                <f:else>
+				                    </div><div class="row align-items-stretch m-0">
+				                </f:else>
+				            </f:if>
+				        </f:else>
+				    </f:if>
+				    <f:if condition="{iterator.isLast}">
+				        </div>
+				    </f:if>
+				</f:for>
+			</div>                     
+		</f:if>
+			
+		<f:comment>4 Items Flex </f:comment>
+		<f:if condition="{data.pi_flexform.items} == 4">
+	 	  	<div class="containerbuttons fourItems interspace{data.pi_flexform.interspace}">
+				<f:for each="{childrenContent}" as="child" iteration="iterator">
+				    <f:if condition="{iterator.isFirst}">
+				        <div class="row align-items-stretch m-0">
+				    </f:if>
+				    <f:if condition="{iterator.cycle} % 4">
+				        <f:then>
+							<f:render section="element" arguments="{_all}"/>
+				        </f:then>
+				
+				        <f:else>
+							<f:render section="element" arguments="{_all}"/>
+				
+				            <f:if condition="{iterator.isLast}">
+				                <f:then></f:then>
+				                <f:else>
+				                    </div><div class="row align-items-stretch m-0">
+				                </f:else>
+				            </f:if>
+				        </f:else>
+				    </f:if>
+				    <f:if condition="{iterator.isLast}">
+				        </div>
+				    </f:if>
+				</f:for>
+			</div>                     
+		</f:if>
+			
+		<f:comment>5 Items Flex </f:comment>
+		<f:if condition="{data.pi_flexform.items} == 5">
+	 	  	<div class="containerbuttons fiveItems interspace{data.pi_flexform.interspace}">
+				<f:for each="{childrenContent}" as="child" iteration="iterator">
+				    <f:if condition="{iterator.isFirst}">
+				        <div class="row align-items-stretch m-0">
+				    </f:if>
+				    <f:if condition="{iterator.cycle} % 5">
+				        <f:then>
+							<f:render section="element" arguments="{_all}"/>
+				        </f:then>
+				
+				        <f:else>
+							<f:render section="element" arguments="{_all}"/>
+				
+				            <f:if condition="{iterator.isLast}">
+				                <f:then></f:then>
+				                <f:else>
+				                    </div><div class="row align-items-stretch m-0">
+				                </f:else>
+				            </f:if>
+				        </f:else>
+				    </f:if>
+				    <f:if condition="{iterator.isLast}">
+				        </div>
+				    </f:if>
+				</f:for>
+			</div>                     
+		</f:if>
+			
+		<f:comment>6 Items Flex </f:comment>
+		<f:if condition="{data.pi_flexform.items} == 6">
+	 	  	<div class="containerbuttons sixItems interspace{data.pi_flexform.interspace}">
+				<f:for each="{childrenContent}" as="child" iteration="iterator">
+				    <f:if condition="{iterator.isFirst}">
+				        <div class="row align-items-stretch m-0">
+				    </f:if>
+				    <f:if condition="{iterator.cycle} % 6">
+				        <f:then>
+							<f:render section="element" arguments="{_all}"/>
+				        </f:then>
+				
+				        <f:else>
+							<f:render section="element" arguments="{_all}"/>
+				
+				            <f:if condition="{iterator.isLast}">
+				                <f:then></f:then>
+				                <f:else>
+				                    </div><div class="row align-items-stretch m-0">
+				                </f:else>
+				            </f:if>
+				        </f:else>
+				    </f:if>
+				    <f:if condition="{iterator.isLast}">
+				        </div>
+				    </f:if>
+				</f:for>
+			</div>                     
+		</f:if>
+			
+			
+			
+	</f:section>		
+	
+	<f:section name="element">	
+		<div class="containerbutton format{data.pi_flexform.format} round{data.pi_flexform.round}">
+			<f:format.raw>{child.renderedContent}</f:format.raw>
+		</div>
+	</f:section>	
+	
+</f:spaceless>
+</html>
+
+
+
+
+
+
+
+

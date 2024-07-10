@@ -1,0 +1,34 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+	<f:layout name="Default"/>
+
+	<f:section name="Main">
+	
+	
+		<f:variable name="teiler" value="20" />
+		<f:variable name="hteiler" value="10" />
+		<f:variable name="wert" value="{data.pi_flexform.interspace}" />
+		<f:variable name="iwert" value="{data.pi_flexform.innerspace}" />	
+					
+		<f:variable name="bg" value="background-color:{data.pi_flexform.bgcolor};" />			
+		<f:variable name="cl" value="color:{data.pi_flexform.color};" />		
+		<f:variable name="bc" value="border-color:{data.pi_flexform.bordercolor};" />	
+		<f:variable name="bo" value="border-style:solid; border-width:{data.pi_flexform.border}px;" />	
+		
+		<f:variable name="pd" value="padding-right: {wert / hteiler}vw; padding-left: {wert / hteiler}vw;" />	
+		<f:variable name="ip" value="padding: {iwert / hteiler}vw;" />			
+		<f:variable name="mn" value="margin-right: -{wert / teiler}vw; margin-left: -{wert / teiler}vw;" />	
+		
+		<div class="containerbuttons flex-wrap format{data.pi_flexform.format} round{data.pi_flexform.round} Item{data.pi_flexform.items} d-flex w-auto align-items-stretch" style="{mn}" >	
+		
+			<f:for each="{childrenContent}" as="child" iteration="iterator">
+				<div class="containerbutton" style="padding-left: {wert / teiler}vw; padding-right: {wert / teiler}vw; margin-bottom: {wert / hteiler}vw;" >
+					<div class="containerbuttonInnen" style="{bg} {cl} {bc} {bo} {ip}" >
+					 	<f:format.raw>{child.renderedContent}</f:format.raw>
+					 </div>
+				</div>
+			</f:for>
+		</div>	
+	</f:section>		
+
+</html>

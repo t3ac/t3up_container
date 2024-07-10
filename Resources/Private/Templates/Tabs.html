@@ -1,0 +1,36 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:spaceless>
+
+	<f:layout name="Default"/>
+	
+	<f:section name="Main">
+		<div class="t3up_tabulator tabssstyle-{bootstraptabs}">
+		    <ul class="nav nav-tabs m-0 p-0" role="tablist" id="tab-{f:if(condition:data._LOCALIZED_UID, then:data._LOCALIZED_UID, else:data.uid)}">
+				<f:for each="{childrenContent}" as="child" iteration="iteration">
+		            <li class="nav-item" role="presentation">
+		                <a 
+		                    class="nav-item nav-link {f:if(condition:iteration.index, then:'', else:'active')}" 
+		                    id="nav-c{child.uid}-tab" 
+		                    data-bs-toggle="tab"
+		                    data-toggle="tab" 
+		                    href="#nav-c{child.uid}" 
+		                    role="tab" 
+		                    type="button"
+		                    aria-controls="nav-c{child.uid}"
+		                    aria-selected="false">
+		                    	{child.header}
+		                </a>
+		        	</li>   
+				</f:for>
+			 </ul>
+			 <div class="tab-content">
+			 	<f:for each="{childrenContent}" as="child" iteration="iteration">
+                        <div class="tab-pane fade {f:if(condition:iteration.index, then:'', else:'show active')}" id="nav-c{child.uid}" role="tabpanel" aria-labelledby="nav-c{child.uid}-tab">
+                            <f:format.raw>{child.renderedContent}</f:format.raw>
+                        </div>
+			    </f:for>
+			 </div>
+		 </div>
+	</f:section>	
+</f:spaceless>
+</html>
