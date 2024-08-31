@@ -25,8 +25,8 @@ defined('TYPO3') or die('Access denied.');
                 $L.'2ColsDes',
                 [
                     [
-                        ['name' => $L.'left',  'colPos' => 101, 'disallowed' => ['CType' => 'headerimage_content,2cols,3cols,4cols,image,textpic']],
-                        ['name' => $L.'right', 'colPos' => 102, 'disallowed' => ['CType' => 'headerimage_content,2cols,3cols,4cols,image,textpic']]
+                        ['name' => $L.'left',  'colPos' => 101, 'disallowed' => ['CType' => 't3upheaderimage_content,2cols,3cols,4cols,image,textpic']],
+                        ['name' => $L.'right', 'colPos' => 102, 'disallowed' => ['CType' => 't3upheaderimage_content,2cols,3cols,4cols,image,textpic']]
                     ]
                 ]
                 )
