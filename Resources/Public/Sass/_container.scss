@@ -1,11 +1,22 @@
 /* Columns Layout *****************************************************************************************************/
-.frame-2cols .row.align-items-stretch > .h-100 > div 			{height: 100%}
+.frame-2cols .row.align-items-stretch > div > div 				{height: 100%}
 .frame-2cols > .row												{margin-left: $-v3; margin-right: $-v3;}
-.frame-3cols .row.align-items-stretch > .h-100 > div 			{height: 100%}
+.frame-3cols .row.align-items-stretch > div > div 				{height: 100%}
 .frame-3cols > .row												{margin-left: $-v3; margin-right: $-v3;}
-.frame-4cols .row.align-items-stretch > .h-100 > div 			{height: 100%}
+.frame-4cols .row.align-items-stretch > div > div 				{height: 100%}
 .frame-4cols > .row												{margin-left: $-v3; margin-right: $-v3;}
 
+	
+
+@media (min-width: 768px){
+	.frame-3cols > .row	> div									{padding: 0; margin-right:$v15; margin-left:$v15; width: $c33; overflow: hidden;}
+	.frame-3cols > .row	> div:first-of-type 					{margin-left:0; }
+	.frame-3cols > .row	> div:last-of-type 						{margin-right:0;}		
+	.frame-4cols > .row	> div									{padding: 0; margin-right:$v15; margin-left:$v15; width: $c25; overflow: hidden;}
+	.frame-4cols > .row	> div:first-of-type 					{margin-left:0; }
+	.frame-4cols > .row	> div:last-of-type 						{margin-right:0;}	
+			 
+}	
 
 /* Buttons ***********************************************************************************************************/
 
