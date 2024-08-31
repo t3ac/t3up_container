@@ -120,7 +120,7 @@
                                 <items type="array">
                                     <numIndex index="0" type="array">
                                         <numIndex index="0">LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.none</numIndex>
-                                        <numIndex index="1"></numIndex>
+                                        <numIndex index="1">none</numIndex>
                                     </numIndex>
                                     <numIndex index="1" type="array">
                                         <numIndex index="0">LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:rowValign.alignItemsStart</numIndex>
@@ -156,7 +156,7 @@
                                 <items type="array">
                                     <numIndex index="0" type="array">
                                         <numIndex index="0">LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.none</numIndex>
-                                        <numIndex index="1"></numIndex>
+                                        <numIndex index="1">none</numIndex>
                                     </numIndex>
                                     <numIndex index="1" type="array">
                                         <numIndex index="0">LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:rowHalign.justifyContentStart</numIndex>
