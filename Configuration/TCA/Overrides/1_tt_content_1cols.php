@@ -25,7 +25,7 @@ defined('TYPO3') or die('Access denied.');
                 $L.'1ColsDes',
                 [
                     [
-                        ['name' => $L.'center', 'colPos' => 101, 'disallowed' => ['CType' => 'headerimage_content,image,textpic']],
+                        ['name' => $L.'center', 'colPos' => 101, 'disallowed' => ['CType' => 't3upheaderimage_content,image,textpic']],
                     ]
                 ]
                 )
