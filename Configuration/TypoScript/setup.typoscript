@@ -4,24 +4,6 @@ page.includeCSS {
     container = EXT:t3up_container/Resources/Public/Sass/_container.scss
 }
 
-
-lib.flexformContentInterspace = CONTENT
-lib.flexformContentInterspace {
-    table = tt_content
-    select {
-        pidInList = this
-    }
-
-    renderObj = COA
-    renderObj {
-        10 = TEXT
-        10 {
-            data = flexform: pi_flexform:interspace
-        }
-    }
-    wrap = |vw
-}
-
 lib.flexformContentbuttonbordercolor = CONTENT
 lib.flexformContentbuttonbordercolor {
     table = tt_content
@@ -91,24 +73,68 @@ lib.flexformContentcolor {
 }
 
 
-plugin.tx_wsscss.variables {
-	interspace < lib.flexformContentInterspace
-	buttonbordercolor < lib.flexformContentbuttonbordercolor
-	buttonborderwidth < lib.flexformContentbuttonborderwidth
-	buttonbgcolor < lib.flexformContentbgcolor
-	buttoncolor < lib.flexformContentcolor
+lib.flexformContentTextalign = CONTENT
+lib.flexformContentTextalign {
+    table = tt_content
+    select {
+        pidInList = this
+    }
+
+    renderObj = COA
+    renderObj {
+        10 = TEXT
+        10 {
+            data = flexform: pi_flexform:textalign 
+        }
+    }
+    wrap = |
+}
+
+## Buttons ------------------------------------------------------------------------
+
+tt_content.headerbutton =< lib.contentElement
+tt_content.headerbutton {
+	templateName = Headerbutton
+	templateRootPaths.0 = EXT:t3up_container/Resources/Private/Templates
+	dataProcessing {
+		10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+		10.references.fieldName = assets
+		999 = T3ac\T3upContainer\DataProcessing\FlexFormProcessor
+	}
 }
 
 
-page.includeJSFooterlibs {
-        buttonbox          	     = EXT:t3up_container/Resources/Public/JavaScript/basic.js
-        buttonbox.async          = 1 
-} 
+tt_content.textbutton =< lib.contentElement
+tt_content.textbutton {
+	templateName = Textbutton
+	templateRootPaths.0 = EXT:t3up_container/Resources/Private/Templates
+	dataProcessing {
+		10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+		10.references.fieldName = assets
+		999 = T3ac\T3upContainer\DataProcessing\FlexFormProcessor
+	}
+}
 
 
 
-lib.containerContentElement =< lib.contentElement
-lib.containerContentElement.templateRootPaths.10 = EXT:t3up_container/Resources/Private/Templates
+tt_content.imagebutton =< lib.contentElement
+tt_content.imagebutton {
+	templateName = Imagebutton
+	templateRootPaths.0 = EXT:t3up_container/Resources/Private/Templates
+	dataProcessing {
+        10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+        10 {
+            references.fieldName = assets
+            as = image
+        }
+		999 = T3ac\T3upContainer\DataProcessing\FlexFormProcessor
+        
+   }
+}
+
+
+## ----------------------------------------------------------------------------------------
+
 
 lib.containerContentElement {
     dataProcessing {
@@ -120,8 +146,14 @@ lib.containerContentElement {
     }
 }
 
+page.includeJSFooterlibs {
+        buttonbox          	     = EXT:t3up_container/Resources/Public/JavaScript/t3upcontainer.js
+        buttonbox.async          = 1 
+} 
 
 
+lib.containerContentElement =< lib.contentElement
+lib.containerContentElement.templateRootPaths.10 = EXT:t3up_container/Resources/Private/Templates
 
 #########################################################################################
 
