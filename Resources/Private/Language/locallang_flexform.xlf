@@ -261,8 +261,27 @@
              <trans-unit id="label.stil5" xml:space="preserve">
                  <source>right outside</source>
             </trans-unit>    
-
-
+             <trans-unit id="label.textalign" xml:space="preserve">
+                 <source>Textalign</source>
+            </trans-unit>    
+            <trans-unit id="label.start" xml:space="preserve">
+                <source>left</source>
+            </trans-unit>
+            <trans-unit id="label.center" xml:space="preserve">
+                <source>center</source>
+            </trans-unit>
+            <trans-unit id="label.end" xml:space="preserve">
+                <source>right</source>
+            </trans-unit>
+             <trans-unit id="label.valign" xml:space="preserve">
+                 <source>Vertical align</source>
+            </trans-unit>  
+            <trans-unit id="label.top" xml:space="preserve">
+                <source>top</source>
+            </trans-unit>            
+            <trans-unit id="label.bottom" xml:space="preserve">
+                <source>bottom</source>
+            </trans-unit>
             /* Misc classes */
             <trans-unit id="label.none" xml:space="preserve">
                 <source>none</source>
@@ -276,7 +295,7 @@
             <trans-unit id="label.no" xml:space="preserve">
                 <source>no</source>
             </trans-unit>
-            
+
                         
         </body>
     </file>

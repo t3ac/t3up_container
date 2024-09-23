@@ -86,6 +86,19 @@
                  <source>Buttons in columns and rows.</source>
             </trans-unit>              
             
+             <trans-unit id="headerbutton.flexvalues">
+                 <source>Options</source>
+            </trans-unit>
+            <trans-unit id="headerbuttonDes">
+                 <source>Header as a button item.</source>
+            </trans-unit>              
+            <trans-unit id="imagebuttonDes">
+                 <source>Image as a button item.</source>
+            </trans-unit>              
+            <trans-unit id="textbuttonDes">
+                 <source>Small text as a button item.</source>
+            </trans-unit>              
+            
             
             <trans-unit id="slider">
                  <source>Slider</source>
