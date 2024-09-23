@@ -15,7 +15,10 @@
 	"type" : "typo3-cms-extension",
 	"license" : "GPL-2.0-or-later",
 	"require" : {
-		"b13/container" : "^2"
+	 	"php": ">= 7.4 < 8.4",
+		"b13/container" : "^2",
+		"t3ac/t3up" : "^11",
+		"t3ac/t3up_image" : "^11"
 	},
     "autoload": {
         "psr-4": {
