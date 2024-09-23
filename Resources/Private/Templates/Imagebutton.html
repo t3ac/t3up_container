@@ -1,0 +1,84 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+	<f:variable name="cl" value="color:{data.pi_flexform.color}" />
+	<f:variable name="hs" value="h{data.pi_flexform.headersize}" />
+	
+    <div id="c{data.uid}" class="frame-{data.CType} w-100" >
+    
+        <f:link.typolink parameter="{data.header_link}" class="{f:if(condition: data.overlayfunction, then: 'showlayer')}">
+
+			<f:if condition="{data.pi_flexform.showtext} = true">
+				<f:then>
+		            <f:if condition="{data.pi_flexform.valign} == 'start'">
+		            	<f:then>
+					        <span class="d-block {hs} m-0 p-3 w-100 imageitemtitle {data.pi_flexform.valign} text-{data.pi_flexform.textalign}" style="{cl}"><f:format.nl2br>{data.header}</f:format.nl2br></span>
+				          	<f:for each="{image}" as="image"> 
+							   <f:render section="picture" arguments="{_all}"/>
+						   </f:for>
+				        </f:then>  	
+				    </f:if> 	
+		            <f:if condition="{data.pi_flexform.valign} == 'end'">
+		            	<f:then>
+				          	<f:for each="{image}" as="image"> 
+							   <f:render section="picture" arguments="{_all}"/>
+						   </f:for>
+					       <span class="d-block {hs} m-0 p-3 w-100 imageitemtitle {data.pi_flexform.valign} text-{data.pi_flexform.textalign}"  style="{cl}"><f:format.nl2br>{data.header}</f:format.nl2br></span>
+				        </f:then>  	
+				    </f:if>
+		            <f:if condition="{data.pi_flexform.valign} == 'center'">
+		            	<f:then>
+					        <span class="d-block {hs} p-3 w-100 imageitemtitle text-{data.pi_flexform.textalign}" style="position: absolute; top: 50%; left: 0; transform: translate(0%, -50%); z-index: 1; {cl}"><f:format.nl2br>{data.header}</f:format.nl2br></span>
+				          	<f:for each="{image}" as="image"> 
+							   <f:render section="picture" arguments="{_all}"/>
+						   </f:for>
+				        </f:then>  	
+				    </f:if>
+				</f:then>	
+				<f:else>
+					<f:for each="{image}" as="image"> 
+					   <f:render section="picture" arguments="{_all}"/>
+				   </f:for>			
+				</f:else>								     
+          	</f:if> 
+          	
+        </f:link.typolink>
+    </div>
+</html>
+
+
+
+<f:section name="picture">
+	   <picture>  
+						
+		   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '992', fileExtension: 'webp')}"   media="(min-width: 769px)" type="image/webp"> 
+		   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '992', fileExtension: 'jpg')}"   media="(min-width: 769px)" type="image/jpeg">
+				
+		   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '768', fileExtension: 'webp')}"   media="(min-width: 641px)" type="image/webp"> 
+		   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '768', fileExtension: 'jpg')}"   media="(min-width: 641px)" type="image/jpeg">
+			  
+		   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '640', fileExtension: 'webp')}"   media="(min-width: 481px)" type="image/webp">    
+		   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '640', fileExtension: 'jpg')}"   media="(min-width: 481px)" type="image/jpeg"> 
+		   
+		   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '480', fileExtension: 'webp')}"   media="(min-width: 361px)" type="image/webp">    
+		   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '480', fileExtension: 'jpg')}"   media="(min-width: 361px)" type="image/jpeg">             
+						   
+		   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '360', fileExtension: 'webp')}"  type="image/webp">	
+		   <source srcset="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '360', fileExtension: 'jpg')}"  type="image/jpeg">	   
+				  
+		   <img class="imageitem" role="Presentation"
+			   src="{f:uri.image(src:'{image.uid}', treatIdAsReference:'1', cropVariant: 'default', maxWidth: '{data.imagewidth}')}"
+			   
+			   {f:if(condition: '{image.title}', then: 'title="{image.title}"')}
+			   {f:if(condition: '{image.properties.creator}', then: 'author="{image.properties.creator}"')}    
+			   {f:if(condition: '{image.alternative}', then: 'alt="{image.alternative}"')} 
+			   style="{f:if(condition: settings.imageminheight, then: 'min-height:{settings.imageminheight}px;')} {f:if(condition: settings.imagemaxheight, then: 'max-height:{settings.imagemaxheight}px;')}"
+			   loading="lazy"
+			   />
+			   
+	        <f:if condition="data.overlayfunction">
+	        	<span class="{hs}">{image.title}</span>
+	        </f:if> 
+	
+	   </picture>
+  
+</f:section>
