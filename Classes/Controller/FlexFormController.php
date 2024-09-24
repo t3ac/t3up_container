@@ -51,7 +51,7 @@ class FlexFormController {
      */
     public static function getColumnOptions($config): array
     {
-        // xlCol, mdCol, smCol, Col or lgCol
+        // lgCol, mdCol, Col 
         $fieldName = $config['field'];
         $columnType = substr($fieldName, 0, -1);
 
@@ -101,7 +101,6 @@ class FlexFormController {
                     array('LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.hidden', 'd-md-none'));
                 break;
 
-
             //  large
             case 'lgCol':
                 $optionList = array(array('LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.notset', ''),
@@ -122,11 +121,8 @@ class FlexFormController {
                     array('LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.variableWidth', 'col-lg-auto'),
                     array('LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.hidden', 'd-lg-none'));
                 break;
-
         }
         $config['items'] = array_merge($config['items'], $optionList);
         return $config;
     }
-
-
 }
