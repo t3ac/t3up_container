@@ -32,5 +32,12 @@ defined('TYPO3_MODE') or die();
         'imagebutton_icon',
         \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
         ['source' => 'EXT:t3up_container/Resources/Public/Icons/imagebutton_icon.svg']
-        );   
+        ); 
+    
+    $iconRegistry->registerIcon(
+        'texttile_icon',
+        \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
+        ['source' => 'EXT:t3up_container/Resources/Public/Icons/texttile_icon.svg']
+        ); 
+    
 })();
