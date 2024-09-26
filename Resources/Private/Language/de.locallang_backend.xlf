@@ -1,7 +1,6 @@
-
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="messages" date="2014-09-22T11:44:12Z" product-name="t3up_container">
+	<file source-language="de" datatype="plaintext" original="messages" date="2014-09-22T11:44:12Z" product-name="t3up_container">
  	<header/>
 		<body>
 			/* -- BACKENDLAYOUTS ------------------------- */
@@ -47,17 +46,16 @@
             </trans-unit>
             <trans-unit id="4ColsDes">
                  <source>Bootstrap Layout for 4 columns</source>
-
+                <target state="translated">Vierspaltiges Layout, mit Spaltenbreite und Ausrichtung der Inhaltselemente</target> 
             </trans-unit>   
             
             <trans-unit id="accordion">
                  <source>Accordion</source>
                 <target state="translated">Akkordeon</target> 
-                 <source>Akkordeon</source>
             </trans-unit>
             <trans-unit id="accordionDes">
                  <source>with three diffrent behaviors.</source>
-
+                <target state="translated">alle Akkordeon-Element können individuell geöffnet, oder geschlossen werden</target>
             </trans-unit>   
 
             <trans-unit id="tabs">
@@ -120,7 +118,7 @@
             </trans-unit>              
             <trans-unit id="texttileDes">
                  <source>Designed texttiles</source>
-                 
+                 <target state="translated">Textkacheln mit Überschrift und Kurztext</target> 
             </trans-unit>    
             
             
@@ -129,7 +127,7 @@
             </trans-unit>
             <trans-unit id="sliderDes">
                  <source>bootstrap slider from content.</source>
-                 
+                 <target state="translated">Slider aus Inhaltselementen</target> 
             </trans-unit>   
 
             <trans-unit id="left">
