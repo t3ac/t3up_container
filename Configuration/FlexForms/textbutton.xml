@@ -14,12 +14,69 @@
 					<color>
 						<TCEforms>
 		                    <label>LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.color</label>
-		                     <config>
-		                        <type>input</type> 
-								<size>6</size> 
-								<renderType>colorpicker</renderType>
-								<default>inherit</default> 
-		                    </config>
+	                        <config type="array">
+		                        <type>select</type>
+		                        <renderType>selectSingle</renderType>
+		                        <items type="array">
+		                            <numIndex index="0" type="array">
+		                                <numIndex index="0">LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.none</numIndex>
+		                                <numIndex index="1">inherit</numIndex>
+		                            </numIndex>
+		                            <numIndex index="1" type="array">
+		                                <numIndex index="0">LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.basecolor</numIndex>
+		                                <numIndex index="1">none</numIndex>
+		                            </numIndex>
+		                            <numIndex index="2" type="array">
+		                                <numIndex index="0">LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.white</numIndex>
+		                                <numIndex index="1">#ffffff</numIndex>
+		                            </numIndex>
+		                            <numIndex index="3" type="array">
+		                                <numIndex index="0">LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.lightgrey</numIndex>
+		                                <numIndex index="1">#efefef</numIndex>
+		                            </numIndex>
+		                            <numIndex index="4" type="array">
+		                                <numIndex index="0">LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.grey</numIndex>
+		                                <numIndex index="1">#DADADA</numIndex>
+		                            </numIndex>  
+		                            <numIndex index="5" type="array">
+		                                <numIndex index="0">LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.darkergrey</numIndex>
+		                                <numIndex index="1">#787878</numIndex>
+		                            </numIndex>
+		                            <numIndex index="6" type="array">
+		                                <numIndex index="0">LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.darkgrey</numIndex>
+		                                <numIndex index="1">#454545</numIndex>
+		                            </numIndex> 
+		                            <numIndex index="7" type="array">
+		                                <numIndex index="0">LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.black</numIndex>
+		                                <numIndex index="1">#000000</numIndex>
+		                            </numIndex> 
+		                            <numIndex index="8" type="array">
+		                                <numIndex index="0">LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.blue</numIndex>
+		                                <numIndex index="1">#346097</numIndex>
+		                            </numIndex>
+		                            <numIndex index="9" type="array">
+		                                <numIndex index="0">LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.darkblue</numIndex>
+		                                <numIndex index="1">#2D4F9A</numIndex>
+		                            </numIndex>        
+		                            <numIndex index="10" type="array">
+		                                <numIndex index="0">LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.turquoise</numIndex>
+		                                <numIndex index="1">#1D725F</numIndex>
+		                            </numIndex>	       
+		                            <numIndex index="11" type="array">
+		                                <numIndex index="0">LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.green</numIndex>
+		                                <numIndex index="1">#406C03</numIndex>
+		                            </numIndex>	                            		                            
+		                            <numIndex index="12" type="array">
+		                                <numIndex index="0">LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.violett</numIndex>
+		                                <numIndex index="1">#863177</numIndex>
+		                            </numIndex>	        
+		                            <numIndex index="12" type="array">
+		                                <numIndex index="0">LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.orange</numIndex>
+		                                <numIndex index="1">#FF8700</numIndex>
+		                            </numIndex>	                       
+		                        </items>
+					            <default>inherit</default>
+	                        </config>
 		                </TCEforms>
 		        	</color>	 
 	   				<textalign>
