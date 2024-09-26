@@ -1,13 +1,13 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 
-	<f:variable name="cl" value="color:{data.pi_flexform.color} !important;" />		
+	<f:variable name="cl" value="color: {data.pi_flexform.color}" />		
 		
-    <div id="c{data.uid}" class="frame-{data.CType} align-self-{data.pi_flexform.valign} w-100 text-{data.pi_flexform.textalign}" style="{cl}" >
+    <div id="c{data.uid}" class="frame-{data.CType} align-self-{data.pi_flexform.valign} w-100 text-{data.pi_flexform.textalign}" >
         <f:link.typolink parameter="{data.header_link}">
 	        <f:if condition="{data.header_layout} != 100">
-	          	<span class="d-block h{data.header_layout} m-0 p-3"><f:format.nl2br>{data.header}</f:format.nl2br></span>
+	          	<span class="d-block h{data.header_layout} m-0 p-3" style="{cl}"><f:format.nl2br>{data.header}</f:format.nl2br></span>
 	         </f:if> 	
-        	<f:format.nl2br><p class="m-0 px-3 pb-3">{data.bodytext}<p></f:format.nl2br>
+        	<f:format.nl2br><p class="m-0 px-3 pb-3" style="{cl}">{data.bodytext}<p></f:format.nl2br>
         </f:link.typolink>
     </div>
 </html>
