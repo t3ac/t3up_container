@@ -8,8 +8,6 @@
             <trans-unit id="container">
                  <source>Container</source>
             </trans-unit>           
-                    
-
 
             <trans-unit id="wizzard">
                  <source>T3UP</source>
@@ -98,7 +96,9 @@
             <trans-unit id="textbuttonDes">
                  <source>Small text as a button item.</source>
             </trans-unit>              
-            
+            <trans-unit id="texttileDes">
+                 <source>Designed texttiles</source>
+            </trans-unit>    
             
             <trans-unit id="slider">
                  <source>Slider</source>
