@@ -5,6 +5,7 @@ defined('TYPO3_MODE') || die('Access denied.');
 $GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['headerbutton']   =  'headerbutton_icon';
 $GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['imagebutton']    =  'imagebutton_icon';
 $GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['textbutton']     =  'textbutton_icon';
+$GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['texttile']       =  'texttile_icon';
 
 // Get extension configuration
 $extensionConfiguration = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(
@@ -40,13 +41,21 @@ $extensionConfiguration = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(
     'after'
     );
 
+// Add to content type dropdown
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTcaSelectItem(
+    "tt_content",
+    "CType",
+    ['Texttile', 'texttile', 'texttile_icon', 'container'],
+    'tabs',
+    'after'
+    );
+
 
 $GLOBALS['TCA']['tt_content']['types']['headerbutton']=[
     'showitem' => '
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
             header, 
             header_link,
-            CType,
 		--div--;LLL:EXT:t3up_container/Resources/Private/Language/locallang_backend.xlf:headerbutton.flexvalues, pi_flexform,
         --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
             --palette--;;appearanceLinks,
@@ -87,7 +96,6 @@ $GLOBALS['TCA']['tt_content']['types']['textbutton']=[
                     header_link,
                     header_layout,
                     bodytext;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:bodytext_formlabel,
-                    CType,
 		         --div--;LLL:EXT:t3up_container/Resources/Private/Language/locallang_backend.xlf:headerbutton.flexvalues, pi_flexform,
                 --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
                     --palette--;;appearanceLinks,
@@ -133,6 +141,50 @@ $GLOBALS['TCA']['tt_content']['types']['textbutton']=[
     );
 
 
+$GLOBALS['TCA']['tt_content']['types']['texttile']=[
+    'showitem' => '
+                --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
+                    header,
+                    header_link,
+                    bodytext;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:bodytext_formlabel,
+		         --div--;LLL:EXT:t3up_container/Resources/Private/Language/locallang_backend.xlf:headerbutton.flexvalues, pi_flexform,
+                --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
+                    --palette--;;appearanceLinks,
+                --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,
+                    --palette--;;language,
+                --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,
+                    --palette--;;hidden,
+                    --palette--;;access,
+                --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:categories,
+                    categories,
+                --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:notes,
+                    rowDescription,
+                --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:extended,
+            ',
+    'columnsOverrides' => [
+        'bodytext' => [
+            'l10n_mode' => 'prefixLangTitle',
+            'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.text',
+            'config' => [
+                'enableRichtext' => false,
+                'rows' => 5,
+                'max' => 200,
+            ]
+        ],
+        'header' => [
+            'l10n_mode' => 'prefixLangTitle',
+            'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header',
+            'config' => [
+                'type' => 'input',
+                'size' => 50,
+                'max' => 80,
+            ],
+        ],
+    ]
+];
+
+
+
 $GLOBALS['TCA']['tt_content']['types']['imagebutton']=[
     'showitem' => '
                 --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
@@ -140,7 +192,6 @@ $GLOBALS['TCA']['tt_content']['types']['imagebutton']=[
                     header_link,
                     assets,
                     overlayfunction,
-                    CType,
     		    --div--;LLL:EXT:t3up_container/Resources/Private/Language/locallang_backend.xlf:headerbutton.flexvalues, pi_flexform,
                 --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
                     --palette--;;appearanceLinks,
