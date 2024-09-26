@@ -25,7 +25,7 @@ defined('TYPO3') or die('Access denied.');
                 $L.'buttonsDes',
                 [
                     [
-                        ['name' => $L.'center', 'colPos' => 101, 'allowed' => ['CType' => 'headerbutton,textbutton,imagebutton']],
+                        ['name' => $L.'center', 'colPos' => 101, 'allowed' => ['CType' => 'headerbutton,textbutton,imagebutton,texttile']],
                     ]
                 ]
                 )
