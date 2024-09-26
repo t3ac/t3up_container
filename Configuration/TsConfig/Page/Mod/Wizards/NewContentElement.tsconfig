@@ -15,7 +15,15 @@ mod.wizards.newContentElement.wizardItems {
             tt_content_defValues {
                 CType = textbutton
             }
-        }       
+        }   
+        texttile {
+            iconIdentifier = texttile_icon
+            title = Texttile
+            description = LLL:EXT:t3up_container/Resources/Private/Language/locallang_backend.xlf:texttileDes
+            tt_content_defValues {
+                CType = texttile
+            }
+        }     
         imagebutton {
             iconIdentifier = imagebutton_icon
             title = Imagebutton
@@ -25,5 +33,5 @@ mod.wizards.newContentElement.wizardItems {
             }
         }     
     }
-     common.show := addToList(headerbutton,textbutton,imagebutton)
+     common.show := addToList(headerbutton,textbutton,texttile,imagebutton)
 }
