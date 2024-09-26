@@ -8,7 +8,7 @@
             <trans-unit id="container">
                  <source>Container</source>
             </trans-unit>           
-
+                    
             <trans-unit id="wizzard">
                  <source>T3UP</source>
             </trans-unit>           
@@ -83,7 +83,8 @@
             <trans-unit id="buttonsDes">
                  <source>Buttons in columns and rows.</source>
             </trans-unit>              
-            
+                        
+
              <trans-unit id="headerbutton.flexvalues">
                  <source>Options</source>
             </trans-unit>
@@ -96,9 +97,10 @@
             <trans-unit id="textbuttonDes">
                  <source>Small text as a button item.</source>
             </trans-unit>              
-            <trans-unit id="texttileDes">
-                 <source>Designed texttiles</source>
-            </trans-unit>    
+            <trans-unit id="tilebuttonDes">
+                 <source>Designed texttiles.</source>
+            </trans-unit>              
+            
             
             <trans-unit id="slider">
                  <source>Slider</source>
@@ -106,11 +108,10 @@
             <trans-unit id="sliderDes">
                  <source>bootstrap slider from content.</source>
             </trans-unit>   
-
             <trans-unit id="left">
                  <source>Left Column</source>
             </trans-unit>
-            
+         
             <trans-unit id="center">
                  <source>Center Column</source>
             </trans-unit>   
@@ -127,7 +128,7 @@
                  <source>Right Column</source>
             </trans-unit>
 		    
-		    
+
             <trans-unit id="options">
                 <source>Options</source>
             </trans-unit>  	
