@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-    <file source-language="en" datatype="plaintext" original="messages" date="2014-09-22T11:44:12Z" product-name="t3up_container">
+    <file source-language="de" datatype="plaintext" original="messages" date="2014-09-22T11:44:12Z" product-name="t3up_container">
     <header/>
         <body>
         
@@ -281,7 +281,6 @@
 			     <source>Min. height of the slider (px)</source>
 			     <target state="translated">Minimale Höhe des Sliders (px), 0 - kein Wert</target>
 		    </trans-unit>
-		    
             <trans-unit id="slider.controlNav" xml:space="preserve">
                  <source>Hide control elements</source>
                  <target state="translated">Verstecke Kontrollpunkte</target>
@@ -298,6 +297,8 @@
                  <source>Styles</source>
                  <target state="translated">Stile</target>
             </trans-unit>            
+            
+            
              <trans-unit id="label.basic" xml:space="preserve">
                  <source>Basic</source>
                  <target state="translated">Basis</target>
@@ -323,6 +324,45 @@
                  <target state="translated">Oben rechts ausserhalb</target>
             </trans-unit>    
 
+
+               /* Buttons */           
+             <trans-unit id="label.textalign" xml:space="preserve">
+                 <source>Textalign</source>
+                  <target state="translated">Textausrichtung</target>                
+            </trans-unit>    
+             <trans-unit id="label.showtext" xml:space="preserve">
+                 <source>Show text</source>
+                  <target state="translated">Text anzeigen</target>                
+            </trans-unit>            
+             <trans-unit id="label.headersize" xml:space="preserve">
+                 <source>Size of the header</source>
+                  <target state="translated">Textgröße</target>      
+            </trans-unit>   
+            <trans-unit id="label.start" xml:space="preserve">
+                <source>left</source>
+                <target state="translated">links</target>   
+            </trans-unit>
+            <trans-unit id="label.center" xml:space="preserve">
+                <source>center</source>
+                  <target state="translated">zentriert</target>   
+            </trans-unit>
+            <trans-unit id="label.end" xml:space="preserve">
+                <source>right</source>
+                   <target state="translated">rechts</target>               
+            </trans-unit>
+             <trans-unit id="label.valign" xml:space="preserve">
+                 <source>Vertical align</source>
+                 <target state="translated">Vertikale Ausrichtung</target>                    
+            </trans-unit>  
+            <trans-unit id="label.top" xml:space="preserve">
+                <source>top</source>
+                 <target state="translated">oben</target>                 
+            </trans-unit>            
+            <trans-unit id="label.bottom" xml:space="preserve">
+                  <source>bottom</source>            
+                 <target state="translated">unten</target>     
+            </trans-unit>
+
             /* Misc classes */
             <trans-unit id="label.none" xml:space="preserve">
                 <source>none</source>
@@ -336,8 +376,7 @@
                 <source>no</source>
                 <target state="translated">nein</target>
             </trans-unit>
-            
-                        
+ 
         </body>
     </file>
 </xliff>        
