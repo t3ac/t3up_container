@@ -3,7 +3,7 @@
 	<f:layout name="Default"/>
 	<f:section name="Main">
 		<f:if condition="{childrenCenter}">
-		    <div class="{f:if(condition: data.layout, then: ' {data.layout}')} w-100 {data.pi_flexform.col11class}">
+		    <div class="{f:if(condition: data.layout, then: ' {data.layout}')} {data.pi_flexform.col11class}">
 		        <f:for each="{childrenCenter}" as="child">
 		            <f:format.raw>{child.renderedContent}</f:format.raw>
 		        </f:for>
