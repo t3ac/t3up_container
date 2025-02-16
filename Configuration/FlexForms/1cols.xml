@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3DataStructure>
+    <meta>
+        <langDisable>1</langDisable>
+    </meta>
+    <sheets>
+        <customClasses>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:sheet.customClasses</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el type="array">
+                    <col11class type="array">
+                        <TCEforms type="array">
+                            <label>LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.col1</label>
+                            <config type="array">
+                                <type>input</type>
+                                <eval>trim</eval>
+                            </config>
+                        </TCEforms>
+                    </col11class>
+                </el>
+            </ROOT>
+        </customClasses> 
+    </sheets>
+</T3DataStructure>

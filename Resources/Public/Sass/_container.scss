@@ -1,0 +1,120 @@
+@import '../../../../t3up/Resources/Public/Sass/mixin.scss';
+
+@import 'col.scss';
+@import 'accordion.scss';
+
+/* Buttons **************************************************************************************************************************************************************************************************************************/
+
+.containerbuttons{                                                  flex-wrap: wrap;  margin-left: $-v033; margin-right: $-v033;
+    .containerbutton{                                               overflow: hidden; padding: 0; margin: 0;  transition: all ease .3s; padding: $v033;
+        > .containerbuttonInnen                                     {display: flex; padding: 0; transition: all ease .3s; /*overflow: hidden*/; position: relative; background-color: $baseColor; border-color: $baseColor;}
+        > .containerbuttonInnen    > *    > *                       {color: inherit !important;}
+        > .containerbuttonInnen    > *    > a                       {color: inherit !important;}
+        &.roundtrue > .containerbuttonInnen                         {border-radius: $v050;}
+
+        > .containerbuttonInnen.text-center     *                   {text-align: center !important}
+        > .containerbuttonInnen.text-end     *                      {text-align: right !important}
+        > .containerbuttonInnen:hover                               {box-shadow: $shadow;}
+    }
+    
+    &.sq> .containerbutton{
+        > .containerbuttonInnen                                     {display: none;}
+        > .containerbuttonInnen:hover                               {box-shadow: $shadow;}
+        > .containerbuttonInnen .frame-imagebutton{                 aspect-ratio: 1 / 1; position: relative; overflow: hidden; 
+            img                                                     {width: 100%; height: 100%; object-fit: cover; object-position: center 0;}
+
+            .imageitemtitle                                         {transition: all ease .3s;}
+            .imageitemtitle.start                                   {position: absolute; top: 0; left: 0;}
+            .imageitemtitle.end                                     {position: absolute; bottom: 0; left: 0;}
+            
+            a.showlayer picture span                                {z-index: 17; text-align: center; transition: all ease .3s; color: $pictureoverlaytext; position: absolute; width: 100%; height: 100%; top: -100%; display: flex; padding: $v050; align-items: center; justify-content: center;  background-color: $pictureoverlay;}
+            a.showlayer:focus, 
+            a.showlayer:hover picture span                          {top: 0;}
+            a.showlayer:focus .imageitemtitle, 
+            a.showlayer:hover .imageitemtitle                       {color: transparent !important;}
+        }
+    }
+    .containerbutton .frame-textbutton                              {transition: all ease .3s;}
+    .containerbutton .frame-textbutton span                         {color: $baseColor;}
+        
+    .containerbutton .frame-texttile                                {border: 1px solid rgba($textColor,.5); border-left: $v2 solid rgba($baseColor,.5); padding-bottom: $v5; position: relative;}
+    .containerbutton .frame-texttile:hover                          {border-left: $v2 solid rgba($baseColor,.75);}
+    .containerbutton .frame-texttile .arrowtile                     {position: absolute; right: $v050; bottom: $v050; font-size: 150%; line-height: 1rem;}
+    &.format2 > .containerbutton > .containerbuttonInnen            {border-radius: 50%; overflow: hidden;}
+}
+
+.containerbuttons.Item1{
+    .containerbutton                                                {min-width: 100%; width: 100%;}
+}
+.containerbuttons.Item2{
+    .containerbutton                                                {min-width: 50%; width: 50%;}
+}
+.containerbuttons.Item3{
+    .containerbutton                                                {min-width: 50%; width: 50%;}
+}
+.containerbuttons.Item4{                                     
+    .containerbutton                                                {min-width: 50%; width: 50%;}
+}
+.containerbuttons.Item5{
+    .containerbutton                                                {min-width: 33.33%; width: 33.33%;}
+}
+.containerbuttons.Item6{
+    .containerbutton                                                {min-width: 33.33%; width: 33.33%;}
+}
+
+/**********************************************************************************************************************/
+
+@media screen and (min-width: 576px) { 
+}
+
+@media screen and (min-width: 768px) {
+    .containerbuttons.Item3{
+        .containerbutton                                            {min-width: 33.33%; width: 33.33%;}
+    }
+    .containerbuttons.Item4{
+        .containerbutton                                            {min-width: 25%; width: 25%;}
+    }
+    .containerbuttons.Item5{
+        .containerbutton                                            {min-width: 25%; width: 25%;}
+    }
+    .containerbuttons.Item6{
+        .containerbutton                                            {min-width: 25%; width: 25%;}
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .containerbuttons.Item5{
+        .containerbutton                                            {min-width: 20%; width: 20%;}
+    }
+    .containerbuttons.Item6{
+        .containerbutton                                            {min-width: 16.66666%; width: 16.66666%;}
+    }
+}
+
+@media screen and (min-width: 1200px) {
+}
+
+@media screen and (min-width: 1400px) {    
+}
+
+
+
+/* Tabs * ************************************** */
+
+.t3up_tabulator    {
+    .tab-content .tab-pane > *                                      {background: none;}
+    .tab-content .tab-pane > *                                      {padding: 0; border: 0 !important; margin-bottom:0;}
+}
+    
+.t3up_tabulator.owntab{
+    .tab-content .tab-pane > * > h2,
+    .tab-content .tab-pane > * > h3,
+    .tab-content .tab-pane > * > h4                                {display: none !important;}
+}
+    
+.t3up_tabulator{
+    .nav-item                                                       {margin-bottom: -1px; cursor: pointer;}
+    .nav-link.active                                                {border-color: rgba(0,0,0,.2) rgba(0,0,0,.2) $white rgba(0,0,0,.2);}
+    .tab-content                                                    {padding: $v050; background-color: $white; border-radius: 0 0 5px 5px; border: 1px solid rgba(0,0,0,.2); background-color: $white;}
+}
+

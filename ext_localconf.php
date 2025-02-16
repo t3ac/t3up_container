@@ -1,17 +1,13 @@
 <?php
 
-/*
- * For the full copyright and license information, please read the
- * LICENSE file that was distributed with this source code.
- */
+defined('TYPO3') || die('Access denied.');
 
+use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 
-defined('TYPO3_MODE') or die();
-(static function() {
+call_user_func(static function () {
     
     // Add PageTSConfig
-    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig(
-        '<INCLUDE_TYPOSCRIPT: source="FILE:EXT:t3up_container/Configuration/TsConfig/Page/Mod/Wizards/NewContentElement.tsconfig">');
+	ExtensionManagementUtility::addPageTSConfig("@import 'EXT:t3up_container/Configuration/TsConfig/Page/Mod/Wizards/NewContentElement.tsconfig'");
     
     // Register icons
     $iconRegistry = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Imaging\IconRegistry::class);
@@ -39,5 +35,4 @@ defined('TYPO3_MODE') or die();
         \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
         ['source' => 'EXT:t3up_container/Resources/Public/Icons/texttile_icon.svg']
         ); 
-    
-})();
+});

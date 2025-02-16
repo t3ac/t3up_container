@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="de" datatype="plaintext" original="messages" date="2014-09-22T11:44:12Z" product-name="t3up_container">
+ 	<header/>
+		<body>
+			/* -- BACKENDLAYOUTS ------------------------- */
+
+            <trans-unit id="container">
+                 <source>Container</source>
+            </trans-unit>           
+                    
+            <trans-unit id="wizzard">
+                 <source>T3UP</source>
+            </trans-unit>           
+                    
+             <trans-unit id="1Cols">
+                 <source>1-Col-Layout</source>
+                <target state="translated">1-Spaltenlayout</target> 
+            </trans-unit>
+            <trans-unit id="1ColsDes">
+                 <source>Bootstrap Layout for 1 column</source>
+                <target state="translated">Einspaltiges Layout, für Inhaltselemete</target> 
+            </trans-unit>                        
+                    
+            <trans-unit id="2Cols">
+                 <source>2-Col-Layout</source>
+                <target state="translated">2-Spaltenlayout</target> 
+            </trans-unit>
+            <trans-unit id="2ColsDes">
+                 <source>Bootstrap Layout for 2 columns</source>
+                <target state="translated">Zweispaltiges Layout, mit Spaltenbreite und Ausrichtung der Inhaltselemente</target> 
+            </trans-unit>
+
+            <trans-unit id="3Cols">
+                 <source>3-Col-Layout</source>
+                <target state="translated">3-Spaltenlayout</target> 
+            </trans-unit>
+            <trans-unit id="3ColsDes">
+                 <source>Bootstrap Layout for 3 columns</source>
+                <target state="translated">Dreispaltiges Layout, mit Spaltenbreite und Ausrichtung der Inhaltselemente</target> 
+            </trans-unit>   
+            
+            <trans-unit id="4Cols">
+                 <source>4-Col-Layout</source>
+                <target state="translated">4-Spaltenlayout</target> 
+            </trans-unit>
+            <trans-unit id="4ColsDes">
+                 <source>Bootstrap Layout for 4 columns</source>
+                <target state="translated">Vierspaltiges Layout, mit Spaltenbreite und Ausrichtung der Inhaltselemente</target> 
+            </trans-unit>   
+            
+            <trans-unit id="accordion">
+                 <source>Accordion</source>
+                <target state="translated">Akkordeon</target> 
+            </trans-unit>
+            <trans-unit id="accordionDes">
+                 <source>with three diffrent behaviors.</source>
+                <target state="translated">alle Akkordeon-Element können individuell geöffnet, oder geschlossen werden</target>
+            </trans-unit>   
+
+            <trans-unit id="tabs">
+                 <source>Tabulator</source>
+                <target state="translated">Tabulatoren</target> 
+            </trans-unit>
+            <trans-unit id="tabsDes">
+                 <source>shows content in tabs.</source>
+                <target state="translated">Inhaltselemente werden in einem Tabulator erstellt</target> 
+            </trans-unit>   
+
+            <trans-unit id="2tabs">
+                 <source>2-Tabulator</source>
+            </trans-unit>
+            <trans-unit id="2tabsDes">
+                 <source>shows content in tabs with 2 sections.</source>
+                <target state="translated">Tabulator aus 2 Inhaltselementen</target> 
+            </trans-unit>   
+
+            <trans-unit id="3tabs">
+                 <source>3-Tabulator</source>
+            </trans-unit>
+            <trans-unit id="3tabsDes">
+                 <source>shows content in tabs with 3 sections.</source>
+                <target state="translated">Tabulator aus 3 Inhaltselementen</target> 
+            </trans-unit>  
+            
+            <trans-unit id="4tabs">
+                 <source>4-Tabulator</source>
+            </trans-unit>
+            <trans-unit id="4tabsDes">
+                 <source>shows content in tabs with 4 sections.</source>
+                <target state="translated">Tabulator aus 4 Inhaltselementen</target> 
+            </trans-unit>  
+                        
+            
+             <trans-unit id="buttons">
+                 <source>Buttons</source>
+            </trans-unit>
+            <trans-unit id="buttonsDes">
+                 <source>Buttons in columns and rows.</source>
+                 <target state="translated">Bis zu sechs Schalter (Buttons) in einer Reihe</target> 
+            </trans-unit>              
+            
+             <trans-unit id="headerbutton.flexvalues">
+                 <source>Options</source>
+                 <target state="translated">Überschrift-Buttons</target> 
+            </trans-unit>
+            <trans-unit id="headerbuttonDes">
+                 <source>Header as a button item.</source>
+                 <target state="translated">Schalter (Buttons) aus Überschriftelementen</target> 
+            </trans-unit>              
+            <trans-unit id="imagebuttonDes">
+                 <source>Image as a button item.</source>
+                 <target state="translated">Schalter (Buttons) aus Bildelementen</target> 
+            </trans-unit>              
+            <trans-unit id="textbuttonDes">
+                 <source>Small text as a button item.</source>
+                 <target state="translated">Schalter (Buttons) aus kurzen Textelementen</target> 
+            </trans-unit>              
+            <trans-unit id="texttileDes">
+                 <source>Designed texttiles</source>
+                 <target state="translated">Textkacheln mit Überschrift und Kurztext</target> 
+            </trans-unit>    
+            
+            
+            <trans-unit id="slider">
+                 <source>Slider</source>
+            </trans-unit>
+            <trans-unit id="sliderDes">
+                 <source>bootstrap slider from content.</source>
+                 <target state="translated">Slider aus Inhaltselementen</target> 
+            </trans-unit>   
+
+            <trans-unit id="left">
+                 <source>Left Column</source>
+                <target state="translated">Linke Spalte</target>
+            </trans-unit>
+            
+            <trans-unit id="center">
+                 <source>Center Column</source>
+                <target state="translated">Mittelspalte</target>
+            </trans-unit>   
+            
+            <trans-unit id="centerLeft">
+                 <source>Left Center Column</source>
+                <target state="translated">Spalte Linksmitte</target>
+            </trans-unit>     
+            
+            <trans-unit id="centerRight">
+                 <source>Right Center Column</source>
+                <target state="translated">Spalte Rechtsmitte</target>
+            </trans-unit>             
+            
+            <trans-unit id="right">
+                 <source>Right Column</source>
+                <target state="translated">Rechts Spalte</target>
+            </trans-unit>
+		    
+		    
+            <trans-unit id="options">
+                <source>Options</source>
+                <target state="translated">Einstellungen</target>
+            </trans-unit>  	
+            
+		    
+		    <trans-unit id="align-items-stretch">
+			     <source>Stretching the items</source>
+                <target state="translated">Elemente aufgespreizt</target>
+		    </trans-unit>
+		    <trans-unit id="align-items-end">
+			     <source>Aling the items to the bottom</source>
+                <target state="translated">Elemente am unteren Rand ausgerichtet</target>
+		    </trans-unit>
+		    <trans-unit id="align-items-center">
+			     <source>Aling the items to the center</source>
+                <target state="translated">Elemente zentriert ausgerichtet</target>
+		    </trans-unit>		    
+		    <trans-unit id="align-items-baseline">
+			     <source>Aling the items to the baseline</source>
+                <target state="translated">Elemente an der Grundlinie ausgerichtet</target>
+		    </trans-unit>		    
+
+		    	
+		    <trans-unit id="accordion1">
+			     <source>All items closed</source>
+                <target state="translated">Alle Akkordeon-Elemente sind geschlossen</target>
+		    </trans-unit>		    	
+		    <trans-unit id="accordion2">
+			     <source>First open</source>
+                <target state="translated">1 Akkordeon-Element ist geöffnet</target>
+		    </trans-unit>	    	
+		    <trans-unit id="accordion3">
+			     <source>Multiple select</source>
+                <target state="translated">alle Akkordeon-Element können individuell geöffnet, oder geschlossen werden</target>
+		    </trans-unit>	 	    	
+	    
+		    
+		   /* -- Designs ----------- */
+  
+			<trans-unit id="darkgrey">
+			     <source>Darkgrey background</source>
+                <target state="translated">Dunkelgrauer Hintergrund</target>
+		    </trans-unit>	  
+            <trans-unit id="white">
+			     <source>White background</source>
+                <target state="translated">Weißer Hintergrund</target>
+            </trans-unit> 
+            <trans-unit id="colored">
+			     <source>Colored background</source>
+                <target state="translated">Farbiger Hintergrund</target>
+            </trans-unit>   
+            <trans-unit id="lightgrey">
+			     <source>Lightgrey background</source>
+                <target state="translated">Hellgrauer Hintergrund</target>
+            </trans-unit>   
+            <trans-unit id="grey">
+			     <source>Grey background</source>
+                <target state="translated">Grauer Hintergrund</target>
+            </trans-unit>  
+		</body>
+	</file>
+</xliff>

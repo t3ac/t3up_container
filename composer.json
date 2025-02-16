@@ -16,9 +16,9 @@
 	"license" : "GPL-2.0-or-later",
 	"require" : {
 	 	"php": ">= 8.1 < 8.4",
-		"b13/container" : "^2",
-		"t3ac/t3up" : "^11",
-		"t3ac/t3up-image" : "^11"
+		"b13/container" : "^3",
+		"t3ac/t3up" : "^12",
+		"t3ac/t3up-image" : "^12"
 	},
     "autoload": {
         "psr-4": {

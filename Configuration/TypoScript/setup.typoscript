@@ -1,0 +1,362 @@
+# Fluid_styled_content Elements ###########################################################
+
+page.includeCSS {
+    container = EXT:t3up_container/Resources/Public/Sass/_container.scss
+}
+
+lib.flexformContentbuttonbordercolor = CONTENT
+lib.flexformContentbuttonbordercolor {
+    table = tt_content
+    select {
+        pidInList = this
+    }
+
+    renderObj = COA
+    renderObj {
+        10 = TEXT
+        10 {
+            data = flexform: pi_flexform:bordercolor
+        }
+    }
+    wrap = |
+}
+
+lib.flexformContentbuttonborderwidth = CONTENT
+lib.flexformContentbuttonborderwidth {
+    table = tt_content
+    select {
+        pidInList = this
+    }
+
+    renderObj = COA
+    renderObj {
+        10 = TEXT
+        10 {
+            data = flexform: pi_flexform:border
+        }
+    }
+    wrap = |px
+}
+
+lib.flexformContentbgcolor = CONTENT
+lib.flexformContentbgcolor {
+    table = tt_content
+    select {
+        pidInList = this
+    }
+
+    renderObj = COA
+    renderObj {
+        10 = TEXT
+        10 {
+            data = flexform: pi_flexform:bgcolor 
+        }
+    }
+    wrap = |
+}
+
+lib.flexformContentcolor = CONTENT
+lib.flexformContentcolor {
+    table = tt_content
+    select {
+        pidInList = this
+    }
+
+    renderObj = COA
+    renderObj {
+        10 = TEXT
+        10 {
+            data = flexform: pi_flexform:color 
+        }
+    }
+    wrap = |
+}
+
+
+lib.flexformContentTextalign = CONTENT
+lib.flexformContentTextalign {
+    table = tt_content
+    select {
+        pidInList = this
+    }
+
+    renderObj = COA
+    renderObj {
+        10 = TEXT
+        10 {
+            data = flexform: pi_flexform:textalign 
+        }
+    }
+    wrap = |
+}
+
+## Buttons ------------------------------------------------------------------------
+
+tt_content.headerbutton =< lib.contentElement
+tt_content.headerbutton {
+	templateName = Headerbutton
+	templateRootPaths.0 = EXT:t3up_container/Resources/Private/Templates
+	dataProcessing {
+		10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+		10.references.fieldName = assets
+		999 = T3ac\T3upContainer\DataProcessing\FlexFormProcessor
+	}
+}
+
+
+tt_content.textbutton =< lib.contentElement
+tt_content.textbutton {
+	templateName = Textbutton
+	templateRootPaths.0 = EXT:t3up_container/Resources/Private/Templates
+	dataProcessing {
+		10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+		10.references.fieldName = assets
+		999 = T3ac\T3upContainer\DataProcessing\FlexFormProcessor
+	}
+}
+
+
+
+tt_content.imagebutton =< lib.contentElement
+tt_content.imagebutton {
+	templateName = Imagebutton
+	templateRootPaths.0 = EXT:t3up_container/Resources/Private/Templates
+	dataProcessing {
+        10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+        10 {
+            references.fieldName = assets
+            as = image
+        }
+		999 = T3ac\T3upContainer\DataProcessing\FlexFormProcessor
+        
+   }
+}
+
+
+## ----------------------------------------------------------------------------------------
+
+
+lib.containerContentElement {
+    dataProcessing {
+        111 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+        111 {
+            references.fieldName = bgimage
+        }
+        999 = T3ac\T3upContainer\DataProcessing\FlexFormProcessor
+    }
+}
+
+page.includeJSFooterlibs {
+        buttonbox          	     = EXT:t3up_container/Resources/Public/JavaScript/t3upcontainer.js
+        buttonbox.async          = 1 
+} 
+
+
+lib.containerContentElement =< lib.contentElement
+lib.containerContentElement.templateRootPaths.10 = EXT:t3up_container/Resources/Private/Templates
+
+#########################################################################################
+
+## 1 Column
+tt_content.1cols < lib.containerContentElement
+tt_content.1cols {
+  templateName = 1Cols
+  dataProcessing {
+    101 = B13\Container\DataProcessing\ContainerProcessor
+    101 {
+      colPos = 101
+      as = childrenCenter
+    }
+  }
+}
+
+## 2 Columns
+tt_content.2cols < lib.containerContentElement
+tt_content.2cols {
+  templateName = 2Cols
+  dataProcessing {
+    101 = B13\Container\DataProcessing\ContainerProcessor
+    101 {
+      colPos = 101
+      as = childrenLeft
+    }
+    102 = B13\Container\DataProcessing\ContainerProcessor
+    102 {
+     colPos = 102
+     as = childrenRight
+    }
+  }
+}
+
+## 3 Columns
+tt_content.3cols < lib.containerContentElement
+tt_content.3cols {
+  templateName = 3Cols
+  dataProcessing {
+    101 = B13\Container\DataProcessing\ContainerProcessor
+    101 {
+      colPos = 101
+      as = childrenLeft
+    }
+    102 = B13\Container\DataProcessing\ContainerProcessor
+    102 {
+     colPos = 102
+     as = childrenCenter
+    }
+    103 = B13\Container\DataProcessing\ContainerProcessor
+    103 {
+     colPos = 103
+     as = childrenRight
+    }
+  }
+}
+
+## 4 Columns
+tt_content.4cols < lib.containerContentElement
+tt_content.4cols {
+  templateName = 4Cols
+  dataProcessing {
+    101 = B13\Container\DataProcessing\ContainerProcessor
+    101 {
+      colPos = 101
+      as = childrenLeft
+    }
+    102 = B13\Container\DataProcessing\ContainerProcessor
+    102 {
+     colPos = 102
+     as = childrenCenterLeft
+    }
+    103 = B13\Container\DataProcessing\ContainerProcessor
+    103 {
+     colPos = 103
+     as = childrenCenterRight
+    }
+    104 = B13\Container\DataProcessing\ContainerProcessor
+    104 {
+     colPos = 104
+     as = childrenRight
+    }
+  } 
+}
+
+## Tabulatoren
+tt_content.tabs < lib.containerContentElement
+tt_content.tabs {
+  templateName = Tabs
+  dataProcessing {
+    101 = B13\Container\DataProcessing\ContainerProcessor
+    101 {
+      colPos = 101
+      as = childrenContent
+    }
+  }
+}
+
+## 2 Tabs
+tt_content.2tabs < lib.containerContentElement
+tt_content.2tabs {
+  templateName = 2Tabs
+  dataProcessing {
+    101 = B13\Container\DataProcessing\ContainerProcessor
+    101 {
+      colPos = 101
+      as = childrenLeft
+    }
+    102 = B13\Container\DataProcessing\ContainerProcessor
+    102 {
+     colPos = 102
+     as = childrenRight
+    }
+  }
+}
+
+## 3 Tabs
+tt_content.3tabs < lib.containerContentElement
+tt_content.3tabs {
+  templateName = 3Tabs
+  dataProcessing {
+    101 = B13\Container\DataProcessing\ContainerProcessor
+    101 {
+      colPos = 101
+      as = childrenLeft
+    }
+    102 = B13\Container\DataProcessing\ContainerProcessor
+    102 {
+     colPos = 102
+     as = childrenCenter
+    }
+    103 = B13\Container\DataProcessing\ContainerProcessor
+    103 {
+     colPos = 103
+     as = childrenRight
+    }
+  }
+}
+
+## 4 Tabs
+tt_content.4tabs < lib.containerContentElement
+tt_content.4tabs {
+  templateName = 4Tabs
+  dataProcessing {
+    101 = B13\Container\DataProcessing\ContainerProcessor
+    101 {
+      colPos = 101
+      as = childrenLeft
+    }
+    102 = B13\Container\DataProcessing\ContainerProcessor
+    102 {
+     colPos = 102
+     as = childrenCenterLeft
+    }
+    103 = B13\Container\DataProcessing\ContainerProcessor
+    103 {
+     colPos = 103
+     as = childrenCenterRight
+    }
+    104 = B13\Container\DataProcessing\ContainerProcessor
+    104 {
+     colPos = 104
+     as = childrenRight
+    }
+  } 
+}
+
+## Accordion
+tt_content.accordion < lib.containerContentElement
+tt_content.accordion {
+  templateName = Accordion
+  dataProcessing {
+    101 = B13\Container\DataProcessing\ContainerProcessor
+    101 {
+      colPos = 101
+      as = childrenContent
+    }
+  }
+}
+
+## Slider
+tt_content.slide < lib.containerContentElement
+tt_content.slide {
+  templateName = Slide
+  dataProcessing {
+    101 = B13\Container\DataProcessing\ContainerProcessor
+    101 {
+      colPos = 101
+      as = childrenContent
+    }
+  }
+}
+
+
+## Buttons
+tt_content.buttons < lib.containerContentElement
+tt_content.buttons {
+  templateName = Buttons
+  dataProcessing {
+    101 = B13\Container\DataProcessing\ContainerProcessor
+    101 {
+      colPos = 101
+      as = childrenContent
+    }
+  }
+}
