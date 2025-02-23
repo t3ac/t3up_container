@@ -4,7 +4,7 @@
 .t3up_accordion{ 
     a.accordion-button                                              {display: flex; align-content: space-between; align-items: center; font-size: 100%;}
     a.accordion-button::after,
-    a.accordion-button::before                                      {display: flex; align-items: center; justify-content: center; font-family: $symbol; font-weight: normal !important; transition: all ease .3s; font-size: 150%; width: $v15; height: $v15;}
+    a.accordion-button::before                                      {display: flex; align-items: center; justify-content: center; font-family: $symbol; font-weight: normal !important; transition: all ease .3s; font-size: 150%; width: $v150; height: $v150;}
     a.accordion-button:not(.collapsed)::after                       {font-family: $symbol; transform: rotate(-180deg);}
      
     a.accordion-button::after                                       {content:$plus; color: $gray-800;;}
