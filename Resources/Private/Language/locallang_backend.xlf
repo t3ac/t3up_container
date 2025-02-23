@@ -40,8 +40,21 @@
             <trans-unit id="4ColsDes">
                  <source>Bootstrap Layout for 4 columns</source>
             </trans-unit>   
+            
+            <trans-unit id="accordion">
+                 <source>Accordion</source>
+            </trans-unit>
+            <trans-unit id="accordionDes">
+                 <source>with three diffrent behaviors.</source>
+            </trans-unit>   
 
-          
+            <trans-unit id="tabs">
+                 <source>Tabulator</source>
+            </trans-unit>
+            <trans-unit id="tabsDes">
+                 <source>shows content in tabs.</source>
+            </trans-unit>   
+			
             <trans-unit id="left">
                  <source>Left Column</source>
             </trans-unit>
@@ -61,7 +74,6 @@
             <trans-unit id="right">
                  <source>Right Column</source>
             </trans-unit>
-		    
 
             <trans-unit id="options">
                 <source>Options</source>

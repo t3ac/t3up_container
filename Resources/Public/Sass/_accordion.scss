@@ -1,0 +1,37 @@
+
+/* Accordions * **********************************************************************************************************************************************************************************************************************/
+
+.t3up_accordion{ 
+    a.accordion-button                                              {display: flex; align-content: space-between; align-items: center; font-size: 100%;}
+    a.accordion-button::after,
+    a.accordion-button::before                                      {display: flex; align-items: center; justify-content: center; font-family: $symbol; font-weight: normal !important; transition: all ease .3s; font-size: 150%; width: $v15; height: $v15;}
+    a.accordion-button:not(.collapsed)::after                       {font-family: $symbol; transform: rotate(-180deg);}
+     
+    a.accordion-button::after                                       {content:$plus; color: $gray-800;;}
+    a.accordion-button:not(.collapsed)::after                       {content:$minus;}
+    
+    .accordion-item .accordion-header > a                           {border-top: 0; padding-right: $v050; padding-left: $v050; background-color: $white; border: 1px solid $gray-500; border-bottom: 0;}
+    .accordion-item:first-of-type .accordion-header    > a          {border-radius: $v025 $v025 0 0;}
+    .accordion-item:last-of-type .accordion-header > a.collapsed    {border-radius: 0 0 $v025 $v025; border-bottom: 1px solid $gray-500;}
+    
+    .accordion-item .accordion-body                                 {background-color: $white; border-left: 1px solid $gray-500; border-right: 1px solid $gray-500;}
+    .accordion-item .accordion-body > *                             {padding-top: $v050; padding-bottom: $v050; background: none !important;}
+    .accordion-item .accordion-body > .frame-text                   {padding: $v050;}
+    .accordion-item .accordion-body > .frame-textmedia              {padding: $v050;}
+    .accordion-item .accordion-body > * > *:last-of-type            {margin-bottom: 0;;}
+    .accordion-item:last-of-type .accordion-body                    {border-bottom: 1px solid $gray-500; border-radius: 0 0 $v025 $v025;}
+
+    .accordion-item:first-of-type .accordion-header    > a          {border-radius: 0;}
+    .accordion-item .accordion-header > a                           {background-color: $gray-100;}
+    .accordion-item .accordion-header > a.collapsed                 {background-color: $white;}
+
+    .accordion-item:last-of-type .accordion-header > a.collapsed    {border-radius: 0;}
+    .accordion-item:last-of-type .accordion-body                    {border-radius: 0;}
+    .accordion-item .accordion-body > * > h2,
+    .accordion-item .accordion-body > * > h3,
+    .accordion-item .accordion-body > * > h4                        {display: none !important;}
+     
+    .accordion-item .accordion-body .ce-bodytext > h2,
+    .accordion-item .accordion-body .ce-bodytext > h3,
+    .accordion-item .accordion-body .ce-bodytext > h4               {display: none !important;}
+}

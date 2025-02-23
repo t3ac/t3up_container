@@ -92,3 +92,29 @@ tt_content.4cols {
     }
   } 
 }
+
+## Tabulatoren
+tt_content.tabs < lib.containerContentElement
+tt_content.tabs {
+  templateName = Tabs
+  dataProcessing {
+    101 = B13\Container\DataProcessing\ContainerProcessor
+    101 {
+      colPos = 101
+      as = childrenContent
+    }
+  }
+}
+
+## Accordion
+tt_content.accordion < lib.containerContentElement
+tt_content.accordion {
+  templateName = Accordion
+  dataProcessing {
+    101 = B13\Container\DataProcessing\ContainerProcessor
+    101 {
+      colPos = 101
+      as = childrenContent
+    }
+  }
+}
