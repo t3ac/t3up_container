@@ -1,7 +1,7 @@
 # Fluid_styled_content Elements ###########################################################
 
 page.includeCSS {
-    container = EXT:t3up_container/Resources/Public/Sass/_col.scss
+    container = EXT:t3up_container/Resources/Public/Sass/_cotainer.scss
 }
 
 ## ----------------------------------------------------------------------------------------
