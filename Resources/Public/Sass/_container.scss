@@ -18,10 +18,7 @@
     .padding8 > div                                 {@include p15;}
     .padding9 > div                                 {@include p175;}
     .padding10 > div                                {@include p2;}
-
 }
-    
-
 
 @media screen and (min-width:  768px) {
     .frame-2cols,
@@ -472,17 +469,10 @@
         }
         
         /* lg *******************************************/
-
-
         .row > div:first-of-type                {margin-left:0;}
         .row > div:last-of-type                 {margin-right:0;}       
     
     }
-        
-    
-    
-    
-        
 }        
     
     
