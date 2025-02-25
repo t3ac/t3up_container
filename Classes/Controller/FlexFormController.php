@@ -1,5 +1,5 @@
 <?php
-namespace T3ac\T3upColumn\Controller;
+namespace T3ac\T3upContainer\Controller;
 
 /*
  * It is free software; you can redistribute it and/or modify it under
@@ -60,13 +60,13 @@ class FlexFormController {
             // small
             case 'Col':
                 $optionList = array(
-                    array('LLL:EXT:t3up_column/Resources/Private/Language/locallang_flexform.xlf:label.notset', ''),
+                    array('LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.notset', ''),
                     array('25% (col-3)', 'col-3'),
                     array('33% (col-4)', 'col-4'),
                     array('50% (col-6)', 'col-6'),
                     array('66% (col-8)', 'col-8'),
                     array('75% (col-9)', 'col-9'),
-                    array('LLL:EXT:t3up_column/Resources/Private/Language/locallang_flexform.xlf:label.moreWidth', '--div--'),
+                    array('LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.moreWidth', '--div--'),
                     array('8.3%  (col-1)', 'col-1'),
                     array('16.7% (col-2)', 'col-2'),
                     array('41.7% (col-5)', 'col-5'),
@@ -74,20 +74,20 @@ class FlexFormController {
                     array('83.3% (col-10)', 'col-10'),
                     array('91.7% (col-11)', 'col-11'),
                     array('100%  (col-12)', 'col-12'),
-                    array('LLL:EXT:t3up_column/Resources/Private/Language/locallang_flexform.xlf:label.moreOptions', '--div--'),
-                    array('LLL:EXT:t3up_column/Resources/Private/Language/locallang_flexform.xlf:label.variableWidth', 'col-auto'));
+                    array('LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.moreOptions', '--div--'),
+                    array('LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.variableWidth', 'col-auto'));
                 break;
                 
              // small
             case 'smCol':
                 $optionList = array(
-                array('LLL:EXT:t3up_column/Resources/Private/Language/locallang_flexform.xlf:label.notset', ''),
+                array('LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.notset', ''),
                 array('25% (col-sm-3)', 'col-sm-3'),
                 array('33% (col-sm-4)', 'col-sm-4'),
                 array('50% (col-sm-6)', 'col-sm-6'),
                 array('66% (col-sm-8)', 'col-sm-8'),
                 array('75% (col-sm-9)', 'col-sm-9'),
-                array('LLL:EXT:t3up_column/Resources/Private/Language/locallang_flexform.xlf:label.moreWidth', '--div--'),
+                array('LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.moreWidth', '--div--'),
                 array('8.3%  (col-sm-1)', 'col-sm-1'),
                 array('16.7% (col-sm-2)', 'col-sm-2'),
                 array('41.7% (col-sm-5)', 'col-sm-5'),
@@ -95,20 +95,20 @@ class FlexFormController {
                 array('83.3% (col-sm-10)', 'col-sm-10'),
                 array('91.7% (col-sm-11)', 'col-sm-11'),
                 array('100%  (col-sm-12)', 'col-sm-12'),
-                array('LLL:EXT:t3up_column/Resources/Private/Language/locallang_flexform.xlf:label.moreOptions', '--div--'),
-                array('LLL:EXT:t3up_column/Resources/Private/Language/locallang_flexform.xlf:label.variableWidth', 'col-sm-auto'),
-                array('LLL:EXT:t3up_column/Resources/Private/Language/locallang_flexform.xlf:label.hidden', 'd-sm-none'));
+                array('LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.moreOptions', '--div--'),
+                array('LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.variableWidth', 'col-sm-auto'),
+                array('LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.hidden', 'd-sm-none'));
                 break;
             // medium 
             case 'mdCol':
                 $optionList = array(
-                    array('LLL:EXT:t3up_column/Resources/Private/Language/locallang_flexform.xlf:label.notset', ''),
+                    array('LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.notset', ''),
                     array('25% (col-md-3)', 'col-md-3'),
                     array('33% (col-md-4)', 'col-md-4'),
                     array('50% (col-md-6)', 'col-md-6'),
                     array('66% (col-md-8)', 'col-md-8'),
                     array('75% (col-md-9)', 'col-md-9'),
-                    array('LLL:EXT:t3up_column/Resources/Private/Language/locallang_flexform.xlf:label.moreWidth', '--div--'),
+                    array('LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.moreWidth', '--div--'),
                     array('8.3%  (col-md-1)', 'col-md-1'),
                     array('16.7% (col-md-2)', 'col-md-2'),
                     array('41.7% (col-md-5)', 'col-md-5'),
@@ -116,20 +116,20 @@ class FlexFormController {
                     array('83.3% (col-md-10)', 'col-md-10'),
                     array('91.7% (col-md-11)', 'col-md-11'),
                     array('100%  (col-md-12)', 'col-md-12'),
-                    array('LLL:EXT:t3up_column/Resources/Private/Language/locallang_flexform.xlf:label.moreOptions', '--div--'),
-                    array('LLL:EXT:t3up_column/Resources/Private/Language/locallang_flexform.xlf:label.variableWidth', 'col-md-auto'),
-                    array('LLL:EXT:t3up_column/Resources/Private/Language/locallang_flexform.xlf:label.hidden', 'd-md-none'));
+                    array('LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.moreOptions', '--div--'),
+                    array('LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.variableWidth', 'col-md-auto'),
+                    array('LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.hidden', 'd-md-none'));
                 break;
 
             //  large
             case 'lgCol':
-                $optionList = array(array('LLL:EXT:t3up_column/Resources/Private/Language/locallang_flexform.xlf:label.notset', ''),
+                $optionList = array(array('LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.notset', ''),
                     array('25% (col-lg-3)', 'col-lg-3'),
                     array('33% (col-lg-4)', 'col-lg-4'),
                     array('50% (col-lg-6)', 'col-lg-6'),
                     array('66% (col-lg-8)', 'col-lg-8'),
                     array('75% (col-lg-9)', 'col-lg-9'),
-                    array('LLL:EXT:t3up_column/Resources/Private/Language/locallang_flexform.xlf:label.moreWidth', '--div--'),
+                    array('LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.moreWidth', '--div--'),
                     array('8.3%  (col-lg-1)', 'col-lg-1'),
                     array('16.7% (col-lg-2)', 'col-lg-2'),
                     array('41.7% (col-lg-5)', 'col-lg-5'),
@@ -137,9 +137,9 @@ class FlexFormController {
                     array('83.3% (col-lg-10)', 'col-lg-10'),
                     array('91.7% (col-lg-11)', 'col-lg-11'),
                     array('100%  (col-lg-12)', 'col-lg-12'),
-                    array('LLL:EXT:t3up_column/Resources/Private/Language/locallang_flexform.xlf:label.moreOptions', '--div--'),
-                    array('LLL:EXT:t3up_column/Resources/Private/Language/locallang_flexform.xlf:label.variableWidth', 'col-lg-auto'),
-                    array('LLL:EXT:t3up_column/Resources/Private/Language/locallang_flexform.xlf:label.hidden', 'd-lg-none'));
+                    array('LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.moreOptions', '--div--'),
+                    array('LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.variableWidth', 'col-lg-auto'),
+                    array('LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.hidden', 'd-lg-none'));
                 break;
         }
         $config['items'] = array_merge($config['items'], $optionList);
