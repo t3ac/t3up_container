@@ -1,13 +1,18 @@
 # Fluid_styled_content Elements ###########################################################
 
 page.includeCSS {
-    container = EXT:t3up_container/Resources/Public/Sass/_cotainer.scss
+    container = EXT:t3up_container/Resources/Public/Sass/_container.scss
 }
 
 ## ----------------------------------------------------------------------------------------
 
 lib.containerContentElement =< lib.contentElement
-lib.containerContentElement.templateRootPaths.10 = EXT:t3up_container/Resources/Private/Templates
+lib.containerContentElement {
+    templateRootPaths.10 = EXT:t3up_container/Resources/Private/Templates
+    dataProcessing {
+        999 = TYPO3\CMS\Frontend\DataProcessing\FlexFormProcessor
+    }
+}
 
 #########################################################################################
 
