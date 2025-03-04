@@ -14,7 +14,7 @@
                         <config type="array">
                             <type>select</type>
                             <renderType>selectSingle</renderType>
-                            <itemsProcFunc>T3ac\T3upColumn\Controller\FlexFormController->getThreeColumnOptions</itemsProcFunc>
+                            <itemsProcFunc>T3ac\T3upContainer\Controller\FlexFormController->getThreeColumnOptions</itemsProcFunc>
                              <default>col-12</default>
                         </config>
                     </Col1>
@@ -23,7 +23,7 @@
                         <config type="array">
                             <type>select</type>
                             <renderType>selectSingle</renderType>
-                            <itemsProcFunc>T3ac\T3upColumn\Controller\FlexFormController->getThreeColumnOptions</itemsProcFunc>
+                            <itemsProcFunc>T3ac\T3upContainer\Controller\FlexFormController->getThreeColumnOptions</itemsProcFunc>
                             <default>col-12</default>
                         </config>
                     </Col2>
@@ -32,7 +32,7 @@
                         <config type="array">
                             <type>select</type>
                             <renderType>selectSingle</renderType>
-                            <itemsProcFunc>T3ac\T3upColumn\Controller\FlexFormController->getThreeColumnOptions</itemsProcFunc>
+                            <itemsProcFunc>T3ac\T3upContainer\Controller\FlexFormController->getThreeColumnOptions</itemsProcFunc>
                             <default>col-12</default>
                         </config>
                     </Col3>
@@ -50,7 +50,7 @@
                         <config type="array">
                             <type>select</type>
                             <renderType>selectSingle</renderType>
-                            <itemsProcFunc>T3ac\T3upColumn\Controller\FlexFormController->getTwoColumnOptions</itemsProcFunc>
+                            <itemsProcFunc>T3ac\T3upContainer\Controller\FlexFormController->getThreeColumnOptions</itemsProcFunc>
                         </config>
                     </smCol1>
                     <smCol2 type="array">
@@ -58,7 +58,7 @@
                         <config type="array">
                             <type>select</type>
                             <renderType>selectSingle</renderType>
-                            <itemsProcFunc>T3ac\T3upColumn\Controller\FlexFormController->getTwoColumnOptions</itemsProcFunc>
+                            <itemsProcFunc>T3ac\T3upContainer\Controller\FlexFormController->getThreeColumnOptions</itemsProcFunc>
                         </config>  
                     </smCol2>
                     <smCol3 type="array">
@@ -66,13 +66,13 @@
                         <config type="array">
                             <type>select</type>
                             <renderType>selectSingle</renderType>
-                            <itemsProcFunc>T3ac\T3upColumn\Controller\FlexFormController->getTwoColumnOptions</itemsProcFunc>
+                            <itemsProcFunc>T3ac\T3upContainer\Controller\FlexFormController->getThreeColumnOptions</itemsProcFunc>
                         </config>  
                     </smCol3>
                 </el>
             </ROOT>
         </smallDevices>
- 
+
         <sDEF>
             <ROOT type="array">
                 <sheetTitle>LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:sheet.mediumDevices</sheetTitle>
@@ -83,7 +83,7 @@
                         <config type="array">
                             <type>select</type>
                             <renderType>selectSingle</renderType>
-                            <itemsProcFunc>T3ac\T3upColumn\Controller\FlexFormController->getThreeColumnOptions</itemsProcFunc>
+                            <itemsProcFunc>T3ac\T3upContainer\Controller\FlexFormController->getThreeColumnOptions</itemsProcFunc>
                             <default>col-md-4</default>
                         </config>
                     </mdCol1>
@@ -92,7 +92,7 @@
                         <config type="array">
                             <type>select</type>
                             <renderType>selectSingle</renderType>
-                            <itemsProcFunc>T3ac\T3upColumn\Controller\FlexFormController->getThreeColumnOptions</itemsProcFunc>
+                            <itemsProcFunc>T3ac\T3upContainer\Controller\FlexFormController->getThreeColumnOptions</itemsProcFunc>
                             <default>col-md-4</default>
                         </config>  
                     </mdCol2>
@@ -101,10 +101,10 @@
                         <config type="array">
                             <type>select</type>
                             <renderType>selectSingle</renderType>
-                            <itemsProcFunc>T3ac\T3upColumn\Controller\FlexFormController->getThreeColumnOptions</itemsProcFunc>
+                            <itemsProcFunc>T3ac\T3upContainer\Controller\FlexFormController->getThreeColumnOptions</itemsProcFunc>
                             <default>col-md-4</default>
                         </config>  
-                    </mdCol3>                   
+                    </mdCol3>                 
                 </el>
             </ROOT>
         </sDEF>
@@ -119,7 +119,8 @@
                         <config type="array">
                             <type>select</type>
                             <renderType>selectSingle</renderType>
-                            <itemsProcFunc>T3ac\T3upColumn\Controller\FlexFormController->getThreeColumnOptions</itemsProcFunc>
+                            <itemsProcFunc>T3ac\T3upContainer\Controller\FlexFormController->getThreeColumnOptions</itemsProcFunc>
+                            <default>col-lg-4</default>
                         </config>
                     </lgCol1>
                     <lgCol2 type="array">
@@ -127,7 +128,8 @@
                         <config type="array">
                             <type>select</type>
                             <renderType>selectSingle</renderType>
-                            <itemsProcFunc>T3ac\T3upColumn\Controller\FlexFormController->getThreeColumnOptions</itemsProcFunc>
+                            <itemsProcFunc>T3ac\T3upContainer\Controller\FlexFormController->getThreeColumnOptions</itemsProcFunc>
+                            <default>col-lg-4</default>
                         </config>
                     </lgCol2>
                      <lgCol3 type="array">
@@ -135,89 +137,15 @@
                         <config type="array">
                             <type>select</type>
                             <renderType>selectSingle</renderType>
-                            <itemsProcFunc>T3ac\T3upColumn\Controller\FlexFormController->getThreeColumnOptions</itemsProcFunc>
+                            <itemsProcFunc>T3ac\T3upContainer\Controller\FlexFormController->getThreeColumnOptions</itemsProcFunc>
+                            <default>col-lg-4</default>
                         </config>
-                    </lgCol3>                   
+                    </lgCol3>                     
                 </el>
             </ROOT>
         </largeDevices>
+  
 
-  		<rowClasses>
-            <ROOT>
-                <sheetTitle>LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:sheet.rowClasses</sheetTitle>
-                <type>array</type>
-                <el type="array">
-                    <valign type="array">
-                        <label>LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.rowValign</label>
-                        <config type="array">
-                            <type>select</type>
-                            <renderType>selectSingle</renderType>
-                            <items type="array">
-                                <numIndex index="0" type="array">
-                                    <numIndex index="0">LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.none</numIndex>
-                                    <numIndex index="1">none</numIndex>
-                                </numIndex>
-                                <numIndex index="1" type="array">
-                                    <numIndex index="0">LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:rowValign.alignItemsStart</numIndex>
-                                    <numIndex index="1">align-items-start</numIndex>
-                                </numIndex>
-                                <numIndex index="2" type="array">
-                                    <numIndex index="0">LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:rowValign.alignItemsCenter</numIndex>
-                                    <numIndex index="1">align-items-center</numIndex>
-                                </numIndex>
-                                <numIndex index="3" type="array">
-                                    <numIndex index="0">LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:rowValign.alignItemsEnd</numIndex>
-                                    <numIndex index="1">align-items-end</numIndex>
-                                </numIndex>
-                                <numIndex index="4" type="array">
-                                    <numIndex index="0">LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:rowValign.alignItemsBaseline</numIndex>
-                                    <numIndex index="1">align-items-baseline</numIndex>
-                                </numIndex>
-                                <numIndex index="5" type="array">
-                                    <numIndex index="0">LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:rowValign.alignItemsStretch</numIndex>
-                                    <numIndex index="1">align-items-stretch</numIndex>
-                                </numIndex>
-                            </items>
-                            <default>align-items-stretch</default>
-                        </config>
-                    </valign>
-                    <halign type="array">
-                        <label>LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.rowHalign</label>
-                        <config type="array">
-                            <type>select</type>
-                            <renderType>selectSingle</renderType>
-                            <items type="array">
-                                <numIndex index="0" type="array">
-                                    <numIndex index="0">LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.none</numIndex>
-                                    <numIndex index="1">none</numIndex>
-                                </numIndex>
-                                <numIndex index="1" type="array">
-                                    <numIndex index="0">LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:rowHalign.justifyContentStart</numIndex>
-                                    <numIndex index="1">justify-content-start</numIndex>
-                                </numIndex>
-                                <numIndex index="2" type="array">
-                                    <numIndex index="0">LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:rowHalign.justifyContentCenter</numIndex>
-                                    <numIndex index="1">justify-content-center</numIndex>
-                                </numIndex>
-                                <numIndex index="3" type="array">
-                                    <numIndex index="0">LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:rowHalign.justifyContentEnd</numIndex>
-                                    <numIndex index="1">justify-content-end</numIndex>
-                                </numIndex>
-                                <numIndex index="4" type="array">
-                                    <numIndex index="0">LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:rowHalign.justifyContentAround</numIndex>
-                                    <numIndex index="1">justify-content-around</numIndex>
-                                </numIndex>
-                                <numIndex index="5" type="array">
-                                    <numIndex index="0">LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:rowHalign.justifyContentBetween</numIndex>
-                                    <numIndex index="1">justify-content-between</numIndex>
-                                </numIndex>
-                            </items>
-                             <default>justify-content-between</default>
-                        </config>
-                    </halign>
-                </el>
-            </ROOT>
-        </rowClasses>  
         <customClasses>
             <ROOT>
                 <sheetTitle>LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:sheet.customClasses</sheetTitle>
@@ -243,13 +171,15 @@
                             <type>input</type>
                             <eval>trim</eval>
                         </config>
-                    </col33class>                       
+                    </col33class>
                 </el>
             </ROOT>
         </customClasses>
         <customSpaces>
             <ROOT>
-                <sheetTitle>LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:sheet.customSpaces</sheetTitle>
+                <TCEforms>
+                    <sheetTitle>LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:sheet.customSpaces</sheetTitle>
+                </TCEforms>
                 <type>array</type>
                 <el type="array"> 
                 <spacing type="array">
