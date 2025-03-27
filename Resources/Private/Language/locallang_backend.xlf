@@ -47,6 +47,10 @@
             <trans-unit id="accordionDes">
                  <source>with three diffrent behaviors.</source>
             </trans-unit>   
+            
+            <trans-unit id="singleaccordion">
+                 <source>Activate an accordion for an single element.</source>
+            </trans-unit>               
 
             <trans-unit id="tabs">
                  <source>Tabulator</source>

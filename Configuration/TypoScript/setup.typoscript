@@ -4,6 +4,13 @@ page.includeCSS {
     container = EXT:t3up_container/Resources/Public/Sass/_container.scss
 }
 
+page.includeJSFooterlibs{
+    simpleaccordion                 = EXT:t3up_container/Resources/Public/JavaScript/accordion.js
+    simpleaccordion.if.isTrue       = {$page.files.simpleAccordion}      
+    simpleaccordion.forceOnTop      = 0
+}
+
+
 ## ----------------------------------------------------------------------------------------
 
 lib.containerContentElement =< lib.contentElement

@@ -6,6 +6,7 @@ TCEFORM {
 				1cols {
 					addItems { 
                     	white  			= LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:white
+                    	
 					}
 				} 
 				2cols {

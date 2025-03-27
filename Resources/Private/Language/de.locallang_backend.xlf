@@ -48,7 +48,30 @@
             <trans-unit id="4ColsDes">
                  <source>Bootstrap Layout for 4 columns</source>
                 <target state="translated">Vierspaltiges Layout, mit Spaltenbreite und Ausrichtung der Inhaltselemente</target> 
+            </trans-unit> 
+            
+            <trans-unit id="accordion">
+                 <source>Accordion</source>
+                <target state="translated">Akkordeon</target>  
+            </trans-unit>
+            <trans-unit id="accordionDes">
+                 <source>with three diffrent behaviors.</source>
+                <target state="translated">Akkordeons mit drei verschiedenen Verhalten.</target>      
             </trans-unit>   
+            <trans-unit id="singleaccordion">
+                 <source>Activate an accordion for an single element.</source>
+                <target state="translated">Einfaches Akkordeon für ein einzelnes Element</target>           
+            </trans-unit>               
+
+            <trans-unit id="tabs">
+                 <source>Tabulator</source>
+                <target state="translated">Tabulatoren</target>     
+            </trans-unit>
+            <trans-unit id="tabsDes">
+                 <source>shows content in tabs.</source>
+                <target state="translated">Inhalte in Tabulatoren anzeigen</target>      
+            </trans-unit>   
+              
             
             <trans-unit id="left">
                  <source>Left Column</source>

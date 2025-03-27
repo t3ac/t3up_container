@@ -1,0 +1,5 @@
+page.files{
+
+    # cat= files/javascript/10; type= boolean; label= Javascript for simple Accordion, enable in tsconfig ext_conf_template.txt    
+    simpleAccordion                = 
+}
