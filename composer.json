@@ -16,7 +16,7 @@
 	"license" : "GPL-2.0-or-later",
 	"require" : {
 		"b13/container" : "^3",
-		"hda/t3up" : "^13.2",
+		"t3ac/t3up" : "^13.2",
 		"ichhabrecht/content-defender" : "^3"
 	},
     "autoload": {
