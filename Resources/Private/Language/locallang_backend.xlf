@@ -58,6 +58,13 @@
             <trans-unit id="tabsDes">
                  <source>shows content in tabs.</source>
             </trans-unit>   
+
+            <trans-unit id="silder">
+                 <source>Contentslider</source>
+            </trans-unit>
+            <trans-unit id="sliderDes">
+                 <source>shows content in a slider.</source>
+            </trans-unit>   
 			
             <trans-unit id="left">
                  <source>Left Column</source>

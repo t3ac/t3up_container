@@ -17,6 +17,12 @@
              <trans-unit id="sheet.largeDevices" xml:space="preserve">
                  <source>Desktop</source>
             </trans-unit>
+              <trans-unit id="sheet.largerDevices" xml:space="preserve">
+                 <source>Wide</source>
+            </trans-unit>
+              <trans-unit id="sheet.largestDevices" xml:space="preserve">
+                 <source>Very large</source>
+            </trans-unit>  
             
             <trans-unit id="label.notset" xml:space="preserve">
                  <source>not set</source>
@@ -146,24 +152,31 @@
                 <source>2rem</source>
             </trans-unit>  
 			
-            /* Accordion classes */        
-            <trans-unit id="accordion.style.1" xml:space="preserve">
+            /* Accordion classes */     
+            <trans-unit id="label.behavior" xml:space="preserve">
+                 <source>Behavior</source>
+            </trans-unit>  
+            <trans-unit id="accordion.behavior.1" xml:space="preserve">
                  <source>Collapse</source>
             </trans-unit>         
-            <trans-unit id="accordion.style.2" xml:space="preserve">
+            <trans-unit id="accordion.behavior.2" xml:space="preserve">
                  <source>First open</source>
             </trans-unit>         
-            <trans-unit id="accordion.style.3" xml:space="preserve">
+            <trans-unit id="accordion.behavior.3" xml:space="preserve">
                  <source>Multipe</source>
             </trans-unit>            
+            
+            <trans-unit id="label.style" xml:space="preserve">
+                 <source>Design</source>
+            </trans-unit>                
             <trans-unit id="accordion.style.1" xml:space="preserve">
-                 <source>Collapse</source>
+                 <source>Plain</source>
             </trans-unit>         
             <trans-unit id="accordion.style.2" xml:space="preserve">
-                 <source>First open</source>
+                 <source>Rounded</source>
             </trans-unit>         
             <trans-unit id="accordion.style.3" xml:space="preserve">
-                 <source>Multipe</source>
+                 <source>Minimal</source>
             </trans-unit>       
                 
             /* Flex classes */
@@ -208,7 +221,67 @@
                  <source>Horizontal-alignment: stretch left to right</source>
             </trans-unit>   
             
+            /* Contentslider */            
             
+            /* Slider */
+            <trans-unit id="sheet.controls" xml:space="preserve">
+                 <source>Control</source>
+            </trans-unit>            
+            <trans-unit id="slider.animation" xml:space="preserve">
+                 <source>Animation</source>
+            </trans-unit>              
+            <trans-unit id="slider.animation.1" xml:space="preserve">
+                 <source>Slide</source>
+            </trans-unit>              
+            <trans-unit id="slider.animation.2" xml:space="preserve">
+                 <source>Fade</source>
+            </trans-unit> 
+            <trans-unit id="slider.auto" xml:space="preserve">
+                 <source>Start</source>
+            </trans-unit>             
+            <trans-unit id="label.true" xml:space="preserve">
+                 <source>True</source>
+            </trans-unit>             
+            <trans-unit id="label.false" xml:space="preserve">
+                 <source>False</source>
+            </trans-unit>      
+            <trans-unit id="slider.slidefontsize" xml:space="preserve">           
+               <source>Symbol fontsize</source>           
+            </trans-unit>                
+            
+            <trans-unit id="indicators" xml:space="preserve">           
+               <source>Control element style </source>           
+            </trans-unit>           
+             <trans-unit id="slider.indicators.1" xml:space="preserve">           
+                 <source>Standard</source>           
+             </trans-unit>                 
+             <trans-unit id="slider.indicators.2" xml:space="preserve">           
+                 <source>Standard bottom</source>           
+             </trans-unit>          
+             <trans-unit id="slider.indicators.3" xml:space="preserve">           
+                 <source>Square bottom</source>           
+             </trans-unit>                       
+             <trans-unit id="slider.indicators.4" xml:space="preserve">           
+                 <source>Square bottom outline</source>           
+             </trans-unit>                       
+             <trans-unit id="slider.slideshowoverlaycolor" xml:space="preserve">
+                 <source>Backgroundcolor for the stripes</source>
+            </trans-unit>            
+             <trans-unit id="slider.slidecolor" xml:space="preserve">
+                 <source>Color for the stripesymbol</source>
+            </trans-unit>     
+            
+            <trans-unit id="slider.controlNav" xml:space="preserve">
+                 <source>Hide control elements</source>
+            </trans-unit> 
+            <trans-unit id="slider.directionNav" xml:space="preserve">
+                 <source>Hide control directions</source>
+            </trans-unit> 
+            <trans-unit id="slider.sliderSpeed" xml:space="preserve">
+                 <source>Sliderspeed in MSec</source>
+            </trans-unit>  
+
+
             /* Misc classes */
             <trans-unit id="label.none" xml:space="preserve">
                 <source>none</source>
@@ -219,6 +292,7 @@
             <trans-unit id="label.no" xml:space="preserve">
                 <source>no</source>
             </trans-unit>
+
     
         </body>
     </file>

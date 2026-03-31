@@ -1,13 +1,13 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
     <f:layout name="Default"/>    
     <f:section name="Main">
-        <div id="accordion-{f:if(condition:data._LOCALIZED_UID, then:data._LOCALIZED_UID, else:data.uid)}"  class="t3up_accordion accordion accordion-flush">
+        <div id="accordion-{f:if(condition:data._LOCALIZED_UID, then:data._LOCALIZED_UID, else:data.uid)}"  class="t3up_accordion accordion accordion-flush {flexFormData.style}">
             <f:for each="{childrenContent}" as="child" iteration="iteration">
-                <f:if condition="{{flexFormData.style} == '0'">
+                <f:if condition="{flexFormData.behavior} == '0'">
                     <div class="accordion-item">
                           <div class="accordion-header" id="heading-c{child.uid}" >
                           <a     href="#collapse-{child.uid}"
-                                  class=" py-1 accordion-button collapsed justify-content-between" 
+                                  class="py-1 accordion-button collapsed justify-content-between" 
                                   type="button" 
                                   data-bs-toggle="collapse" 
                                   data-bs-target="#collapse-{child.uid}" 
@@ -27,11 +27,11 @@
                     </div>
                 </f:if>
                 
-                <f:if condition="{{flexFormData.style} == 'collapse'">
+                <f:if condition="{flexFormData.behavior} == 'collapse'">
                     <div class="accordion-item">
                           <div class="accordion-header" id="heading-c{child.uid}">
                           <a     href="#collapse-{child.uid}"
-                                  class=" py-1 accordion-button collapsed justify-content-between" 
+                                  class="py-1 accordion-button collapsed justify-content-between" 
                                   type="button" 
                                   data-bs-toggle="collapse" 
                                   data-bs-target="#collapse-{child.uid}" 
@@ -51,11 +51,11 @@
                     </div>
                 </f:if>
 
-                <f:if condition="{flexFormData.style} == 'first'">
+                <f:if condition="{flexFormData.behavior} == 'first'">
                   <div class="accordion-item">
                     <div class="accordion-header" id="heading-c{child.uid}">
                       <a     href="#collapse-{child.uid}"
-                              class=" py-1 accordion-button justify-content-between {f:if(condition: '{iteration.index} == 0', then: '', else: 'collapsed')}" 
+                              class="py-1 accordion-button justify-content-between {f:if(condition: '{iteration.index} == 0', then: '', else: 'collapsed')}" 
                               type="button" 
                               data-bs-toggle="collapse" 
                               data-bs-target="#collapse-{child.uid}" 
@@ -80,7 +80,7 @@
                   </div>
                 </f:if>
                 
-                <f:if condition="{flexFormData.style} == 'multiple'">
+                <f:if condition="{flexFormData.behavior} == 'multiple'">
                   <div class="accordion-item">
                     <div class="accordion-header" id="heading-c{child.uid}">
                       <a     href="#collapse-{child.uid}"
@@ -108,6 +108,3 @@
         </div>
     </f:section>        
 </html>
-
-           
-    

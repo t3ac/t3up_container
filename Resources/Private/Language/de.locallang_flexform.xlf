@@ -20,7 +20,15 @@
                  <source>Desktop</source>
                  <target state="translated">Desktop</target>                   
             </trans-unit>
-
+              <trans-unit id="sheet.largerDevices" xml:space="preserve">
+                 <source>Wide</source>
+                 <target state="translated">Breit</target>          
+            </trans-unit>
+              <trans-unit id="sheet.largestDevices" xml:space="preserve">
+                 <source>Very large</source>
+                 <target state="translated">Sehr breit</target> 
+            </trans-unit>  
+            
         
             <trans-unit id="label.col1" xml:space="preserve">
                  <source>Column 1</source>
@@ -93,19 +101,42 @@
             </trans-unit>  
 
 
-            /* Accordion classes */        
-            <trans-unit id="accordion.style.1" xml:space="preserve">
+            /* Accordion classes */      
+            <trans-unit id="label.behavior" xml:space="preserve">
+                 <source>Behavior</source>
+                 <target state="translated">Verhalten</target>
+            </trans-unit>  
+            <trans-unit id="accordion.behavior.1" xml:space="preserve">
                  <source>Collapse</source>
                  <target state="translated">Alle geschlossen</target>
             </trans-unit>         
-            <trans-unit id="accordion.style.2" xml:space="preserve">
+            <trans-unit id="accordion.behavior.2" xml:space="preserve">
                  <source>First open</source>
                  <target state="translated">Erstes geöffnet</target>
             </trans-unit>         
-            <trans-unit id="accordion.style.3" xml:space="preserve">
+            <trans-unit id="accordion.behavior.3" xml:space="preserve">
                  <source>Multipe</source>
                  <target state="translated">Individuell</target>
-            </trans-unit>       
+            </trans-unit>     
+            
+             
+            <trans-unit id="label.style" xml:space="preserve">
+                 <source>Design</source>
+            </trans-unit>                
+            <trans-unit id="accordion.style.1" xml:space="preserve">
+                 <source>Plain</source>
+                 <target state="translated">Gerade</target>                 
+            </trans-unit>         
+            <trans-unit id="accordion.style.2" xml:space="preserve">
+                 <source>Rounded</source>
+                 <target state="translated">Abgerundet</target>                 
+            </trans-unit>         
+            <trans-unit id="accordion.style.3" xml:space="preserve">
+                 <source>Minimal</source>
+                 <target state="translated">Minimal</target>                 
+            </trans-unit>              
+            
+            
             
 
             /* Column spaces */     

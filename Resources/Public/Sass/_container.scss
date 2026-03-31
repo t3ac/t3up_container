@@ -1,484 +1,211 @@
-@import '../../../../t3up/Resources/Public/Sass/mixin.scss';
+@import '../../../../t3up/Resources/Public/Sass/_mixins.scss';
 
-@import '_accordion.scss';
-@import '_tabs.scss';
+.frame-2cols,
+.frame-3cols,
+.frame-4cols{
+    &.frame-white                       {padding: 0;}
+}
+
+
+.frame-2cols,
+.frame-3cols,
+.frame-4cols{
+    > div > .stretch > .frame-white               {height: 100%;}
+}
+
 
 .frame-1cols,
 .frame-2cols,
 .frame-3cols,
 .frame-4cols{
+    .col-12                             {flex: 0 1 auto;}
 
-    .padding1 > div                                 {@include p025;}
-    .padding2 > div                                 {@include p033;}
-    .padding3 > div                                 {@include p050;}
-    .padding4 > div                                 {@include p066;}
-    .padding5 > div                                 {@include p075;;}
-    .padding6 > div                                 {@include p1;}
-    .padding7 > div                                 {@include p125;}
-    .padding8 > div                                 {@include p15;}
-    .padding9 > div                                 {@include p175;}
-    .padding10 > div                                {@include p2;}
-
+    > .spacing1 > div                     {@include mb05;}
+    > .spacing2 > div                     {@include mb06;}
+    > .spacing3 > div                     {@include mb07;}
+    > .spacing4 > div                     {@include mb1;}
+    > .spacing5 > div                     {@include mb15;}
+    > .spacing6 > div                     {@include mb2;}   
 }
 
 
-@media screen and (min-width:  582px) {
+// === Maps definieren ===
+$breakpointsA: (sm);
+$breakpointsB: (sm, md);    
+$breakpointsC: (sm, md, lg); 
+$breakpointsD: (sm, md, lg, xl); 
+$breakpointsE: (sm, md, lg, xl, xxl);      
+  
+$cols: (
+  1: $c8,
+  2: $c16,
+  3: $c25,
+  4: $c33,
+  5: $c41,
+  6: $c50,
+  7: $c58,
+  8: $c66,
+  9: $c75,
+  10: $c83,
+  11: $c91
+);
+
+$spacingsA: (
+  1: $v02,
+  2: $v03,
+  3: $v05,
+  4: $v06,
+  5: $v07,
+  6: $v1
+);
+
+$spacingsB: (
+  1: $v03,
+  2: $v04,
+  3: $v06,
+  4: $v07,
+  5: $v1,
+  6: $v15
+);
+
+$spacingsC: (
+  1: $v03,
+  2: $v04,
+  3: $v06,
+  4: $v07,
+  5: $v1,
+  6: $v15
+);
+
+// === Helper-Mixin für Spacing-Mixin-Aufruf ===
+@mixin apply-spacing($num) {
+  @if      $num == 1 { @include mx02; }
+  @else if $num == 2 { @include mx03; }
+  @else if $num == 3 { @include mx05; }
+  @else if $num == 4 { @include mx06; }
+  @else if $num == 5 { @include mx07; }
+  @else if $num == 6 { @include mx1; }
+}
+
+// === MixIn für generische Frames ===
+@mixin generate-frame($frame, $breakpointsE, $spacings) {
+  .#{$frame} {
+    @each $bp in $breakpointsE {
+      @each $col-num, $col-val in $cols {
+        @each $space-num, $space-val in $spacings {
+          .spacing#{$space-num} > .col-#{$bp}-#{$col-num} {
+            width: calc(#{$col-val} - #{$space-val});
+            @include apply-spacing($space-num);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 576px) {
     .frame-2cols,
     .frame-3cols,
-    .frame-4cols{    
-        .spacing1 > div                         {@include mx025;}
-        .spacing2 > div                         {@include mx033;}
-        .spacing3 > div                         {@include mx050;}
-        .spacing4 > div                         {@include mx066;}
-        .spacing5 > div                         {@include mx075;}
-        .spacing6 > div                         {@include mx1;}
-    }
-    
-    
-    
-    .frame-2cols {
-         .spacing1 {            
-            .col-md-1                           {width:   calc(8.33333333333%    - #{$v025});}
-            .col-md-2                           {width:   calc(16.6666666667%    - #{$v025});}
-            .col-md-3                           {width:   calc(25%               - #{$v025});}
-            .col-md-4                           {width:   calc(33.3333333333%    - #{$v025});}
-            .col-md-5                           {width:   calc(41.6666666667%    - #{$v025});}
-            .col-md-6                           {width:   calc(50%               - #{$v025});}
-            .col-md-7                           {width:   calc(58.33333333333%   - #{$v025});}
-            .col-md-8                           {width:   calc(66.6666666667%    - #{$v025});}
-            .col-md-9                           {width:   calc(75%               - #{$v025});}
-            .col-md-10                          {width:   calc(83.3333333333%    - #{$v025});}
-            .col-md-11                          {width:   calc(91.6666666667%    - #{$v025});}
-        }
-    
-         .spacing2 {            
-            .col-md-1                           {width:   calc(8.33333333333%    - #{$v033});}
-            .col-md-2                           {width:   calc(16.6666666667%    - #{$v033});}
-            .col-md-3                           {width:   calc(25%               - #{$v033});}
-            .col-md-4                           {width:   calc(33.3333333333%    - #{$v033});}
-            .col-md-5                           {width:   calc(41.6666666667%    - #{$v033});}
-            .col-md-6                           {width:   calc(50%               - #{$v033});}
-            .col-md-7                           {width:   calc(58.33333333333%   - #{$v033});}
-            .col-md-8                           {width:   calc(66.6666666667%    - #{$v033});}
-            .col-md-9                           {width:   calc(75%               - #{$v033});}
-            .col-md-10                          {width:   calc(83.3333333333%    - #{$v033});}
-            .col-md-11                          {width:   calc(91.6666666667%    - #{$v033});}
-        }
-        
-          .spacing3 {            
-            .col-md-1                           {width:   calc(8.33333333333%    - #{$v050});}
-            .col-md-2                           {width:   calc(16.6666666667%    - #{$v050});}
-            .col-md-3                           {width:   calc(25%               - #{$v050});}
-            .col-md-4                           {width:   calc(33.3333333333%    - #{$v050});}
-            .col-md-5                           {width:   calc(41.6666666667%    - #{$v050});}
-            .col-md-6                           {width:   calc(50%               - #{$v050});}
-            .col-md-7                           {width:   calc(58.33333333333%   - #{$v050});}
-            .col-md-8                           {width:   calc(66.6666666667%    - #{$v050});}
-            .col-md-9                           {width:   calc(75%               - #{$v050});}
-            .col-md-10                          {width:   calc(83.3333333333%    - #{$v050});}
-            .col-md-11                          {width:   calc(91.6666666667%    - #{$v050});}
-        }
-       
-          .spacing4 {            
-            .col-md-1                           {width:   calc(8.33333333333%    - #{$v066});}
-            .col-md-2                           {width:   calc(16.6666666667%    - #{$v066});}
-            .col-md-3                           {width:   calc(25%               - #{$v066});}
-            .col-md-4                           {width:   calc(33.3333333333%    - #{$v066});}
-            .col-md-5                           {width:   calc(41.6666666667%    - #{$v066});}
-            .col-md-6                           {width:   calc(50%               - #{$v066});}
-            .col-md-7                           {width:   calc(58.33333333333%   - #{$v066});}
-            .col-md-8                           {width:   calc(66.6666666667%    - #{$v066});}
-            .col-md-9                           {width:   calc(75%               - #{$v066});}
-            .col-md-10                          {width:   calc(83.3333333333%    - #{$v066});}
-            .col-md-11                          {width:   calc(91.6666666667%    - #{$v066});}
-        }
-       
-         .spacing5 {            
-            .col-md-1                           {width:   calc(8.33333333333%    - #{$v075});}
-            .col-md-2                           {width:   calc(16.6666666667%    - #{$v075});}
-            .col-md-3                           {width:   calc(25%               - #{$v075});}
-            .col-md-4                           {width:   calc(33.3333333333%    - #{$v075});}
-            .col-md-5                           {width:   calc(41.6666666667%    - #{$v075});}
-            .col-md-6                           {width:   calc(50%               - #{$v075});}
-            .col-md-7                           {width:   calc(58.33333333333%   - #{$v075});}
-            .col-md-8                           {width:   calc(66.6666666667%    - #{$v075});}
-            .col-md-9                           {width:   calc(75%               - #{$v075});}
-            .col-md-10                          {width:   calc(83.3333333333%    - #{$v075});}
-            .col-md-11                          {width:   calc(91.6666666667%    - #{$v075});}
-        }
-       
-         .spacing6 {            
-            .col-md-1                           {width:   calc(8.33333333333%    - #{$v1});}
-            .col-md-2                           {width:   calc(16.6666666667%    - #{$v1});}
-            .col-md-3                           {width:   calc(25%               - #{$v1});}
-            .col-md-4                           {width:   calc(33.3333333333%    - #{$v1});}
-            .col-md-5                           {width:   calc(41.6666666667%    - #{$v1});}
-            .col-md-6                           {width:   calc(50%               - #{$v1});}
-            .col-md-7                           {width:   calc(58.33333333333%   - #{$v1});}
-            .col-md-8                           {width:   calc(66.6666666667%    - #{$v1});}
-            .col-md-9                           {width:   calc(75%               - #{$v1});}
-            .col-md-10                          {width:   calc(83.3333333333%    - #{$v1});}
-            .col-md-11                          {width:   calc(91.6666666667%    - #{$v1});}
-        }
-        
-        /* lg *******************************************/
-        
-         .spacing1 {            
-            .col-lg-1                           {width:   calc(8.33333333333%    - #{$v025});}
-            .col-lg-2                           {width:   calc(16.6666666667%    - #{$v025});}
-            .col-lg-3                           {width:   calc(25%               - #{$v025});}
-            .col-lg-4                           {width:   calc(33.3333333333%    - #{$v025});}
-            .col-lg-5                           {width:   calc(41.6666666667%    - #{$v025});}
-            .col-lg-6                           {width:   calc(50%               - #{$v025});}
-            .col-lg-7                           {width:   calc(58.33333333333%   - #{$v025});}
-            .col-lg-8                           {width:   calc(66.6666666667%    - #{$v025});}
-            .col-lg-9                           {width:   calc(75%               - #{$v025});}
-            .col-lg-10                          {width:   calc(83.3333333333%    - #{$v025});}
-            .col-lg-11                          {width:   calc(91.6666666667%    - #{$v025});}
-        }
-    
-         .spacing2 {            
-            .col-lg-1                           {width:   calc(8.33333333333%    - #{$v033});}
-            .col-lg-2                           {width:   calc(16.6666666667%    - #{$v033});}
-            .col-lg-3                           {width:   calc(25%               - #{$v033});}
-            .col-lg-4                           {width:   calc(33.3333333333%    - #{$v033});}
-            .col-lg-5                           {width:   calc(41.6666666667%    - #{$v033});}
-            .col-lg-6                           {width:   calc(50%               - #{$v033});}
-            .col-lg-7                           {width:   calc(58.33333333333%   - #{$v033});}
-            .col-lg-8                           {width:   calc(66.6666666667%    - #{$v033});}
-            .col-lg-9                           {width:   calc(75%               - #{$v033});}
-            .col-lg-10                          {width:   calc(83.3333333333%    - #{$v033});}
-            .col-lg-11                          {width:   calc(91.6666666667%    - #{$v033});}
-        }
-        
-          .spacing3 {            
-            .col-lg-1                           {width:   calc(8.33333333333%    - #{$v050});}
-            .col-lg-2                           {width:   calc(16.6666666667%    - #{$v050});}
-            .col-lg-3                           {width:   calc(25%               - #{$v050});}
-            .col-lg-4                           {width:   calc(33.3333333333%    - #{$v050});}
-            .col-lg-5                           {width:   calc(41.6666666667%    - #{$v050});}
-            .col-lg-6                           {width:   calc(50%               - #{$v050});}
-            .col-lg-7                           {width:   calc(58.33333333333%   - #{$v050});}
-            .col-lg-8                           {width:   calc(66.6666666667%    - #{$v050});}
-            .col-lg-9                           {width:   calc(75%               - #{$v050});}
-            .col-lg-10                          {width:   calc(83.3333333333%    - #{$v050});}
-            .col-lg-11                          {width:   calc(91.6666666667%    - #{$v050});}
-        }
-       
-          .spacing4 {            
-            .col-lg-1                           {width:   calc(8.33333333333%    - #{$v066});}
-            .col-lg-2                           {width:   calc(16.6666666667%    - #{$v066});}
-            .col-lg-3                           {width:   calc(25%               - #{$v066});}
-            .col-lg-4                           {width:   calc(33.3333333333%    - #{$v066});}
-            .col-lg-5                           {width:   calc(41.6666666667%    - #{$v066});}
-            .col-lg-6                           {width:   calc(50%               - #{$v066});}
-            .col-lg-7                           {width:   calc(58.33333333333%   - #{$v066});}
-            .col-lg-8                           {width:   calc(66.6666666667%    - #{$v066});}
-            .col-lg-9                           {width:   calc(75%               - #{$v066});}
-            .col-lg-10                          {width:   calc(83.3333333333%    - #{$v066});}
-            .col-lg-11                          {width:   calc(91.6666666667%    - #{$v066});}
-        }
-       
-         .spacing5 {            
-            .col-lg-1                           {width:   calc(8.33333333333%    - #{$v075});}
-            .col-lg-2                           {width:   calc(16.6666666667%    - #{$v075});}
-            .col-lg-3                           {width:   calc(25%               - #{$v075});}
-            .col-lg-4                           {width:   calc(33.3333333333%    - #{$v075});}
-            .col-lg-5                           {width:   calc(41.6666666667%    - #{$v075});}
-            .col-lg-6                           {width:   calc(50%               - #{$v075});}
-            .col-lg-7                           {width:   calc(58.33333333333%   - #{$v075});}
-            .col-lg-8                           {width:   calc(66.6666666667%    - #{$v075});}
-            .col-lg-9                           {width:   calc(75%               - #{$v075});}
-            .col-lg-10                          {width:   calc(83.3333333333%    - #{$v075});}
-            .col-lg-11                          {width:   calc(91.6666666667%    - #{$v075});}
-        }
-       
-         .spacing6 {            
-            .col-lg-1                           {width:   calc(8.33333333333%    - #{$v1});}
-            .col-lg-2                           {width:   calc(16.6666666667%    - #{$v1});}
-            .col-lg-3                           {width:   calc(25%               - #{$v1});}
-            .col-lg-4                           {width:   calc(33.3333333333%    - #{$v1});}
-            .col-lg-5                           {width:   calc(41.6666666667%    - #{$v1});}
-            .col-lg-6                           {width:   calc(50%               - #{$v1});}
-            .col-lg-7                           {width:   calc(58.33333333333%   - #{$v1});}
-            .col-lg-8                           {width:   calc(66.6666666667%    - #{$v1});}
-            .col-lg-9                           {width:   calc(75%               - #{$v1});}
-            .col-lg-10                          {width:   calc(83.3333333333%    - #{$v1});}
-            .col-lg-11                          {width:   calc(91.6666666667%    - #{$v1});}
-        }
-     
-        .row > div:first-of-type                {margin-left:0;}
-        .row > div:last-of-type                 {margin-right:0;}
-    }
-
-    .frame-3cols {
-         .spacing1 {            
-            .col-md-1                           {width:   calc(8.33333333333%    - #{$v033});}
-            .col-md-2                           {width:   calc(16.6666666667%    - #{$v033});}
-            .col-md-3                           {width:   calc(25%               - #{$v033});}
-            .col-md-4                           {width:   calc(33.3333333333%    - #{$v033});}
-            .col-md-5                           {width:   calc(41.6666666667%    - #{$v033});}
-            .col-md-6                           {width:   calc(50%               - #{$v033});}
-            .col-md-7                           {width:   calc(58.33333333333%   - #{$v033});}
-            .col-md-8                           {width:   calc(66.6666666667%    - #{$v033});}
-            .col-md-9                           {width:   calc(75%               - #{$v033});}
-            .col-md-10                          {width:   calc(83.3333333333%    - #{$v033});}
-            .col-md-11                          {width:   calc(91.6666666667%    - #{$v033});}
-        }
-    
-         .spacing2 {            
-            .col-md-1                           {width:   calc(8.33333333333%    - #{$v050});}
-            .col-md-2                           {width:   calc(16.6666666667%    - #{$v050});}
-            .col-md-3                           {width:   calc(25%               - #{$v050});}
-            .col-md-4                           {width:   calc(33.3333333333%    - #{$v050});}
-            .col-md-5                           {width:   calc(41.6666666667%    - #{$v050});}
-            .col-md-6                           {width:   calc(50%               - #{$v050});}
-            .col-md-7                           {width:   calc(58.33333333333%   - #{$v050});}
-            .col-md-8                           {width:   calc(66.6666666667%    - #{$v050});}
-            .col-md-9                           {width:   calc(75%               - #{$v050});}
-            .col-md-10                          {width:   calc(83.3333333333%    - #{$v050});}
-            .col-md-11                          {width:   calc(91.6666666667%    - #{$v050});}
-        }
-        
-          .spacing3 {            
-            .col-md-1                           {width:   calc(8.33333333333%    - #{$v075});}
-            .col-md-2                           {width:   calc(16.6666666667%    - #{$v075});}
-            .col-md-3                           {width:   calc(25%               - #{$v075});}
-            .col-md-4                           {width:   calc(33.3333333333%    - #{$v075});}
-            .col-md-5                           {width:   calc(41.6666666667%    - #{$v075});}
-            .col-md-6                           {width:   calc(50%               - #{$v075});}
-            .col-md-7                           {width:   calc(58.33333333333%   - #{$v075});}
-            .col-md-8                           {width:   calc(66.6666666667%    - #{$v075});}
-            .col-md-9                           {width:   calc(75%               - #{$v075});}
-            .col-md-10                          {width:   calc(83.3333333333%    - #{$v075});}
-            .col-md-11                          {width:   calc(91.6666666667%    - #{$v075});}
-        }
-       
-          .spacing4 {            
-            .col-md-1                           {width:   calc(8.33333333333%    - #{$v090});}
-            .col-md-2                           {width:   calc(16.6666666667%    - #{$v090});}
-            .col-md-3                           {width:   calc(25%               - #{$v090});}
-            .col-md-4                           {width:   calc(33.3333333333%    - #{$v090});}
-            .col-md-5                           {width:   calc(41.6666666667%    - #{$v090});}
-            .col-md-6                           {width:   calc(50%               - #{$v090});}
-            .col-md-7                           {width:   calc(58.33333333333%   - #{$v090});}
-            .col-md-8                           {width:   calc(66.6666666667%    - #{$v090});}
-            .col-md-9                           {width:   calc(75%               - #{$v090});}
-            .col-md-10                          {width:   calc(83.3333333333%    - #{$v090});}
-            .col-md-11                          {width:   calc(91.6666666667%    - #{$v090});}
-        }
-       
-         .spacing5 {            
-            .col-md-1                           {width:   calc(8.33333333333%    - #{$v1});}
-            .col-md-2                           {width:   calc(16.6666666667%    - #{$v1});}
-            .col-md-3                           {width:   calc(25%               - #{$v1});}
-            .col-md-4                           {width:   calc(33.3333333333%    - #{$v1});}
-            .col-md-5                           {width:   calc(41.6666666667%    - #{$v1});}
-            .col-md-6                           {width:   calc(50%               - #{$v1});}
-            .col-md-7                           {width:   calc(58.33333333333%   - #{$v1});}
-            .col-md-8                           {width:   calc(66.6666666667%    - #{$v1});}
-            .col-md-9                           {width:   calc(75%               - #{$v1});}
-            .col-md-10                          {width:   calc(83.3333333333%    - #{$v1});}
-            .col-md-11                          {width:   calc(91.6666666667%    - #{$v1});}
-        }
-       
-         .spacing6 {            
-            .col-md-1                           {width:   calc(8.33333333333%    - #{$v135});}
-            .col-md-2                           {width:   calc(16.6666666667%    - #{$v135});}
-            .col-md-3                           {width:   calc(25%               - #{$v135});}
-            .col-md-4                           {width:   calc(33.3333333333%    - #{$v135});}
-            .col-md-5                           {width:   calc(41.6666666667%    - #{$v135});}
-            .col-md-6                           {width:   calc(50%               - #{$v135});}
-            .col-md-7                           {width:   calc(58.33333333333%   - #{$v135});}
-            .col-md-8                           {width:   calc(66.6666666667%    - #{$v135});}
-            .col-md-9                           {width:   calc(75%               - #{$v135});}
-            .col-md-10                          {width:   calc(83.3333333333%    - #{$v135});}
-            .col-md-11                          {width:   calc(91.6666666667%    - #{$v135});}
-        }
-        
-        /* lg *******************************************/
- 
-         .spacing1 {            
-            .col-lg-1                           {width:   calc(8.33333333333%    - #{$v033});}
-            .col-lg-2                           {width:   calc(16.6666666667%    - #{$v033});}
-            .col-lg-3                           {width:   calc(25%               - #{$v033});}
-            .col-lg-4                           {width:   calc(33.3333333333%    - #{$v033});}
-            .col-lg-5                           {width:   calc(41.6666666667%    - #{$v033});}
-            .col-lg-6                           {width:   calc(50%               - #{$v033});}
-            .col-lg-7                           {width:   calc(58.33333333333%   - #{$v033});}
-            .col-lg-8                           {width:   calc(66.6666666667%    - #{$v033});}
-            .col-lg-9                           {width:   calc(75%               - #{$v033});}
-            .col-lg-10                          {width:   calc(83.3333333333%    - #{$v033});}
-            .col-lg-11                          {width:   calc(91.6666666667%    - #{$v033});}
-        }
-    
-         .spacing2 {            
-            .col-lg-1                           {width:   calc(8.33333333333%    - #{$v050});}
-            .col-lg-2                           {width:   calc(16.6666666667%    - #{$v050});}
-            .col-lg-3                           {width:   calc(25%               - #{$v050});}
-            .col-lg-4                           {width:   calc(33.3333333333%    - #{$v050});}
-            .col-lg-5                           {width:   calc(41.6666666667%    - #{$v050});}
-            .col-lg-6                           {width:   calc(50%               - #{$v050});}
-            .col-lg-7                           {width:   calc(58.33333333333%   - #{$v050});}
-            .col-lg-8                           {width:   calc(66.6666666667%    - #{$v050});}
-            .col-lg-9                           {width:   calc(75%               - #{$v050});}
-            .col-lg-10                          {width:   calc(83.3333333333%    - #{$v050});}
-            .col-lg-11                          {width:   calc(91.6666666667%    - #{$v050});}
-        }
-        
-          .spacing3 {            
-            .col-lg-1                           {width:   calc(8.33333333333%    - #{$v075});}
-            .col-lg-2                           {width:   calc(16.6666666667%    - #{$v075});}
-            .col-lg-3                           {width:   calc(25%               - #{$v075});}
-            .col-lg-4                           {width:   calc(33.3333333333%    - #{$v075});}
-            .col-lg-5                           {width:   calc(41.6666666667%    - #{$v075});}
-            .col-lg-6                           {width:   calc(50%               - #{$v075});}
-            .col-lg-7                           {width:   calc(58.33333333333%   - #{$v075});}
-            .col-lg-8                           {width:   calc(66.6666666667%    - #{$v075});}
-            .col-lg-9                           {width:   calc(75%               - #{$v075});}
-            .col-lg-10                          {width:   calc(83.3333333333%    - #{$v075});}
-            .col-lg-11                          {width:   calc(91.6666666667%    - #{$v075});}
-        }
-       
-          .spacing4 {            
-            .col-lg-1                           {width:   calc(8.33333333333%    - #{$v090});}
-            .col-lg-2                           {width:   calc(16.6666666667%    - #{$v090});}
-            .col-lg-3                           {width:   calc(25%               - #{$v090});}
-            .col-lg-4                           {width:   calc(33.3333333333%    - #{$v090});}
-            .col-lg-5                           {width:   calc(41.6666666667%    - #{$v090});}
-            .col-lg-6                           {width:   calc(50%               - #{$v090});}
-            .col-lg-7                           {width:   calc(58.33333333333%   - #{$v090});}
-            .col-lg-8                           {width:   calc(66.6666666667%    - #{$v090});}
-            .col-lg-9                           {width:   calc(75%               - #{$v090});}
-            .col-lg-10                          {width:   calc(83.3333333333%    - #{$v090});}
-            .col-lg-11                          {width:   calc(91.6666666667%    - #{$v090});}
-        }
-       
-         .spacing5 {            
-            .col-lg-1                           {width:   calc(8.33333333333%    - #{$v1});}
-            .col-lg-2                           {width:   calc(16.6666666667%    - #{$v1});}
-            .col-lg-3                           {width:   calc(25%               - #{$v1});}
-            .col-lg-4                           {width:   calc(33.3333333333%    - #{$v1});}
-            .col-lg-5                           {width:   calc(41.6666666667%    - #{$v1});}
-            .col-lg-6                           {width:   calc(50%               - #{$v1});}
-            .col-lg-7                           {width:   calc(58.33333333333%   - #{$v1});}
-            .col-lg-8                           {width:   calc(66.6666666667%    - #{$v1});}
-            .col-lg-9                           {width:   calc(75%               - #{$v1});}
-            .col-lg-10                          {width:   calc(83.3333333333%    - #{$v1});}
-            .col-lg-11                          {width:   calc(91.6666666667%    - #{$v1});}
-        }
-       
-         .spacing6 {            
-            .col-lg-1                           {width:   calc(8.33333333333%    - #{$v135});}
-            .col-lg-2                           {width:   calc(16.6666666667%    - #{$v135});}
-            .col-lg-3                           {width:   calc(25%               - #{$v135});}
-            .col-lg-4                           {width:   calc(33.3333333333%    - #{$v135});}
-            .col-lg-5                           {width:   calc(41.6666666667%    - #{$v135});}
-            .col-lg-6                           {width:   calc(50%               - #{$v135});}
-            .col-lg-7                           {width:   calc(58.33333333333%   - #{$v135});}
-            .col-lg-8                           {width:   calc(66.6666666667%    - #{$v135});}
-            .col-lg-9                           {width:   calc(75%               - #{$v135});}
-            .col-lg-10                          {width:   calc(83.3333333333%    - #{$v135});}
-            .col-lg-11                          {width:   calc(91.6666666667%    - #{$v135});}
-        }
-
-        .row > div:first-of-type                {margin-left:0;}
-        .row > div:last-of-type                 {margin-right:0;}
-    
-    }
-    
     .frame-4cols {
-         .spacing1 {            
-            .col-md-1                           {width:   calc(8.33333333333%    - #{$v040});}
-            .col-md-2                           {width:   calc(16.6666666667%    - #{$v040});}
-            .col-md-3                           {width:   calc(25%               - #{$v040});}
-            .col-md-4                           {width:   calc(33.3333333333%    - #{$v040});}
-            .col-md-5                           {width:   calc(41.6666666667%    - #{$v040});}
-            .col-md-6                           {width:   calc(50%               - #{$v040});}
-            .col-md-7                           {width:   calc(58.33333333333%   - #{$v040});}
-            .col-md-8                           {width:   calc(66.6666666667%    - #{$v040});}
-            .col-md-9                           {width:   calc(75%               - #{$v040});}
-            .col-md-10                          {width:   calc(83.3333333333%    - #{$v040});}
-            .col-md-11                          {width:   calc(91.6666666667%    - #{$v040});}
+        div > .col {
+          width: $c50;
         }
-    
-         .spacing2 {            
-            .col-md-1                           {width:   calc(8.33333333333%    - #{$v050});}
-            .col-md-2                           {width:   calc(16.6666666667%    - #{$v050});}
-            .col-md-3                           {width:   calc(25%               - #{$v050});}
-            .col-md-4                           {width:   calc(33.3333333333%    - #{$v050});}
-            .col-md-5                           {width:   calc(41.6666666667%    - #{$v050});}
-            .col-md-6                           {width:   calc(50%               - #{$v050});}
-            .col-md-7                           {width:   calc(58.33333333333%   - #{$v050});}
-            .col-md-8                           {width:   calc(66.6666666667%    - #{$v050});}
-            .col-md-9                           {width:   calc(75%               - #{$v050});}
-            .col-md-10                          {width:   calc(83.3333333333%    - #{$v050});}
-            .col-md-11                          {width:   calc(91.6666666667%    - #{$v050});}
-        }
-        
-          .spacing3 {            
-            .col-md-1                           {width:   calc(8.33333333333%    - #{$v075});}
-            .col-md-2                           {width:   calc(16.6666666667%    - #{$v075});}
-            .col-md-3                           {width:   calc(25%               - #{$v075});}
-            .col-md-4                           {width:   calc(33.3333333333%    - #{$v075});}
-            .col-md-5                           {width:   calc(41.6666666667%    - #{$v075});}
-            .col-md-6                           {width:   calc(50%               - #{$v075});}
-            .col-md-7                           {width:   calc(58.33333333333%   - #{$v075});}
-            .col-md-8                           {width:   calc(66.6666666667%    - #{$v075});}
-            .col-md-9                           {width:   calc(75%               - #{$v075});}
-            .col-md-10                          {width:   calc(83.3333333333%    - #{$v075});}
-            .col-md-11                          {width:   calc(91.6666666667%    - #{$v075});}
-        }
-       
-          .spacing4 {            
-            .col-md-1                           {width:   calc(8.33333333333%    - #{$v1});}
-            .col-md-2                           {width:   calc(16.6666666667%    - #{$v1});}
-            .col-md-3                           {width:   calc(25%               - #{$v1});}
-            .col-md-4                           {width:   calc(33.3333333333%    - #{$v1});}
-            .col-md-5                           {width:   calc(41.6666666667%    - #{$v1});}
-            .col-md-6                           {width:   calc(50%               - #{$v1});}
-            .col-md-7                           {width:   calc(58.33333333333%   - #{$v1});}
-            .col-md-8                           {width:   calc(66.6666666667%    - #{$v1});}
-            .col-md-9                           {width:   calc(75%               - #{$v1});}
-            .col-md-10                          {width:   calc(83.3333333333%    - #{$v1});}
-            .col-md-11                          {width:   calc(91.6666666667%    - #{$v1});}
-        }
-       
-         .spacing5 {            
-            .col-md-1                           {width:   calc(8.33333333333%    - #{$v125});}
-            .col-md-2                           {width:   calc(16.6666666667%    - #{$v125});}
-            .col-md-3                           {width:   calc(25%               - #{$v125});}
-            .col-md-4                           {width:   calc(33.3333333333%    - #{$v125});}
-            .col-md-5                           {width:   calc(41.6666666667%    - #{$v125});}
-            .col-md-6                           {width:   calc(50%               - #{$v125});}
-            .col-md-7                           {width:   calc(58.33333333333%   - #{$v125});}
-            .col-md-8                           {width:   calc(66.6666666667%    - #{$v125});}
-            .col-md-9                           {width:   calc(75%               - #{$v125});}
-            .col-md-10                          {width:   calc(83.3333333333%    - #{$v125});}
-            .col-md-11                          {width:   calc(91.6666666667%    - #{$v125});}
-        }
-       
-         .spacing6 {            
-            .col-md-1                           {width:   calc(8.33333333333%    - #{$v150});}
-            .col-md-2                           {width:   calc(16.6666666667%    - #{$v150});}
-            .col-md-3                           {width:   calc(25%               - #{$v150});}
-            .col-md-4                           {width:   calc(33.3333333333%    - #{$v150});}
-            .col-md-5                           {width:   calc(41.6666666667%    - #{$v150});}
-            .col-md-6                           {width:   calc(50%               - #{$v150});}
-            .col-md-7                           {width:   calc(58.33333333333%   - #{$v150});}
-            .col-md-8                           {width:   calc(66.6666666667%    - #{$v150});}
-            .col-md-9                           {width:   calc(75%               - #{$v150});}
-            .col-md-10                          {width:   calc(83.3333333333%    - #{$v150});}
-            .col-md-11                          {width:   calc(91.6666666667%    - #{$v150});}
-        }
-        
-        /* lg *******************************************/
 
-
-        .row > div:first-of-type                {margin-left:0;}
-        .row > div:last-of-type                 {margin-right:0;}
-    
+    // === Schleifen für .col ohne Breakpoint ===
+    @each $space-num, $space-val in $spacingsA {
+      .spacing#{$space-num} > .col {
+        width: calc(#{$c50} - #{$space-val});
+        @include apply-spacing($space-num);
+      }
     }
 
+    // === Schleifen für alle Breakpoints / Spalten / Spacings ===
+    @each $bp in $breakpointsE {
+      @each $col-num, $col-val in $cols {
+        @each $space-num, $space-val in $spacingsA {
+          .spacing#{$space-num} > .col-#{$bp}-#{$col-num} {
+            width: calc(#{$col-val} - #{$space-val});
+            @include apply-spacing($space-num);
+          }
+        }
+      }
+    }
+  }
+    .frame-2cols {
+    // === Nth-child Regeln ===
+        .row > div {
+          &:nth-child(odd)  {margin-left: 0;}
+          &:nth-child(even) {margin-right:0;}
+        }
+    }  
 }
-    
+
+@media screen and (max-width: 767px){
+    .frame-3cols,
+    .frame-4cols {
+        .row > div{
+            &:nth-child(odd)             {margin-left: 0;}
+            &:nth-child(even)            {margin-right:0;}
+        }
+    }
+}
+
+@media screen and (min-width: 768px){
+    .frame-3cols {
+        div > .col {width: $c33;}
+
+        // === Schleifen für .col ohne Breakpoint ===
+        @each $space-num, $space-val in $spacingsB {
+          .spacing#{$space-num} > .col {
+            width: calc(#{$c33} - #{$space-val});
+            @include apply-spacing($space-num);
+          }
+        }
+
+        .row > div{
+            &:first-of-type              {margin-left: 0;}
+            &:nth-child(3n + 1)          {margin-left: 0;}
+            &:nth-child(3n)              {margin-right:0;}
+        }
+    }   
+  
+    .frame-4cols {
+        div > .col {width: $c25;}
+        
+        // === Schleifen für .col ohne Breakpoint ===
+        @each $space-num, $space-val in $spacingsC {
+          .spacing#{$space-num} > .col {
+            width: calc(#{$c25} - #{$space-val});
+            @include apply-spacing($space-num);
+          }
+        }
+
+        .row > div{
+            &:first-of-type              {margin-left: 0;}
+            &:nth-child(4n + 1)          {margin-left: 0;}
+            &:nth-child(4n)              {margin-right:0;}
+        }
+    }     
+}
+
+// === 2. Media Queries aufrufen ===
+@media screen and (min-width: 768px) {
+  @include generate-frame('frame-3cols', $breakpointsB, $spacingsB);
+  @include generate-frame('frame-4cols', $breakpointsB, $spacingsC);
+}
+
+@media screen and (min-width: 992px) {
+  @include generate-frame('frame-3cols', $breakpointsC, $spacingsB);
+  @include generate-frame('frame-4cols', $breakpointsC, $spacingsC);
+}
+
+@media screen and (min-width: 1200px) {
+  @include generate-frame('frame-3cols', $breakpointsD, $spacingsB);
+  @include generate-frame('frame-4cols', $breakpointsD, $spacingsC);
+}
+
+@media screen and (min-width: 1400px) {
+  @include generate-frame('frame-3cols', $breakpointsE, $spacingsB);
+  @include generate-frame('frame-4cols', $breakpointsE, $spacingsC);
+}
+        

@@ -2,43 +2,43 @@
 <f:spaceless>
     <f:layout name="Default"/>
     <f:section name="Main">
-        <div class="row w-100 {f:if(condition: flexFormData.padding, then: 'padding{flexFormData.padding}')} {f:if(condition: flexFormData.spacing, then: 'spacing{flexFormData.spacing}')} {f:if(condition: data.layout, then: '{data.layout}')} {f:if(condition: flexFormData.halign, then: '{flexFormData.halign}')} {f:if(condition: flexFormData.valign, then: '{flexFormData.valign}')}">
+        <div class="row w-100 {f:if(condition: flexFormData.spacing, then: 'spacing{flexFormData.spacing}')} {f:if(condition: data.layout, then: '{data.layout}')} {f:if(condition: flexFormData.halign, then: '{flexFormData.halign}')} {f:if(condition: flexFormData.valign, then: '{flexFormData.valign}')}">
             <f:if condition="{childrenLeft}">
                 <f:then>
-                    <div class="col {flexFormData.Col1} {flexFormData.mdCol1} {flexFormData.lgCol1} {flexFormData.col31class}">
+                    <div class="{flexFormData.Col1} {flexFormData.smCol1} {flexFormData.mdCol1} {flexFormData.lgCol1}  {flexFormData.xlCol1} {flexFormData.xxlCol1} {flexFormData.col31class} col">
                         <f:for each="{childrenLeft}" as="child">
                             <f:format.raw>{child.renderedContent}</f:format.raw>
                         </f:for>
                     </div>
                 </f:then>
                 <f:else>
-                    <div class="col {flexFormData.Col1} {flexFormData.mdCol1} {flexFormData.lgCol1} {flexFormData.col31class}">
+                    <div class="{flexFormData.Col1} {flexFormData.smCol1} {flexFormData.mdCol1} {flexFormData.lgCol1}  {flexFormData.xlCol1} {flexFormData.xxlCol1} {flexFormData.col31class} col">
                     </div>
                 </f:else>  
             </f:if>
             <f:if condition="{childrenCenter}">
                 <f:then>            
-                <div class="col {flexFormData.Col2} {flexFormData.mdCol2} {flexFormData.lgCol2} {flexFormData.col32class}">
+                <div class="{flexFormData.Col2} {flexFormData.smCol2} {flexFormData.mdCol2} {flexFormData.lgCol2}  {flexFormData.xlCol2} {flexFormData.xxlCol2} {flexFormData.col32class} col">
                     <f:for each="{childrenCenter}" as="child">
                         <f:format.raw>{child.renderedContent}</f:format.raw>
                     </f:for>
                 </div>
                 </f:then>
                 <f:else>    
-                <div class="col {flexFormData.Col2} {flexFormData.mdCol2} {flexFormData.lgCol2} {flexFormData.col32class}">
+                <div class="{flexFormData.Col2} {flexFormData.smCol2} {flexFormData.mdCol2} {flexFormData.lgCol2} {flexFormData.xlCol2} {flexFormData.xxlCol2} {flexFormData.col32class} col">
                     </div>                
                 </f:else>                              
             </f:if>   
             <f:if condition="{childrenRight}">
                 <f:then>            
-                <div class="col {flexFormData.Col3} {flexFormData.mdCol3} {flexFormData.lgCol3} {flexFormData.col33class}">
+                <div class="{flexFormData.Col3} {flexFormData.smCol3} {flexFormData.mdCol3} {flexFormData.lgCol3} {flexFormData.xlCol3} {flexFormData.xxlCol3} {flexFormData.col33class} col">
                     <f:for each="{childrenRight}" as="child">
                         <f:format.raw>{child.renderedContent}</f:format.raw>
                     </f:for>
                 </div>
                 </f:then>
                 <f:else>    
-                <div class="col {flexFormData.Col3} {flexFormData.mdCol3} {flexFormData.lgCol3} {flexFormData.col33class}">
+                <div class="{flexFormData.Col3} {flexFormData.smCol3} {flexFormData.mdCol3} {flexFormData.lgCol3}  {flexFormData.xlCol3} {flexFormData.xxlCol3} {flexFormData.col33class} col">
                     </div>                
                 </f:else>                              
             </f:if>   

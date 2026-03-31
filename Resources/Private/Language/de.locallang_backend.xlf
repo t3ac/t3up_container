@@ -72,7 +72,15 @@
                 <target state="translated">Inhalte in Tabulatoren anzeigen</target>      
             </trans-unit>   
               
-            
+            <trans-unit id="silder">
+                 <source>Contentslider</source>
+                 <target state="translated">Slider für Inhalte</target>  
+            </trans-unit>
+            <trans-unit id="sliderDes">
+                 <source>shows content in a slider.</source>
+                <target state="translated">Inhalte in einem Slider anzeigen</target>   
+            </trans-unit> 
+
             <trans-unit id="left">
                  <source>Left Column</source>
                 <target state="translated">Linke Spalte</target> 

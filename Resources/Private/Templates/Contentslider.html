@@ -1,0 +1,33 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:spaceless>
+
+	<f:layout name="Default"/>
+
+	<f:section name="Main">
+			<div id="slideshow{data.uid}" class="t3up_slider {data.frame_class} carousel slide {f:if(condition: flexFormData.animation, then: 'carousel-fade')}"   data-bs-ride="carousel" data-bs-interval="{flexFormData.auto}"  >
+			    <!-- Indicators -->
+			    <ol class="carousel-indicators {flexFormData.indicators} {f:if(condition: flexFormData.controlNav, then: 'd-none')} ">
+			    	<f:for each="{childrenContent}" as="child" iteration="iteration">
+						<li type="button" data-target="#slideshow{data.uid}"  data-bs-target="#slideshow{data.uid}"   data-slide-to="{iteration.index}" data-bs-slide-to="{iteration.index}" class="{f:if(condition: '{iteration.isFirst}', then: 'active')}"></li>	    	
+					</f:for>
+			    </ol> 
+			  	<div class="carousel-inner">
+				 	<f:for each="{childrenContent}" as="child" iteration="iteration">
+						<div class="carousel-item {f:if(condition:iteration.index, then:'', else:'show active')}" data-bs-interval="{flexFormData.slideshowSpeed}">
+							<f:format.raw>{child.renderedContent}</f:format.raw>
+						</div>
+					</f:for>	
+				</div>	
+				<!-- Direction -->
+				<button class="{f:if(condition: flexFormData.directionNav, then: 'd-none')}  carousel-control-prev d-flex justify-content-center align-items-center" type="button" data-bs-target="#slideshow{data.uid}" data-bs-slide="prev">
+				   <span class="symbol-outline prev {flexFormData.slidefontsize}" style="background-color:{flexFormData.slideshowoverlaycolor}; color:{flexFormData.slidecolor} !important">&#xe2ea</span>
+				   <span class="visually-hidden">Previous</span>
+				</button>
+				<button class="{f:if(condition: flexFormData.directionNav, then: 'd-none')}  carousel-control-next d-flex justify-content-center align-items-center" type="button" data-bs-target="#slideshow{data.uid}" data-bs-slide="next">
+				  <span class="symbol-outline next {flexFormData.slidefontsize}" style="background-color:{flexFormData.slideshowoverlaycolor}; color:{flexFormData.slidecolor} !important">&#xe5e1</span>
+				  <span class="visually-hidden">Next</span>
+			  	</button>
+			</div>
+	</f:section>		
+</f:spaceless>
+</html>
