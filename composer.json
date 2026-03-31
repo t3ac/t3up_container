@@ -21,7 +21,7 @@
 	},
     "autoload": {
         "psr-4": {
-            "Hda\\T3upContainer\\": "Classes"
+            "T3ac\\T3upContainer\\": "Classes"
         }
     },
 	"extra" : {
