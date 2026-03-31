@@ -15,7 +15,7 @@ class FlexFormController {
      */
     public function getOneColumnOptions($config): array
     {
-        return \T3ac\T3upContainer\Controller\FlexFormController::getColumnOptions($config);
+        return \Hda\T3upContainer\Controller\FlexFormController::getColumnOptions($config);
     }
 	
     /**
@@ -24,7 +24,7 @@ class FlexFormController {
      */
     public function getTwoColumnOptions($config): array
     {
-        return \T3ac\T3upContainer\Controller\FlexFormController::getColumnOptions($config);
+        return \Hda\T3upContainer\Controller\FlexFormController::getColumnOptions($config);
     }
 
     /**
@@ -33,7 +33,7 @@ class FlexFormController {
      */
     public function getThreeColumnOptions($config): array
     {
-        return \T3ac\T3upContainer\Controller\FlexFormController::getColumnOptions($config);
+        return \Hda\T3upContainer\Controller\FlexFormController::getColumnOptions($config);
     }
 
     /**
@@ -42,7 +42,7 @@ class FlexFormController {
      */
     public function getFourColumnOptions($config): array
     {
-        return \T3ac\T3upContainer\Controller\FlexFormController::getColumnOptions($config);
+        return \Hda\T3upContainer\Controller\FlexFormController::getColumnOptions($config);
     }
 
     /**
@@ -81,23 +81,23 @@ class FlexFormController {
              // small
             case 'smCol':
                 $optionList = array(
-                array('LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.notset', ''),
-                array('25% (col-sm-3)', 'col-sm-3'),
-                array('33% (col-sm-4)', 'col-sm-4'),
-                array('50% (col-sm-6)', 'col-sm-6'),
-                array('66% (col-sm-8)', 'col-sm-8'),
-                array('75% (col-sm-9)', 'col-sm-9'),
-                array('LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.moreWidth', '--div--'),
-                array('8.3%  (col-sm-1)', 'col-sm-1'),
-                array('16.7% (col-sm-2)', 'col-sm-2'),
-                array('41.7% (col-sm-5)', 'col-sm-5'),
-                array('58.3% (col-sm-7)', 'col-sm-7'),
-                array('83.3% (col-sm-10)', 'col-sm-10'),
-                array('91.7% (col-sm-11)', 'col-sm-11'),
-                array('100%  (col-sm-12)', 'col-sm-12'),
-                array('LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.moreOptions', '--div--'),
-                array('LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.variableWidth', 'col-sm-auto'),
-                array('LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.hidden', 'd-sm-none'));
+                    array('LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.notset', ''),
+                    array('25% (col-sm-3)', 'col-sm-3'),
+                    array('33% (col-sm-4)', 'col-sm-4'),
+                    array('50% (col-sm-6)', 'col-sm-6'),
+                    array('66% (col-sm-8)', 'col-sm-8'),
+                    array('75% (col-sm-9)', 'col-sm-9'),
+                    array('LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.moreWidth', '--div--'),
+                    array('8.3%  (col-sm-1)', 'col-sm-1'),
+                    array('16.7% (col-sm-2)', 'col-sm-2'),
+                    array('41.7% (col-sm-5)', 'col-sm-5'),
+                    array('58.3% (col-sm-7)', 'col-sm-7'),
+                    array('83.3% (col-sm-10)', 'col-sm-10'),
+                    array('91.7% (col-sm-11)', 'col-sm-11'),
+                    array('100%  (col-sm-12)', 'col-sm-12'),
+                    array('LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.moreOptions', '--div--'),
+                    array('LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.variableWidth', 'col-sm-auto'),
+                    array('LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.hidden', 'd-sm-none'));
                 break;
             // medium 
             case 'mdCol':
@@ -121,26 +121,69 @@ class FlexFormController {
                     array('LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.hidden', 'd-md-none'));
                 break;
 
-            //  large
+                //  large
             case 'lgCol':
                 $optionList = array(array('LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.notset', ''),
-                    array('25% (col-lg-3)', 'col-lg-3'),
-                    array('33% (col-lg-4)', 'col-lg-4'),
-                    array('50% (col-lg-6)', 'col-lg-6'),
-                    array('66% (col-lg-8)', 'col-lg-8'),
-                    array('75% (col-lg-9)', 'col-lg-9'),
-                    array('LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.moreWidth', '--div--'),
-                    array('8.3%  (col-lg-1)', 'col-lg-1'),
-                    array('16.7% (col-lg-2)', 'col-lg-2'),
-                    array('41.7% (col-lg-5)', 'col-lg-5'),
-                    array('58.3% (col-lg-7)', 'col-lg-7'),
-                    array('83.3% (col-lg-10)', 'col-lg-10'),
-                    array('91.7% (col-lg-11)', 'col-lg-11'),
-                    array('100%  (col-lg-12)', 'col-lg-12'),
-                    array('LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.moreOptions', '--div--'),
-                    array('LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.variableWidth', 'col-lg-auto'),
-                    array('LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.hidden', 'd-lg-none'));
+                array('25% (col-lg-3)', 'col-lg-3'),
+                array('33% (col-lg-4)', 'col-lg-4'),
+                array('50% (col-lg-6)', 'col-lg-6'),
+                array('66% (col-lg-8)', 'col-lg-8'),
+                array('75% (col-lg-9)', 'col-lg-9'),
+                array('LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.moreWidth', '--div--'),
+                array('8.3%  (col-lg-1)', 'col-lg-1'),
+                array('16.7% (col-lg-2)', 'col-lg-2'),
+                array('41.7% (col-lg-5)', 'col-lg-5'),
+                array('58.3% (col-lg-7)', 'col-lg-7'),
+                array('83.3% (col-lg-10)', 'col-lg-10'),
+                array('91.7% (col-lg-11)', 'col-lg-11'),
+                array('100%  (col-lg-12)', 'col-lg-12'),
+                array('LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.moreOptions', '--div--'),
+                array('LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.variableWidth', 'col-lg-auto'),
+                array('LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.hidden', 'd-lg-none'));
                 break;
+ 
+                //  larger
+            case 'xlCol':
+                $optionList = array(array('LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.notset', ''),
+                array('25% (col-xl-3)', 'col-xl-3'),
+                array('33% (col-xl-4)', 'col-xl-4'),
+                array('50% (col-xl-6)', 'col-xl-6'),
+                array('66% (col-xl-8)', 'col-xl-8'),
+                array('75% (col-xl-9)', 'col-xl-9'),
+                array('LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.moreWidth', '--div--'),
+                array('8.3%  (col-xl-1)', 'col-xl-1'),
+                array('16.7% (col-xl-2)', 'col-xl-2'),
+                array('41.7% (col-xl-5)', 'col-xl-5'),
+                array('58.3% (col-xl-7)', 'col-xl-7'),
+                array('83.3% (col-xl-10)', 'col-xl-10'),
+                array('91.7% (col-xl-11)', 'col-xl-11'),
+                array('100%  (col-xl-12)', 'col-xl-12'),
+                array('LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.moreOptions', '--div--'),
+                array('LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.variableWidth', 'col-xl-auto'),
+                array('LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.hidden', 'd-xl-none'));
+                break;
+                
+                //  larger
+            case 'xxlCol':
+                $optionList = array(array('LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.notset', ''),
+                array('25% (col-xxl-3)', 'col-xxl-3'),
+                array('33% (col-xxl-4)', 'col-xxl-4'),
+                array('50% (col-xxl-6)', 'col-xxl-6'),
+                array('66% (col-xxl-8)', 'col-xxl-8'),
+                array('75% (col-xxl-9)', 'col-xxl-9'),
+                array('LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.moreWidth', '--div--'),
+                array('8.3%  (col-xxl-1)', 'col-xxl-1'),
+                array('16.7% (col-xxl-2)', 'col-xxl-2'),
+                array('41.7% (col-xxl-5)', 'col-xxl-5'),
+                array('58.3% (col-xxl-7)', 'col-xxl-7'),
+                array('83.3% (col-xxl-10)', 'col-xxl-10'),
+                array('91.7% (col-xxl-11)', 'col-xxl-11'),
+                array('100%  (col-xxl-12)', 'col-xxl-12'),
+                array('LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.moreOptions', '--div--'),
+                array('LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.variableWidth', 'col-xxl-auto'),
+                array('LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.hidden', 'd-xxl-none'));
+                break;
+                
         }
         $config['items'] = array_merge($config['items'], $optionList);
         return $config;
