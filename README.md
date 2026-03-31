@@ -1,1 +1,2 @@
-1.04.2026 Umstellung auf t3up 13.2 mit Vendor T3AC
+1.02.2025 - Umstellung auf Abstände steuerbar
+7.7.2025 - Neue Vebindung
