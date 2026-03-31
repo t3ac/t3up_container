@@ -1,15 +1,16 @@
 # Fluid_styled_content Elements ###########################################################
 
 page.includeCSS {
-    container = EXT:t3up_container/Resources/Public/Sass/_container.scss
+    container                = EXT:t3up_container/Resources/Public/Sass/_container.scss
+    tabs                     = EXT:t3up_container/Resources/Public/Sass/_tabs.scss
+    accordion                = EXT:t3up_container/Resources/Public/Sass/_accordion.scss
 }
+
 
 page.includeJSFooterlibs{
     simpleaccordion                 = EXT:t3up_container/Resources/Public/JavaScript/accordion.js
-    simpleaccordion.if.isTrue       = {$page.files.simpleAccordion}      
     simpleaccordion.forceOnTop      = 0
 }
-
 
 ## ----------------------------------------------------------------------------------------
 
@@ -122,6 +123,19 @@ tt_content.tabs {
 tt_content.accordion < lib.containerContentElement
 tt_content.accordion {
   templateName = Accordion
+  dataProcessing {
+    101 = B13\Container\DataProcessing\ContainerProcessor
+    101 {
+      colPos = 101
+      as = childrenContent
+    }
+  }
+}
+
+## Content-Slider
+tt_content.slider < lib.containerContentElement
+tt_content.slider {
+  templateName = Contentslider
   dataProcessing {
     101 = B13\Container\DataProcessing\ContainerProcessor
     101 {
