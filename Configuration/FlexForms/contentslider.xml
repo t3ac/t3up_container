@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3DataStructure>
+    <meta>
+        <langDisable>1</langDisable>
+    </meta>
+    <sheets>
+        <scontrols>
+            <ROOT type="array">
+                    <sheetTitle>LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:sheet.controls</sheetTitle>
+                <type>array</type>
+                <el type="array">
+                   
+                    <animation type="array">
+                            <label>LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:slider.animation</label>
+                            <config>
+                                <type>select</type>
+                                <renderType>selectSingle</renderType>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <label>LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:slider.animation.1</label>
+                                        <value></value>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <label>LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:slider.animation.2</label>
+                                        <value>carousel-fade</value>
+                                    </numIndex>
+                                </items>
+                            </config>
+                    </animation>
+                    
+                    <auto type="array">
+                            <label>LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:slider.auto</label>
+                            <config>
+                                <type>select</type>
+                                <renderType>selectSingle</renderType>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <label>LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.yes</label>
+                                        <value>true</value>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <label>LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.no</label>
+                                        <value>false</value>
+                                    </numIndex>
+                                </items>
+                            </config>
+                    </auto>
+                        
+                    <controlNav type="array">
+                            <label>LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:slider.controlNav</label>
+                            <config>
+                                <type>select</type>
+                                <renderType>selectSingle</renderType>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <label>LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.yes</label>
+                                        <value>true</value>
+                                    </numIndex>                 
+                                    <numIndex index="1" type="array">
+                                        <label>LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.no</label>
+                                        <value>false</value>
+                                    </numIndex>
+
+                                </items>
+                                <default>false</default>
+                            </config>
+                    </controlNav>
+                    
+                    <directionNav type="array">
+                            <label>LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:slider.directionNav</label>
+                            <config>
+                                <type>select</type>
+                                <renderType>selectSingle</renderType>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <label>LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.no</label>
+                                        <value>false</value>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <label>LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.yes</label>
+                                        <value>true</value>
+                                    </numIndex>
+                                </items>
+                                <default>false</default>
+                            </config>
+                    </directionNav> 
+                    
+                    <slideshowSpeed type="array">
+                            <label>LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:slider.sliderSpeed</label>
+                            <config>
+                                <type>input</type>
+                                <size>3</size>
+                                <default>4000</default>
+                                <eval>int</eval>
+                                <range>
+                                    <lower>500</lower>
+                                    <upper>20000</upper>
+                                </range>
+                                <wizards>
+                                    <slideshow>
+                                        <type>slider</type>
+                                        <step>100</step>
+                                    </slideshow>
+                                </wizards>
+                            </config>    
+                    </slideshowSpeed>
+                    
+                    
+                    <slidecolor>
+                            <label>LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:slider.slidecolor</label>
+                             <config>
+                                <type>input</type> 
+                                <size>6</size> 
+                                <renderType>colorpicker</renderType>
+                                <default>#ffffff</default> 
+                            </config>
+                    </slidecolor>         
+                    
+                    <slidefontsize>
+                            <label>LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:slider.slidefontsize</label>
+                             <config>
+                                <type>select</type>
+                                <renderType>selectSingle</renderType>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <label>1 rem</label>
+                                        <value>slidersymbol1</value>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <label>2 rem</label>
+                                        <value>slidersymbol2</value>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <label>3 rem</label>
+                                        <value>slidersymbol3</value>
+                                    </numIndex>
+                                    <numIndex index="3" type="array">
+                                        <label>4 rem</label>
+                                        <value>slidersymbol4</value>
+                                    </numIndex>
+                                    <numIndex index="4" type="array">
+                                        <label>5 rem</label>
+                                        <value>slidersymbol5</value>
+                                    </numIndex>           
+                                </items>
+                                <default>2</default>
+                            </config>
+                    </slidefontsize>         
+                       
+                	<slideshowoverlaycolor>
+                            <label>LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:slider.slideshowoverlaycolor</label>
+                             <config>
+                                <type>input</type> 
+					            <size>6</size> 
+					            <renderType>colorpicker</renderType>
+					        	<default>#333333</default> 
+                            </config>
+                	</slideshowoverlaycolor>         
+                    
+                    <indicators>
+                            <label>LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:indicators</label>
+                            <config>
+                                <type>select</type>
+                                <renderType>selectSingle</renderType>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <label>LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:slider.indicators.1</label>
+                                        <value></value>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <label>LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:slider.indicators.2</label>
+                                        <value>st1</value>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <label>LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:slider.indicators.3</label>
+                                        <value>st2</value>
+                                    </numIndex>
+                                    <numIndex index="3" type="array">
+                                        <label>LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:slider.indicators.4</label>
+                                        <value>st3</value>
+                                    </numIndex>
+                                </items>
+                                <default></default> 
+                            </config>
+                    </indicators>
+                </el>
+            </ROOT>
+        </scontrols>      
+        
+    </sheets>
+</T3DataStructure>

@@ -9,6 +9,28 @@
                 <sheetTitle>LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:sheet.layout</sheetTitle>
                 <type>array</type>
                 <el type="array">
+                    <behavior type="array">
+                        <label>LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.behavior</label>
+                        <config type="array">
+                            <type>select</type>
+                            <renderType>selectSingle</renderType>
+                            <items type="array">
+                                <numIndex index="0">
+                                    <label>LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:accordion.behavior.1</label>
+                                    <value>collapse</value>
+                                </numIndex>
+                                <numIndex index="1">
+                                    <label>LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:accordion.behavior.2</label>
+                                    <value>first</value>
+                                </numIndex>
+                                <numIndex index="2">
+                                    <label>LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:accordion.behavior.3</label>
+                                    <value>multiple</value>
+                                </numIndex>
+                            </items>
+                        </config>
+                    </behavior>
+                    
                     <style type="array">
                         <label>LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.style</label>
                         <config type="array">
@@ -16,20 +38,21 @@
                             <renderType>selectSingle</renderType>
                             <items type="array">
                                 <numIndex index="0">
-                                    <numIndex index="0">LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:accordion.style.1</numIndex>
-                                    <numIndex index="1">collapse</numIndex>
+                                    <label>LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:accordion.style.1</label>
+                                    <value>plain</value>
                                 </numIndex>
                                 <numIndex index="1">
-                                    <numIndex index="0">LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:accordion.style.2</numIndex>
-                                    <numIndex index="1">first</numIndex>
+                                    <label>LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:accordion.style.2</label>
+                                    <value>rounded</value>
                                 </numIndex>
                                 <numIndex index="2">
-                                    <numIndex index="0">LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:accordion.style.3</numIndex>
-                                    <numIndex index="1">multiple</numIndex>
+                                    <label>LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:accordion.style.3</label>
+                                    <value>minimal</value>
                                 </numIndex>
                             </items>
                         </config>
                     </style>
+                
                 </el>
             </ROOT>
         </sDEF>

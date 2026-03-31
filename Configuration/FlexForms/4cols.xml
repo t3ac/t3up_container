@@ -15,7 +15,7 @@
                         <config type="array">
                             <type>select</type>
                             <renderType>selectSingle</renderType>
-                            <itemsProcFunc>T3ac\T3upContainer\Controller\FlexFormController->getFourColumnOptions</itemsProcFunc>
+                            <itemsProcFunc>Hda\T3upContainer\Controller\FlexFormController->getFourColumnOptions</itemsProcFunc>
                              <default>col-12</default>
                         </config>
                     </Col1>
@@ -24,7 +24,7 @@
                         <config type="array">
                             <type>select</type>
                             <renderType>selectSingle</renderType>
-                            <itemsProcFunc>T3ac\T3upContainer\Controller\FlexFormController->getFourColumnOptions</itemsProcFunc>
+                            <itemsProcFunc>Hda\T3upContainer\Controller\FlexFormController->getFourColumnOptions</itemsProcFunc>
                             <default>col-12</default>
                         </config>
                     </Col2>
@@ -33,7 +33,7 @@
                         <config type="array">
                             <type>select</type>
                             <renderType>selectSingle</renderType>
-                            <itemsProcFunc>T3ac\T3upContainer\Controller\FlexFormController->getFourColumnOptions</itemsProcFunc>
+                            <itemsProcFunc>Hda\T3upContainer\Controller\FlexFormController->getFourColumnOptions</itemsProcFunc>
                             <default>col-12</default>
                         </config>
                     </Col3>
@@ -42,7 +42,7 @@
                         <config type="array">
                             <type>select</type>
                             <renderType>selectSingle</renderType>
-                            <itemsProcFunc>T3ac\T3upContainer\Controller\FlexFormController->getFourColumnOptions</itemsProcFunc>
+                            <itemsProcFunc>Hda\T3upContainer\Controller\FlexFormController->getFourColumnOptions</itemsProcFunc>
                             <default>col-12</default>
                         </config>
                     </Col4>
@@ -60,7 +60,7 @@
                         <config type="array">
                             <type>select</type>
                             <renderType>selectSingle</renderType>
-                            <itemsProcFunc>T3ac\T3upContainer\Controller\FlexFormController->getTwoColumnOptions</itemsProcFunc>
+                            <itemsProcFunc>Hda\T3upContainer\Controller\FlexFormController->getTwoColumnOptions</itemsProcFunc>
                         </config>
                     </smCol1>
                     <smCol2 type="array">
@@ -68,7 +68,7 @@
                         <config type="array">
                             <type>select</type>
                             <renderType>selectSingle</renderType>
-                            <itemsProcFunc>T3ac\T3upContainer\Controller\FlexFormController->getTwoColumnOptions</itemsProcFunc>
+                            <itemsProcFunc>Hda\T3upContainer\Controller\FlexFormController->getTwoColumnOptions</itemsProcFunc>
                         </config>  
                     </smCol2>
                     <smCol3 type="array">
@@ -76,7 +76,7 @@
                         <config type="array">
                             <type>select</type>
                             <renderType>selectSingle</renderType>
-                            <itemsProcFunc>T3ac\T3upContainer\Controller\FlexFormController->getTwoColumnOptions</itemsProcFunc>
+                            <itemsProcFunc>Hda\T3upContainer\Controller\FlexFormController->getTwoColumnOptions</itemsProcFunc>
                         </config>  
                     </smCol3>
                     <smCol4 type="array">
@@ -84,7 +84,7 @@
                         <config type="array">
                             <type>select</type>
                             <renderType>selectSingle</renderType>
-                            <itemsProcFunc>T3ac\T3upContainer\Controller\FlexFormController->getTwoColumnOptions</itemsProcFunc>
+                            <itemsProcFunc>Hda\T3upContainer\Controller\FlexFormController->getTwoColumnOptions</itemsProcFunc>
                         </config>  
                     </smCol4>
                 </el>
@@ -101,7 +101,7 @@
                         <config type="array">
                             <type>select</type>
                             <renderType>selectSingle</renderType>
-                            <itemsProcFunc>T3ac\T3upContainer\Controller\FlexFormController->getFourColumnOptions</itemsProcFunc>
+                            <itemsProcFunc>Hda\T3upContainer\Controller\FlexFormController->getFourColumnOptions</itemsProcFunc>
                             <default>col-md-6</default>
                         </config>
                     </mdCol1>
@@ -110,7 +110,7 @@
                         <config type="array">
                             <type>select</type>
                             <renderType>selectSingle</renderType>
-                            <itemsProcFunc>T3ac\T3upContainer\Controller\FlexFormController->getFourColumnOptions</itemsProcFunc>
+                            <itemsProcFunc>Hda\T3upContainer\Controller\FlexFormController->getFourColumnOptions</itemsProcFunc>
                             <default>col-md-6</default>
                         </config>  
                     </mdCol2>
@@ -119,7 +119,7 @@
                         <config type="array">
                             <type>select</type>
                             <renderType>selectSingle</renderType>
-                            <itemsProcFunc>T3ac\T3upContainer\Controller\FlexFormController->getFourColumnOptions</itemsProcFunc>
+                            <itemsProcFunc>Hda\T3upContainer\Controller\FlexFormController->getFourColumnOptions</itemsProcFunc>
                             <default>col-md-6</default>
                         </config>  
                     </mdCol3>  
@@ -128,7 +128,7 @@
                         <config type="array">
                             <type>select</type>
                             <renderType>selectSingle</renderType>
-                            <itemsProcFunc>T3ac\T3upContainer\Controller\FlexFormController->getFourColumnOptions</itemsProcFunc>
+                            <itemsProcFunc>Hda\T3upContainer\Controller\FlexFormController->getFourColumnOptions</itemsProcFunc>
                             <default>col-md-6</default>
                         </config>  
                     </mdCol4>               
@@ -147,7 +147,7 @@
                         <config type="array">
                             <type>select</type>
                             <renderType>selectSingle</renderType>
-                            <itemsProcFunc>T3ac\T3upContainer\Controller\FlexFormController->getFourColumnOptions</itemsProcFunc>
+                            <itemsProcFunc>Hda\T3upContainer\Controller\FlexFormController->getFourColumnOptions</itemsProcFunc>
                             <default>col-lg-3</default>
                         </config>
                     </lgCol1>
@@ -156,7 +156,7 @@
                         <config type="array">
                             <type>select</type>
                             <renderType>selectSingle</renderType>
-                            <itemsProcFunc>T3ac\T3upContainer\Controller\FlexFormController->getFourColumnOptions</itemsProcFunc>
+                            <itemsProcFunc>Hda\T3upContainer\Controller\FlexFormController->getFourColumnOptions</itemsProcFunc>
                             <default>col-lg-3</default>
                         </config>
                     </lgCol2>
@@ -165,7 +165,7 @@
                         <config type="array">
                             <type>select</type>
                             <renderType>selectSingle</renderType>
-                            <itemsProcFunc>T3ac\T3upContainer\Controller\FlexFormController->getFourColumnOptions</itemsProcFunc>
+                            <itemsProcFunc>Hda\T3upContainer\Controller\FlexFormController->getFourColumnOptions</itemsProcFunc>
                             <default>col-lg-3</default>
                         </config>
                     </lgCol3>  
@@ -174,13 +174,95 @@
                         <config type="array">
                             <type>select</type>
                             <renderType>selectSingle</renderType>
-                            <itemsProcFunc>T3ac\T3upContainer\Controller\FlexFormController->getFourColumnOptions</itemsProcFunc>
+                            <itemsProcFunc>Hda\T3upContainer\Controller\FlexFormController->getFourColumnOptions</itemsProcFunc>
                             <default>col-lg-3</default>
                         </config>
                     </lgCol4>                   
                 </el>
             </ROOT>
         </largeDevices>
+  
+         <largerDevices>
+            <ROOT type="array">
+                <sheetTitle>LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:sheet.largerDevices</sheetTitle>
+                <type>array</type>
+                <el type="array">
+                    <xlCol1 type="array">
+                        <label>LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.col1</label>
+                        <config type="array">
+                            <type>select</type>
+                            <renderType>selectSingle</renderType>
+                            <itemsProcFunc>Hda\T3upContainer\Controller\FlexFormController->getFourColumnOptions</itemsProcFunc>
+                        </config>
+                    </xlCol1>
+                    <xlCol2 type="array">
+                        <label>LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.col2</label>
+                        <config type="array">
+                            <type>select</type>
+                            <renderType>selectSingle</renderType>
+                            <itemsProcFunc>Hda\T3upContainer\Controller\FlexFormController->getFourColumnOptions</itemsProcFunc>
+                        </config>
+                    </xlCol2>
+                    <xlCol3 type="array">
+                        <label>LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.col3</label>
+                        <config type="array">
+                            <type>select</type>
+                            <renderType>selectSingle</renderType>
+                            <itemsProcFunc>Hda\T3upContainer\Controller\FlexFormController->getFourColumnOptions</itemsProcFunc>
+                        </config>
+                    </xlCol3>
+                    <xlCol4 type="array">
+                        <label>LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.col4</label>
+                        <config type="array">
+                            <type>select</type>
+                            <renderType>selectSingle</renderType>
+                            <itemsProcFunc>Hda\T3upContainer\Controller\FlexFormController->getFourColumnOptions</itemsProcFunc>
+                        </config>
+                    </xlCol4>
+                </el>
+            </ROOT>
+        </largerDevices>
+  
+        <largestDevices>
+            <ROOT type="array">
+                <sheetTitle>LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:sheet.largestDevices</sheetTitle>
+                <type>array</type>
+                <el type="array">
+                    <xxlCol1 type="array">
+                        <label>LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.col1</label>
+                        <config type="array">
+                            <type>select</type>
+                            <renderType>selectSingle</renderType>
+                            <itemsProcFunc>Hda\T3upContainer\Controller\FlexFormController->getFourColumnOptions</itemsProcFunc>
+                        </config>
+                    </xxlCol1>
+                    <xxlCol2 type="array">
+                        <label>LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.col2</label>
+                        <config type="array">
+                            <type>select</type>
+                            <renderType>selectSingle</renderType>
+                            <itemsProcFunc>Hda\T3upContainer\Controller\FlexFormController->getFourColumnOptions</itemsProcFunc>
+                        </config>
+                    </xxlCol2>
+                    <xxlCol3 type="array">
+                        <label>LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.col3</label>
+                        <config type="array">
+                            <type>select</type>
+                            <renderType>selectSingle</renderType>
+                            <itemsProcFunc>Hda\T3upContainer\Controller\FlexFormController->getFourColumnOptions</itemsProcFunc>
+                        </config>
+                    </xxlCol3>
+                    <xxlCol4 type="array">
+                        <label>LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:label.col4</label>
+                        <config type="array">
+                            <type>select</type>
+                            <renderType>selectSingle</renderType>
+                            <itemsProcFunc>Hda\T3upContainer\Controller\FlexFormController->getFourColumnOptions</itemsProcFunc>
+                        </config>
+                    </xxlCol4>
+                </el>
+            </ROOT>
+        </largestDevices>
   
 
   		<rowClasses>
@@ -337,60 +419,6 @@
                         <default></default>
                     </config>
                 </spacing> 
-                <padding type="array">
-                    <label>LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:padding</label>
-                    <config>
-                    <type>select</type>
-                        <renderType>selectSingle</renderType>
-                        <items>
-                            <numIndex index="0" type="array">
-                                <label>LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:padding.1</label>
-                                <value></value>
-                            </numIndex>
-                            <numIndex index="1" type="array">
-                                <label>LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:padding.2</label>
-                                <value>1</value>
-                            </numIndex> 
-                            <numIndex index="2" type="array">
-                                <label>LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:padding.3</label>
-                                <value>2</value>
-                            </numIndex> 
-                            <numIndex index="3" type="array">
-                                <label>LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:padding.4</label>
-                                <value>3</value>
-                            </numIndex>    
-                            <numIndex index="4" type="array">
-                                <label>LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:padding.5</label>
-                                <value>4</value>
-                            </numIndex>        
-                            <numIndex index="5" type="array">
-                                <label>LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:padding.6</label>
-                                <value>5</value>
-                            </numIndex>    
-                            <numIndex index="6" type="array">
-                                <label>LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:padding.7</label>
-                                <value>6</value>
-                            </numIndex>  
-                            <numIndex index="7" type="array">
-                                <label>LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:padding.8</label>
-                                <value>7</value>
-                            </numIndex>
-                            <numIndex index="8" type="array">
-                                <label>LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:padding.9</label>
-                                <value>8</value>
-                            </numIndex> 
-                            <numIndex index="9" type="array">
-                                <label>LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:padding.10</label>
-                                <value>9</value>
-                            </numIndex> 
-                            <numIndex index="10" type="array">
-                                <label>LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:padding.11</label>
-                                <value>10</value>
-                            </numIndex>    
-                        </items>
-                        <default></default>
-                    </config>
-                </padding>
                </el>
             </ROOT>   
         </customSpaces>  
