@@ -1,17 +1,14 @@
 <?php
-declare(strict_types = 1);
+defined('TYPO3') or die();
 
-/*
- * This file is part of the composer package buepro/typo3-container-elements.
- *
- * For the full copyright and license information, please read the
- * LICENSE file that was distributed with this source code.
- */
 
-defined('TYPO3') or die('Access denied.');
 
 (static function (): void {
-    $typeList = '1cols,2cols,3cols,4cols,accordion,tabs';
+    
+    $frontendLanguageFilePrefix = 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:';
+    
+    $typeList = '1cols,2cols,3cols,4cols,accordion,tabs,slider';
+    
     // Remove header field
     foreach (\TYPO3\CMS\Core\Utility\GeneralUtility::trimExplode(',', $typeList, true) as $type) {
         $showitem = $GLOBALS['TCA']['tt_content']['types'][$type]['showitem'];
@@ -24,19 +21,15 @@ defined('TYPO3') or die('Access denied.');
     // Add headers palette and container options (pi_flexform)
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
         'tt_content',
-        '--palette--;;headers, --div--;LLL:EXT:t3up_container/Resources/Private/Language/locallang_backend.xlf:container,pi_flexform;LLL:EXT:t3up_container/Resources/Private/Language/locallang_backend.xlf:options',
-        $typeList,
-        'after:tx_container_parent'
+        '--palette--;;headers,--div--;LLL:EXT:t3up_container/Resources/Private/Language/locallang_backend.xlf:options,pi_flexform;Flexformwerte','1cols,2cols,3cols,4cols,accordion,tabs,slider','after:tx_container_parent',
+       
         );
-    if(\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::isLoaded('t3up')) {
-        // Palette hinzufügen, nach Layout - dadurch Anzeige im Backend
-        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
-            'tt_content','--palette--;LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class;padding_fields', '', 'after:layout');
-    }
+    
+    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
+        'tt_content','--palette--;LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:animation_class;animation_fields', 'accordion,tabs', 'after:layout');
+    
+    
+    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
+        'tt_content','--palette--;LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:container_class;onepager_fields', $typeList, 'after:layout');
     
 })();
-
-
-
-
-

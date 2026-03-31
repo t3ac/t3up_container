@@ -25,12 +25,20 @@ defined('TYPO3') or die('Access denied.');
                 $L.'tabsDes',
                 [
                     [
-                        ['name' => $L.'center',  'colPos' => 101, 'disallowed' => ['CType' => 't3upheaderimage_content,2cols,3cols,4cols,image,textpic,tabs,2tabs,3tabs,4tabs,slide,accordion']]
+                        ['name' => $L.'center',  'colPos' => 101, 'disallowed' => ['CType' => 't3upheaderimage_content,2cols,3cols,4cols,image,textpic,tabs,slider,accordion']],
                     ]
                 ]
-                )
             )
+        )
         ->setIcon('EXT:t3up_container/Resources/Public/Icons/gridlayout_tabs.svg')
         ->setSaveAndCloseInNewContentElementWizard(true)
+        );
+    /**
+     * Add flexForm
+     */
+    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue(
+        '*',
+        'FILE:EXT:t3up_container/Configuration/FlexForms/tabs.xml',
+        'tabs'
         );
 })();
