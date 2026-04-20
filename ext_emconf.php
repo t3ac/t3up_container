@@ -3,7 +3,7 @@
 /***************************************************************
  * Extension Manager/Repository config file for ext "t3up_container".
  *
- * 07-07-2025
+ * 20-04-2026
  *
  * Manual updates:
  * Only the data in the array - everything else is removed by next
