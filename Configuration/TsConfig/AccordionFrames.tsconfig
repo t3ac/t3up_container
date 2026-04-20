@@ -1,0 +1,26 @@
+TCEFORM {
+    tt_content {
+        frame_class {
+            disableNoMatchingValueElement = 1
+            types {
+                text {
+                    addItems { 
+						singleaccordion = LLL:EXT:t3up_container/Resources/Private/Language/locallang_backend.xlf:singleaccordion
+                    }
+                }
+                
+                textmedia {
+                    addItems { 
+                        singleaccordion = LLL:EXT:t3up_container/Resources/Private/Language/locallang_backend.xlf:singleaccordion
+                    }
+                }
+                
+                1cols {
+                    addItems { 
+                        singleaccordion = LLL:EXT:t3up_container/Resources/Private/Language/locallang_backend.xlf:singleaccordion
+                    }
+                }
+            } // types         
+        } // frame_class
+    } //tt_content
+} // TCEFORM
