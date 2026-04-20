@@ -1,4 +1,4 @@
-@import '../../../../t3up/Resources/Public/Sass/_mixins.scss';
+ @import '../../../../t3up/Resources/Public/Sass/_mixins.scss';
 
 .frame-2cols,
 .frame-3cols,
@@ -53,17 +53,17 @@ $cols: (
 $spacingsA: (
   1: $v02,
   2: $v03,
-  3: $v05,
-  4: $v06,
-  5: $v07,
-  6: $v1
+  3: $v07,
+  4: $v09,
+  5: $v1,
+  6: $v15
 );
 
 $spacingsB: (
   1: $v03,
   2: $v04,
-  3: $v06,
-  4: $v07,
+  3: $v07,
+  4: $v08,
   5: $v1,
   6: $v15
 );
@@ -143,9 +143,10 @@ $spacingsC: (
 @media screen and (max-width: 767px){
     .frame-3cols,
     .frame-4cols {
-        .row > div{
-            &:nth-child(odd)             {margin-left: 0;}
-            &:nth-child(even)            {margin-right:0;}
+           .row > div{
+            &:first-of-type              {margin-left: 0;}
+            &:nth-child(3n + 1)          {margin-left: 0;}
+            &:nth-child(3n)              {margin-right:0;}
         }
     }
 }
