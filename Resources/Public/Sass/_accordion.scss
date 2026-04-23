@@ -4,13 +4,13 @@
 .t3up_accordion{ 
     a.accordion-button                                              {display: flex; align-content: space-between; align-items: center;}
     a.accordion-button::after,
-    a.accordion-button::before                                      {display: flex; align-items: center; justify-content: center; font-family: $symbol; font-weight: normal !important; transition: all ease .3s;  font-size: calc(#{$p} * 1.5); height: $v2;}
+    a.accordion-button::before                                      {display: flex; align-items: center; justify-content: center; font-family: $symbol; font-weight: normal !important; transition: all ease .3s;  font-size: calc(#{$p} * 1.5); }
     a.accordion-button:not(.collapsed)::after                       {font-family: $symbol;}
      
     a.accordion-button::after                                       {content: 'add'; }
     a.accordion-button:not(.collapsed)::after                       {content: 'remove';}
     
-    .accordion-item .accordion-header > a                           {border-top: 0; padding-left: $v05; border: 1px solid ; border-bottom: 0; }
+    .accordion-item .accordion-header > a                           {border-top: 0; padding-left: $v05; padding-right: $v02; border: 1px solid ; border-bottom: 0; }
     .accordion-item .accordion-header > a.collapsed                 {background-color: transparent;}   
 
     .accordion-item:first-of-type .accordion-header > a             {border-radius: 0;}
