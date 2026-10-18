@@ -1,3 +1,0 @@
-
-# cat=PageTS; type=boolean; label=Single Accordion
-TCEForm 					= 1
