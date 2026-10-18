@@ -1,0 +1,10 @@
+categories:
+  t3upContainer:
+    label: 'T3up Container'
+
+settings:
+  t3upContainer.accordion:
+    label: 'Container Accordion'
+    category: t3upContainer
+    type: bool
+    default: false

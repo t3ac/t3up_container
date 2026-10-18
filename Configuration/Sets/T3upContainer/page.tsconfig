@@ -1,0 +1,68 @@
+TCEFORM {
+    tt_content {
+        frame_class {
+            disableNoMatchingValueElement = 1
+            types {
+                1cols {
+                    addItems { 
+                       white           = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:white
+                       xtra            = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:xtra
+                        
+                    }
+                } 
+                2cols {
+                    addItems { 
+                       white           = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:white
+                       xtra            = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:xtra
+                    }
+                }    
+                3cols {
+                    addItems { 
+                       white           = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:white
+                       xtra            = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:xtra
+                    }
+                } 
+                4cols {
+                    addItems { 
+                       white           = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:white
+                       xtra            = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:xtra
+                    }
+                }     
+                accordion {
+                    addItems { 
+                       white           = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:white
+                       xtra            = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:xtra
+                    }
+                }
+            } // types
+        } // frame_class
+    } // tt_content  
+} // TCEFORM
+
+
+TCEFORM {
+    tt_content {
+        frame_class {
+            disableNoMatchingValueElement = 1
+            types {
+                text {
+                    addItems { 
+                        singleaccordion = LLL:EXT:t3up_container/Resources/Private/Language/locallang_backend.xlf:singleaccordion
+                    }
+                }
+                
+                textmedia {
+                    addItems { 
+                        singleaccordion = LLL:EXT:t3up_container/Resources/Private/Language/locallang_backend.xlf:singleaccordion
+                    }
+                }
+                
+                1cols {
+                    addItems { 
+                        singleaccordion = LLL:EXT:t3up_container/Resources/Private/Language/locallang_backend.xlf:singleaccordion
+                    }
+                }
+            } // types         
+        } // frame_class
+    } //tt_content
+} // TCEFORM

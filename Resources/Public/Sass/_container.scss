@@ -1,212 +1,66 @@
- @import '../../../../t3up/Resources/Public/Sass/_mixins.scss';
-
-.frame-2cols,
-.frame-3cols,
-.frame-4cols{
-    &.frame-white                       {padding: 0;}
-}
-
-
-.frame-2cols,
-.frame-3cols,
-.frame-4cols{
-    > div > .stretch > .frame-white               {height: 100%;}
-}
-
+@import '../../../../t3up/Resources/Public/Sass/_initalize.scss';
 
 .frame-1cols,
 .frame-2cols,
 .frame-3cols,
 .frame-4cols{
-    .col-12                             {flex: 0 1 auto;}
+    .col-12                               {flex: 0 1 auto;}
 
-    > .spacing1 > div                     {@include mb05;}
-    > .spacing2 > div                     {@include mb06;}
-    > .spacing3 > div                     {@include mb07;}
-    > .spacing4 > div                     {@include mb1;}
-    > .spacing5 > div                     {@include mb15;}
-    > .spacing6 > div                     {@include mb2;}   
+	> .spacing1 > div                     {@include mb01;}
+	> .spacing2 > div                     {@include mb02;}
+	> .spacing3 > div                     {@include mb03;}
+	> .spacing4 > div                     {@include mb04;}
+	> .spacing5 > div                     {@include mb05;}
+	> .spacing6 > div                     {@include mb06;}
+	> .spacing7 > div                     {@include mb07;}	
+	
+	.frame-default {background-color: rgba(220,200,255,.25)}
+	.container    {background-color: rgba(100,255,105,.25)} 
 }
 
 
-// === Maps definieren ===
-$breakpointsA: (sm);
-$breakpointsB: (sm, md);    
-$breakpointsC: (sm, md, lg); 
-$breakpointsD: (sm, md, lg, xl); 
-$breakpointsE: (sm, md, lg, xl, xxl);      
-  
-$cols: (
-  1: $c8,
-  2: $c16,
-  3: $c25,
-  4: $c33,
-  5: $c41,
-  6: $c50,
-  7: $c58,
-  8: $c66,
-  9: $c75,
-  10: $c83,
-  11: $c91
-);
 
-$spacingsA: (
-  1: $v02,
-  2: $v03,
-  3: $v07,
-  4: $v09,
-  5: $v1,
-  6: $v15
-);
 
-$spacingsB: (
-  1: $v03,
-  2: $v04,
-  3: $v07,
-  4: $v08,
-  5: $v1,
-  6: $v15
-);
-
-$spacingsC: (
-  1: $v03,
-  2: $v04,
-  3: $v06,
-  4: $v07,
-  5: $v1,
-  6: $v15
-);
-
-// === Helper-Mixin für Spacing-Mixin-Aufruf ===
-@mixin apply-spacing($num) {
-  @if      $num == 1 { @include mx02; }
-  @else if $num == 2 { @include mx03; }
-  @else if $num == 3 { @include mx05; }
-  @else if $num == 4 { @include mx06; }
-  @else if $num == 5 { @include mx07; }
-  @else if $num == 6 { @include mx1; }
-}
-
-// === MixIn für generische Frames ===
-@mixin generate-frame($frame, $breakpointsE, $spacings) {
-  .#{$frame} {
-    @each $bp in $breakpointsE {
-      @each $col-num, $col-val in $cols {
-        @each $space-num, $space-val in $spacings {
-          .spacing#{$space-num} > .col-#{$bp}-#{$col-num} {
-            width: calc(#{$col-val} - #{$space-val});
-            @include apply-spacing($space-num);
-          }
-        }
-      }
-    }
-  }
-}
 
 @media screen and (min-width: 576px) {
-    .frame-2cols,
-    .frame-3cols,
-    .frame-4cols {
-        div > .col {
-          width: $c50;
-        }
+	.frame-2cols .spacing1 > div,
+	.frame-3cols .spacing1 > div,
+	.frame-4cols .spacing1 > div {@include px01} 
+	
+	.frame-2cols .spacing2 > div,
+	.frame-3cols .spacing2 > div,
+	.frame-4cols .spacing2 > div {@include px02} 
+	
+	.frame-2cols .spacing3 > div,
+	.frame-3cols .spacing3 > div,
+	.frame-4cols .spacing3 > div {@include px03} 
+	
+	.frame-2cols .spacing4 > div,
+	.frame-3cols .spacing4 > div,
+	.frame-4cols .spacing4 > div {@include px04} 
+	
+	.frame-2cols .spacing5 > div,
+	.frame-3cols .spacing5 > div,
+	.frame-4cols .spacing5 > div {@include px05} 
+	
+	.frame-2cols .spacing6 > div,
+	.frame-3cols .spacing6 > div,
+	.frame-4cols .spacing6 > div {@include px06} 
 
-    // === Schleifen für .col ohne Breakpoint ===
-    @each $space-num, $space-val in $spacingsA {
-      .spacing#{$space-num} > .col {
-        width: calc(#{$c50} - #{$space-val});
-        @include apply-spacing($space-num);
-      }
-    }
-
-    // === Schleifen für alle Breakpoints / Spalten / Spacings ===
-    @each $bp in $breakpointsE {
-      @each $col-num, $col-val in $cols {
-        @each $space-num, $space-val in $spacingsA {
-          .spacing#{$space-num} > .col-#{$bp}-#{$col-num} {
-            width: calc(#{$col-val} - #{$space-val});
-            @include apply-spacing($space-num);
-          }
-        }
-      }
-    }
-  }
-    .frame-2cols {
-    // === Nth-child Regeln ===
-        .row > div {
-          &:nth-child(odd)  {margin-left: 0;}
-          &:nth-child(even) {margin-right:0;}
-        }
-    }  
+	.frame-2cols .spacing7 > div,
+	.frame-3cols .spacing7 > div,
+	.frame-4cols .spacing7 > div {@include px07} 
+	
+	.frame-2cols,
+	.frame-3cols,
+	.frame-4cols {
+		 .spacing1                       {@include mx-01; width: calc(100% + 2 * $v1) !important}
+		 .spacing2                       {@include mx-02; width: calc(100% + 2 * $v2) !important}
+		 .spacing3                       {@include mx-03; width: calc(100% + 2 * $v3) !important}
+		 .spacing4                       {@include mx-04; width: calc(100% + 2 * $v4) !important}
+		 .spacing5                       {@include mx-05; width: calc(100% + 2 * $v5) !important}
+		 .spacing6                       {@include mx-06; width: calc(100% + 2 * $v6) !important}
+		 .spacing7                       {@include mx-07; width: calc(100% + 2 * $v7) !important}
+	}
 }
 
-@media screen and (max-width: 767px){
-    .frame-3cols,
-    .frame-4cols {
-           .row > div{
-            &:first-of-type              {margin-left: 0;}
-            &:nth-child(3n + 1)          {margin-left: 0;}
-            &:nth-child(3n)              {margin-right:0;}
-        }
-    }
-}
-
-@media screen and (min-width: 768px){
-    .frame-3cols {
-        div > .col {width: $c33;}
-
-        // === Schleifen für .col ohne Breakpoint ===
-        @each $space-num, $space-val in $spacingsB {
-          .spacing#{$space-num} > .col {
-            width: calc(#{$c33} - #{$space-val});
-            @include apply-spacing($space-num);
-          }
-        }
-
-        .row > div{
-            &:first-of-type              {margin-left: 0;}
-            &:nth-child(3n + 1)          {margin-left: 0;}
-            &:nth-child(3n)              {margin-right:0;}
-        }
-    }   
-  
-    .frame-4cols {
-        div > .col {width: $c25;}
-        
-        // === Schleifen für .col ohne Breakpoint ===
-        @each $space-num, $space-val in $spacingsC {
-          .spacing#{$space-num} > .col {
-            width: calc(#{$c25} - #{$space-val});
-            @include apply-spacing($space-num);
-          }
-        }
-
-        .row > div{
-            &:first-of-type              {margin-left: 0;}
-            &:nth-child(4n + 1)          {margin-left: 0;}
-            &:nth-child(4n)              {margin-right:0;}
-        }
-    }     
-}
-
-// === 2. Media Queries aufrufen ===
-@media screen and (min-width: 768px) {
-  @include generate-frame('frame-3cols', $breakpointsB, $spacingsB);
-  @include generate-frame('frame-4cols', $breakpointsB, $spacingsC);
-}
-
-@media screen and (min-width: 992px) {
-  @include generate-frame('frame-3cols', $breakpointsC, $spacingsB);
-  @include generate-frame('frame-4cols', $breakpointsC, $spacingsC);
-}
-
-@media screen and (min-width: 1200px) {
-  @include generate-frame('frame-3cols', $breakpointsD, $spacingsB);
-  @include generate-frame('frame-4cols', $breakpointsD, $spacingsC);
-}
-
-@media screen and (min-width: 1400px) {
-  @include generate-frame('frame-3cols', $breakpointsE, $spacingsB);
-  @include generate-frame('frame-4cols', $breakpointsE, $spacingsC);
-}
-        

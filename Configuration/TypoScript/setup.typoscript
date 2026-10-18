@@ -1,3 +1,18 @@
+
+plugin.tx_wsscss.variables{
+
+    // COMPONENTS
+    a1                       = {$t3upContainer.val1}
+    a2                       = {$t3upContainer.val2}
+    a3                       = {$t3upContainer.val3}
+    a4                       = {$t3upContainer.val4}
+    a5                       = {$t3upContainer.val5}
+    a6                       = {$t3upContainer.val6}
+    a7                       = {$t3upContainer.val7}
+    a8                       = {$t3upContainer.val8}    
+}
+
+
 # Fluid_styled_content Elements ###########################################################
 
 page.includeCSS {

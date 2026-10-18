@@ -388,33 +388,37 @@
                         <renderType>selectSingle</renderType>
                         <items>
                             <numIndex index="0" type="array">
-                                <label>LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:spacing.1</label>
+                                <label>LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:space_class_none</label>
                                 <value></value>
                             </numIndex>
                             <numIndex index="1" type="array">
-                                <label>LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:spacing.2</label>
+                                <label>LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:space_class_1</label>
                                 <value>1</value>
                             </numIndex> 
                             <numIndex index="2" type="array">
-                                <label>LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:spacing.3</label>
+                                <label>LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:space_class_2</label>
                                 <value>2</value>
                             </numIndex> 
                             <numIndex index="3" type="array">
-                                <label>LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:spacing.4</label>
+                                <label>LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:space_class_3</label>
                                 <value>3</value>
                             </numIndex>    
                             <numIndex index="4" type="array">
-                                <label>LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:spacing.5</label>
+                                <label>LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:space_class_4</label>
                                 <value>4</value>
                             </numIndex>        
                             <numIndex index="5" type="array">
-                                <label>LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:spacing.6</label>
+                                <label>LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:space_class_5</label>
                                 <value>5</value>
                             </numIndex>    
                             <numIndex index="6" type="array">
-                                <label>LLL:EXT:t3up_container/Resources/Private/Language/locallang_flexform.xlf:spacing.7</label>
+                                <label>LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:space_class_6</label>
                                 <value>6</value>
-                            </numIndex>     
+                            </numIndex> 
+                            <numIndex index="7" type="array">
+                                <label>LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:space_class_7</label>
+                                <value>7</value>
+                            </numIndex>                             
                         </items>
                         <default></default>
                     </config>

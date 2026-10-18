@@ -59,7 +59,7 @@
                  <source>shows content in tabs.</source>
             </trans-unit>   
 
-            <trans-unit id="silder">
+            <trans-unit id="sildertitle">
                  <source>Contentslider</source>
             </trans-unit>
             <trans-unit id="sliderDes">

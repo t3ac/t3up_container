@@ -1,8 +1,8 @@
-
+@import '../../../../t3up/Resources/Public/Sass/_initalize.scss';
 
 .t3up_tabulator    {
     .tab-content .tab-pane > *                                {background: none;}
-    .tab-content .tab-pane > *                                {padding: 0; border: 0 !important; margin-bottom:0;}
+    .tab-content .tab-pane > *                                {padding: $v2; border: 0 !important; margin-bottom:0;}
 }
     
 .t3up_tabulator.owntab{
@@ -13,7 +13,8 @@
     
 .t3up_tabulator{
     .nav-item                                                 {margin-bottom: -1px; cursor: pointer;}
+    .nav-link                                                 {color:$basicColor;}
     .nav-link.active                                          {border-color: rgba(0,0,0,.2) rgba(0,0,0,.2) $white rgba(0,0,0,.2);}
-    .tab-content                                              {padding: $v05; background-color: $white; border-radius: 0 0 $v02 $v02; border: 1px solid rgba(0,0,0,.2); background-color: $white;}
+    .tab-content                                              {padding: $v2; background-color: $white; border-radius: 0 0 $v1 $v1; border: 1px solid rgba(0,0,0,.2); background-color: $white;}
 }
 

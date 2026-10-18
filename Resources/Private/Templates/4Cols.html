@@ -2,7 +2,7 @@
 <f:spaceless>
     <f:layout name="Default"/>
     <f:section name="Main">
-        <div class="row w-100 f:if(condition: flexFormData.spacing, then: 'spacing{flexFormData.spacing}')} {f:if(condition: data.layout, then: '{data.layout}')} {f:if(condition: flexFormData.halign, then: '{flexFormData.halign}')} {f:if(condition: flexFormData.valign, then: '{flexFormData.valign}')}">
+        <div class="row w-100 {f:if(condition: flexFormData.spacing, then: 'spacing{flexFormData.spacing}')} {f:if(condition: data.layout, then: '{data.layout}')} {f:if(condition: flexFormData.halign, then: '{flexFormData.halign}')} {f:if(condition: flexFormData.valign, then: '{flexFormData.valign}')}">
             <f:if condition="{childrenLeft}">
                 <f:then>
                     <div class="{flexFormData.Col1} {flexFormData.smCol1} {flexFormData.mdCol1} {flexFormData.lgCol1} {flexFormData.xlCol1} {flexFormData.xxlCol1} {flexFormData.col41class} col">

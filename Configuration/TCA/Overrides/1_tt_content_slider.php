@@ -21,7 +21,7 @@ defined('TYPO3') or die('Access denied.');
         (
             new \B13\Container\Tca\ContainerConfiguration(
                 'slider',
-                $L.'slider',
+                $L.'sildertitle',
                 $L.'sliderDes',
                 [
                     [

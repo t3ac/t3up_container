@@ -3,7 +3,7 @@
 /***************************************************************
  * Extension Manager/Repository config file for ext "t3up_container".
  *
- * 20-04-2026
+ * 25-09-2026
  *
  * Manual updates:
  * Only the data in the array - everything else is removed by next
@@ -16,7 +16,7 @@ $EM_CONF[$_EXTKEY]  = [
 	'category' 		    => 'templates',
 	'author' 		    => 'Michael Lang',
   	'author_email' 		=> 'info@t3ac.de',
-    'version'           => '13.2.06',
+    'version'           => '14.0.01',
   	'author_company' 	=> 'h_da',
   	'state' 		    => 'stable',
     'uploadfolder'    	=> false,
@@ -24,9 +24,9 @@ $EM_CONF[$_EXTKEY]  = [
     	'clearCacheOnLoad' 	=> true,
     	'constraints'      	=> [
         'depends'   => [
-            'typo3'          	=> '13.4.0-',
-            'container'		    => '3-',
-            't3up'          	=> '13.2-',
+            'typo3'          	=> '14.3.0-',
+            'container'		    => '4-',
+            't3up'          	=> '14-',
         ],
         'conflicts' => [],
         'suggests'  => [],
