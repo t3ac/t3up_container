@@ -15,10 +15,6 @@
 	> .spacing7 > div                     {@include mb07;}	
 }
 
-
-
-
-
 @media screen and (min-width: 576px) {
 	.frame-2cols .spacing1 > div,
 	.frame-3cols .spacing1 > div,
@@ -47,17 +43,5 @@
 	.frame-2cols .spacing7 > div,
 	.frame-3cols .spacing7 > div,
 	.frame-4cols .spacing7 > div {@include px07} 
-	
-	.frame-2cols,
-	.frame-3cols,
-	.frame-4cols {
-		 .spacing1                       {@include mx-01; width: calc(100% + 2 * $v1) !important}
-		 .spacing2                       {@include mx-02; width: calc(100% + 2 * $v2) !important}
-		 .spacing3                       {@include mx-03; width: calc(100% + 2 * $v3) !important}
-		 .spacing4                       {@include mx-04; width: calc(100% + 2 * $v4) !important}
-		 .spacing5                       {@include mx-05; width: calc(100% + 2 * $v5) !important}
-		 .spacing6                       {@include mx-06; width: calc(100% + 2 * $v6) !important}
-		 .spacing7                       {@include mx-07; width: calc(100% + 2 * $v7) !important}
-	}
 }
 
