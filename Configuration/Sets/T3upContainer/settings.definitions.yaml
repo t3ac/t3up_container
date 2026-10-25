@@ -8,3 +8,8 @@ settings:
     category: t3upContainer
     type: bool
     default: false
+  t3upContainer.accordionBorderColor:
+    label: 'Accordion bordercolor'
+    category: t3upContainer
+    type: color
+    default: '#ccc'
