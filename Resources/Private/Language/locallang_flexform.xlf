@@ -170,12 +170,15 @@
                  <source>Design</source>
             </trans-unit>                
             <trans-unit id="accordion.style.1" xml:space="preserve">
+                 <source>Block</source>
+            </trans-unit>                 
+            <trans-unit id="accordion.style.2" xml:space="preserve">
                  <source>Plain</source>
             </trans-unit>         
-            <trans-unit id="accordion.style.2" xml:space="preserve">
+            <trans-unit id="accordion.style.3" xml:space="preserve">
                  <source>Rounded</source>
             </trans-unit>         
-            <trans-unit id="accordion.style.3" xml:space="preserve">
+            <trans-unit id="accordion.style.4" xml:space="preserve">
                  <source>Minimal</source>
             </trans-unit>       
                 
