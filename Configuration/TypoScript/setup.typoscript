@@ -10,6 +10,7 @@ plugin.tx_wsscss.variables{
     a6                       = {$t3upContainer.val6}
     a7                       = {$t3upContainer.val7}
     a8                       = {$t3upContainer.val8}    
+    accordionBorderColor     = {$t3upContainer.accordionBorderColor} 
 }
 
 
