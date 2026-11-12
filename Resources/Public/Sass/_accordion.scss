@@ -1,6 +1,8 @@
 @import '../../../../t3up/Resources/Public/Sass/_initalize.scss';
 
+
 $bc :                       (#{$accordionBorderColor});
+
 
 /* Accordions * **********************************************************************************************************************************************************************************************************************/
 
@@ -11,28 +13,30 @@ $bc :                       (#{$accordionBorderColor});
      
     a.accordion-button::after                                       {content: $add; transition: all ease 0.3s;}
     a.accordion-button:not(.collapsed)::after                       {content: $remove;}
+   
 	
 	&.block{
-    	.accordion-item .accordion-header > a                       {display: block; padding-top: $v2; padding-bottom: $v2; padding-left: $v3; padding-right: $v6; border: 1px solid $bc; border-bottom: 0; position: relative;}
+    	.accordion-item .accordion-header > a                           {display: block; padding-top: $v2; padding-bottom: $v2; padding-left: $v3; padding-right: $v6; border: 1px solid $bc; border-bottom: 0; position: relative;}
 		.accordion-item:last-of-type  .accordion-header > a         {border-bottom: 1px solid $bc;}
 	}	
 	
 	&.plain {
-		.accordion-item .accordion-header > a                       {padding-top: $v2; padding-bottom: $v2; padding-left: $v3; padding-right: $v3; border: 1px solid $bc; border-bottom: 0; }
+		.accordion-item .accordion-header > a                       {padding-top: $v2; padding-bottom: $v2; padding-left: $v3; padding-right: $v3; border: 1px solid $bc; border-bottom: 0; margin-bottom: 0; }
 		.accordion-item:last-of-type  .accordion-header > a         {border-bottom: 1px solid $bc;}	 
 	}
 	 
 	&.rounded { 
-    	.accordion-item .accordion-header > a                       {padding-top: $v2; padding-bottom: $v2; padding-left: $v3; padding-right: $v3; border: 1px solid $bc; border-bottom: 0; }
+    	.accordion-item .accordion-header > a                           {padding-top: $v2; padding-bottom: $v2; padding-left: $v3; padding-right: $v3; border: 1px solid $bc; border-bottom: 0; }
 	}
 	
 	&.minimal {
-    	.accordion-item .accordion-header > a                       {padding-top: $v2; padding-bottom: $v2; border: 1px solid $bc ; border-bottom: 0; }
+    	.accordion-item .accordion-header > a                           {padding-top: $v2; padding-bottom: $v2; border: 1px solid $bc ; border-bottom: 0; }
 	}
 				
    /* .accordion-item .accordion-header > a.collapsed               {background-color: transparent;}   */
 
     .accordion-item:first-of-type .accordion-header > a             {border-radius: 0;}
+    /*.accordion-item:last-of-type  .accordion-header > a.collapsed   {border-bottom: 1px solid $bc; border-radius: 0;}*/
     
     .accordion-item .accordion-body                                 {border-left: 1px solid $bc; border-right: 1px solid $bc}
     .accordion-item .accordion-body > *                             {background: none !important; padding: $v3; padding-top: 0; margin: 0;}
@@ -52,8 +56,10 @@ $bc :                       (#{$accordionBorderColor});
 		.accordion-item .accordion-body > *                         {padding-top:$v3;}
 		
 		.accordion-item .show .accordion-body > *                   {border-bottom: 1px solid $bc;}
+		
      }
 	
+    
     &.rounded {
          .accordion-item:first-of-type .accordion-header >a         {border-radius: $v2 $v2 0 0;}
 		 .accordion-item:last-of-type .accordion-header >a.collapsed          {border-radius: 0 0 $v2 $v2;}
@@ -71,8 +77,11 @@ $bc :                       (#{$accordionBorderColor});
 		 a.accordion-button::after,
          a.accordion-button::before                                 {width: auto;}
     }
+
 }
 
-.frame-accordion.frame-white{                                        background-color: transparent;
+
+.frame-accordion.frame-white{                                        padding: 0; background-color: transparent;
     .t3up_accordion                                                  {background-color: $white;}
 }
+
