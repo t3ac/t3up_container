@@ -1,47 +1,118 @@
 @import '../../../../t3up/Resources/Public/Sass/_initalize.scss';
 
-.frame-1cols,
-.frame-2cols,
-.frame-3cols,
-.frame-4cols{
-    .col-12                               {flex: 0 1 auto;}
+/* -------------------------------------------------------------------------*/
 
-	> .spacing1 > div                     {@include mb01;}
-	> .spacing2 > div                     {@include mb02;}
-	> .spacing3 > div                     {@include mb03;}
-	> .spacing4 > div                     {@include mb04;}
-	> .spacing5 > div                     {@include mb05;}
-	> .spacing6 > div                     {@include mb06;}
-	> .spacing7 > div                     {@include mb07;}	
+$columns: (
+    1: $c8,
+    2: $c16,
+    3: $c25,
+    4: $c33,
+    5: $c41,
+    6: $c50,
+    7: $c58,
+    8: $c66,
+    9: $c75,
+    10: $c83,
+    11: $c91,
+    12: $c100
+);
+
+$spacings: (
+    1: $v1,
+    2: $v2,
+    3: $v3,
+    4: $v4,
+    5: $v5,
+    6: $v6,
+    7: $v7
+);
+
+$breakpoint-spacings: (
+    md: (1, 2, 3, 4, 5, 6, 7),
+    lg: (1, 2, 3, 4, 5, 6, 7),
+    xl: (1, 2, 3, 4, 5, 6, 7),
+    xxl: (1, 2, 3, 4, 5, 6, 7)
+);
+
+/* -------------------------------------------------------------------------*/
+
+.opg.frame-2cols .container,
+.frame-2cols,
+.opg.frame-3cols .container,
+.frame-3cols,
+.opg.frame-4cols .container,
+.frame-4cols{
+	> .spacing1 > div                     {@include mb01; @include mx01;}
+	> .spacing2 > div                     {@include mb02; @include mx02;}
+	> .spacing3 > div                     {@include mb03; @include mx03;}
+	> .spacing4 > div                     {@include mb04; @include mx04;}
+	> .spacing5 > div                     {@include mb05; @include mx05;}
+	> .spacing6 > div                     {@include mb06; @include mx06;}
+	> .spacing7 > div                     {@include mb07; @include mx07;}	
+	
+	> .spacing1 > div:first-of-type,      
+	> .spacing2 > div:first-of-type, 
+	> .spacing3 > div:first-of-type, 
+	> .spacing4 > div:first-of-type, 
+	> .spacing5 > div:first-of-type, 
+	> .spacing6 > div:first-of-type, 
+	> .spacing7 > div:first-of-type       {margin-left: 0;}
+	
+	> .spacing1 > div:last-of-type,      
+	> .spacing2 > div:last-of-type, 
+	> .spacing3 > div:last-of-type, 
+	> .spacing4 > div:last-of-type, 
+	> .spacing5 > div:last-of-type, 
+	> .spacing6 > div:last-of-type, 
+	> .spacing7 > div:last-of-type        {margin-right: 0;}		
 }
 
-@media screen and (min-width: 576px) {
-	.frame-2cols .spacing1 > div,
-	.frame-3cols .spacing1 > div,
-	.frame-4cols .spacing1 > div {@include px01} 
+@media screen and (min-width: 582px) {
 	
-	.frame-2cols .spacing2 > div,
-	.frame-3cols .spacing2 > div,
-	.frame-4cols .spacing2 > div {@include px02} 
-	
-	.frame-2cols .spacing3 > div,
-	.frame-3cols .spacing3 > div,
-	.frame-4cols .spacing3 > div {@include px03} 
-	
-	.frame-2cols .spacing4 > div,
-	.frame-3cols .spacing4 > div,
-	.frame-4cols .spacing4 > div {@include px04} 
-	
-	.frame-2cols .spacing5 > div,
-	.frame-3cols .spacing5 > div,
-	.frame-4cols .spacing5 > div {@include px05} 
-	
-	.frame-2cols .spacing6 > div,
-	.frame-3cols .spacing6 > div,
-	.frame-4cols .spacing6 > div {@include px06} 
-
-	.frame-2cols .spacing7 > div,
-	.frame-3cols .spacing7 > div,
-	.frame-4cols .spacing7 > div {@include px07} 
+	.opg.frame-2cols .container,
+    .frame-2cols {
+        @each $breakpoint, $spacing-list in $breakpoint-spacings {
+            @each $spacing in $spacing-list {
+                $spacing-width: map-get($spacings, $spacing);
+                > .spacing#{$spacing} {
+                    @each $column, $column-width in $columns {
+                        > .col-#{$breakpoint}-#{$column} {
+                            width: calc(#{$column-width} - #{$spacing-width});
+                        }
+                    }
+                }
+            }
+        }
+    }
+	.opg.frame-3cols .container,
+    .frame-3cols {
+        @each $breakpoint, $spacing-list in $breakpoint-spacings {
+            @each $spacing in $spacing-list {
+                $spacing-width: map-get($spacings, $spacing);
+                > .spacing#{$spacing} {
+                    @each $column, $column-width in $columns {
+                        > .col-#{$breakpoint}-#{$column} {
+                            width: calc(#{$column-width} - 1.5*#{$spacing-width});
+                        }
+                    }
+                }
+            }
+        }
+    }
+	.opg.frame-4cols .container,				
+	.frame-4cols {
+	    @each $breakpoint, $spacing-list in $breakpoint-spacings {
+	        @each $spacing in $spacing-list {
+	            $spacing-width: map-get($spacings, $spacing);
+	            > .spacing#{$spacing} {
+	                @each $column, $column-width in $columns {
+	                    > .col-#{$breakpoint}-#{$column} {
+	                        width: calc(#{$column-width} - 2*#{$spacing-width});
+	                    }
+	                }
+	            }
+	        }
+	    }
+	}
 }
 
