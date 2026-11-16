@@ -7,13 +7,12 @@ $bc :                       (#{$accordionBorderColor});
 /* Accordions * **********************************************************************************************************************************************************************************************************************/
 
 .t3up_accordion{ 
-    a.accordion-button                                              {display: flex; align-content: space-between; align-items: center;}
+    a.accordion-button                                              {display: flex; align-content: space-between; align-items: center; margin-bottom: 0;}
     a.accordion-button::after,
     a.accordion-button::before                                      {margin-top: $-v2; @include symbol; display: flex; align-items: center; justify-content: center; font-weight: normal !important; transition: all ease .3s;  font-size: calc(#{$v3} * 1.5); height: $v2;}
      
     a.accordion-button::after                                       {content: $add; transition: all ease 0.3s;}
     a.accordion-button:not(.collapsed)::after                       {content: $remove;}
-   
 	
 	&.block{
     	.accordion-item .accordion-header > a                           {display: block; padding-top: $v2; padding-bottom: $v2; padding-left: $v3; padding-right: $v6; border: 1px solid $bc; border-bottom: 0; position: relative;}
@@ -40,7 +39,7 @@ $bc :                       (#{$accordionBorderColor});
     
     .accordion-item .accordion-body                                 {border-left: 1px solid $bc; border-right: 1px solid $bc}
     .accordion-item .accordion-body > *                             {background: none !important; padding: $v3; padding-top: 0; margin: 0;}
-    .accordion-item .accordion-body > * > *:last-of-type            {margin-bottom: 0;;}
+    .accordion-item .accordion-body > * > *:last-of-type            {margin-bottom: 0;}
     
     .accordion-item .accordion-body > * > h2,
     .accordion-item .accordion-body > * > h3,
@@ -51,14 +50,13 @@ $bc :                       (#{$accordionBorderColor});
     .accordion-item .accordion-body .ce-bodytext > h4               {display: none !important;}
 	
 	&.block{
-		a.accordion-button::after    								{background: rgba(0, 0, 0, 0.1); padding-right: $v1;    padding-left: $v1;  font-size: 150%; position: absolute;	top:  12px;;	right: 0; height: 100%;  rotate: 180deg;}
-	    a.accordion-button:not(.collapsed)::after     				{rotate: 0deg; top: 4px;}
+		a.accordion-button::after    							   {background: rgba(0, 0, 0, 0.1); padding-right: $v1;    padding-left: $v1;  font-size: 150%; position: absolute;	top:  12px;;	right: 0; height: 100%;  rotate: 180deg;}
+	    a.accordion-button:not(.collapsed)::after     			   {rotate: 0deg; top: 4px;}
 		.accordion-item .accordion-body > *                         {padding-top:$v3;}
 		
 		.accordion-item .show .accordion-body > *                   {border-bottom: 1px solid $bc;}
 		
      }
-	
     
     &.rounded {
          .accordion-item:first-of-type .accordion-header >a         {border-radius: $v2 $v2 0 0;}
@@ -77,6 +75,11 @@ $bc :                       (#{$accordionBorderColor});
 		 a.accordion-button::after,
          a.accordion-button::before                                 {width: auto;}
     }
+	
+	&.plain {
+		.accordion-item .accordion-body                              {border-bottom: 1px solid $bc;} 
+		.accordion-item .accordion-body p:last-of-type               {margin-bottom: 0;} 
+	}
 
 }
 
