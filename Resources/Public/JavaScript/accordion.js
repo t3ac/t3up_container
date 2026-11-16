@@ -1,22 +1,72 @@
-jQuery(document).ready(function($) {
-	
-	$(".frame-singleaccordion").each(function(){	
-        idx = (this.id);
-        $( ".idxa" ).remove();
 
-      	$(this).wrapInner('<div id="accordion-'+ idx +'" class="t3up_accordion accordion accordion-flush accordionstyle-1"><div class="accordion-item"></div></div>');     
-      	$proove = $(this).find('.accordion-item').children().first();
-		if ($proove.is( "a" )) {
-        	$proove.remove();
-		}
-		
-      	$(this).find('.accordion-item').children().first().wrap('<div class="accordion-header" id="heading-'+ (idx + 1) +'"></div>')   
-      	$(this).find('.accordion-item > .accordion-header').children().first().wrap('<a href="#collapse-' + (idx + 1)+ '" class="accordion-button collapsed justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-' + (idx + 1) +
-      	'" data-toggle="collapse" data-target="#collapse-' + (idx + 1) +'" aria-expanded="false" aria-controls="collapse-' + (idx + 1) +'"></a>');
-     	$(this).find('.accordion-item > .accordion-header .accordion-button').children().first().removeAttr("class");
-      	$(this).find('.accordion-item').children().last().wrap('<div id="collapse-' + (idx + 1) + '" class="accordion-collapse collapse" aria-labelledby="heading-' + (idx + 1) + '"><div class="accordion-body"></div></div>');
-      	$(this).css('opacity','1');
+document.addEventListener('DOMContentLoaded', () => {
 
-	});
-        
+    document.querySelectorAll('.frame-singleaccordion').forEach(element => {
+
+        const idx = element.id;
+        const nextId = `${idx}1`;
+
+        // Die beiden ursprünglichen Elemente sichern
+        const children = Array.from(element.children);
+
+        if (children.length !== 2) return;
+
+        let [heading, content] = children;
+
+        // Falls die Überschrift ein Link ist, entfernen
+        if (heading.tagName === 'A') {
+            heading.remove();
+            heading = element.firstElementChild;
+        }
+
+        if (!heading || !content) return;
+
+        // Accordion aufbauen
+        const accordion = document.createElement('div');
+        accordion.id = `accordion-${idx}`;
+        accordion.className = 't3up_accordion accordion accordion-flush accordionstyle-1';
+
+        const item = document.createElement('div');
+        item.className = 'accordion-item';
+
+        const header = document.createElement('div');
+        header.className = 'accordion-header';
+        header.id = `heading-${nextId}`;
+
+        const button = document.createElement('a');
+        button.href = `#collapse-${nextId}`;
+        button.className = 'accordion-button collapsed justify-content-between';
+        button.setAttribute('data-bs-toggle', 'collapse');
+        button.setAttribute('data-bs-target', `#collapse-${nextId}`);
+        button.setAttribute('data-toggle', 'collapse');
+        button.setAttribute('data-target', `#collapse-${nextId}`);
+        button.setAttribute('aria-expanded', 'false');
+        button.setAttribute('aria-controls', `collapse-${nextId}`);
+
+        // Klasse des ersten Kindelements entfernen
+        button.append(...Array.from(heading.childNodes));
+        button.firstElementChild?.removeAttribute('class');
+
+        header.appendChild(button);
+
+        const collapse = document.createElement('div');
+        collapse.id = `collapse-${nextId}`;
+        collapse.className = 'accordion-collapse collapse';
+        collapse.setAttribute('aria-labelledby', `heading-${nextId}`);
+
+        const body = document.createElement('div');
+        body.className = 'accordion-body';
+        body.appendChild(content);
+
+        collapse.appendChild(body);
+        item.append(header, collapse);
+        accordion.appendChild(item);
+
+        element.replaceChildren(accordion);
+
+        // Accordion sichtbar machen
+        element.style.opacity = '1';
+
+    });
+
 });
